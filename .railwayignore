@@ -1,0 +1,11 @@
+kainna-web/.git/
+kainna-web/.next/
+kainna-web/.vercel/
+kainna-web/node_modules/
+kainna-web/public/
+kainna-web/scripts/
+kainna-web/src/app/
+kainna-web/src/components/
+kainna-web/src/lib/
+kainna-web/src/store/
+api/data/

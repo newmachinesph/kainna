@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sp-datu-puti",
+    "brand": "Datu Puti",
+    "tagline": "Mas masarap ang adobo kapag Datu Puti ang suka at toyo.",
+    "dish_ids": ["d001", "d002"],
+    "regions": ["NCR", "CALABARZON", "Central Luzon"],
+    "budget_tiers": ["sapat", "maluwag"],
+    "active": true,
+    "impressions": 3412,
+    "list_adds": 1187
+  },
+  {
+    "id": "sp-mega",
+    "brand": "Mega Sardines",
+    "tagline": "Sardinas na sagana, kahit tipid na araw.",
+    "dish_ids": ["d021", "d059"],
+    "regions": ["NCR", "CALABARZON", "Central Luzon", "Bicol", "Western Visayas", "Central Visayas", "Davao"],
+    "budget_tiers": ["tipid", "sapat"],
+    "active": false,
+    "impressions": 0,
+    "list_adds": 0
+  },
+  {
+    "id": "sp-knorr",
+    "brand": "Knorr",
+    "tagline": "Sinigang na may kilig sa asim.",
+    "dish_ids": ["d004", "d005"],
+    "regions": ["NCR", "CALABARZON", "Central Luzon", "Ilocos", "Bicol"],
+    "budget_tiers": ["tipid", "sapat", "maluwag"],
+    "active": false,
+    "impressions": 0,
+    "list_adds": 0
+  }
+]

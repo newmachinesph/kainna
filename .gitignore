@@ -1,0 +1,13 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# env files
+.env*
+
+# local api database
+api/data/
+
+# food images are served from the CDN
+kainna-web/public/food/

@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "bibingka", "title": "Bibingka", "kind": "Baked rice cake", "minutes": 45, "servings": 8,
+    "image": "/food/phfood_340d4bd6de11__bibingka.webp",
+    "intro": "Soft coconut rice cake with a lightly browned top. Best eaten warm with butter and a little cheese.",
+    "ingredients": ["2 cups rice flour", "1 cup coconut milk", "½ cup milk", "¾ cup sugar", "2 eggs", "2 tsp baking powder", "Butter, cheese, and sliced salted egg for topping"],
+    "steps": ["Heat the oven to 200°C. Line a shallow baking pan with banana leaf or parchment and lightly butter it.", "Whisk the eggs, sugar, coconut milk, and milk. Stir in the rice flour and baking powder until smooth.", "Pour into the prepared pan. Add salted egg slices and cheese on top.", "Bake for 20–25 minutes, until the center is set and the top is golden. Brush with butter before serving."]
+  },
+  {
+    "slug": "champorado", "title": "Champorado", "kind": "Chocolate rice porridge", "minutes": 35, "servings": 4,
+    "image": "/food/phfood_56056ebd2f5d__champorado.webp",
+    "intro": "A rich, comforting bowl of chocolate sticky rice for slow mornings and rainy afternoons.",
+    "ingredients": ["1 cup glutinous rice", "5 cups water", "4 tablea discs or ⅓ cup unsweetened cocoa", "½ cup sugar, adjusted to taste", "Evaporated milk for serving"],
+    "steps": ["Rinse the glutinous rice. Bring it to a gentle boil with the water, then lower the heat.", "Simmer for about 20 minutes, stirring often, until the rice is soft and the porridge thickens.", "Stir in the tablea or cocoa and sugar. Cook for another 5 minutes until smooth.", "Serve hot with a swirl of evaporated milk."]
+  },
+  {
+    "slug": "turon", "title": "Turon", "kind": "Crisp banana rolls", "minutes": 25, "servings": 6,
+    "image": "/food/phfood_e9b7ef9fa9bf__turon.webp",
+    "intro": "Caramel-crisp lumpia wrappers around sweet saba and jackfruit.",
+    "ingredients": ["6 ripe saba bananas, halved lengthwise", "12 lumpia wrappers", "½ cup brown sugar", "Jackfruit strips, optional", "Neutral oil for frying"],
+    "steps": ["Roll each banana half in brown sugar. Place on a lumpia wrapper with a strip of jackfruit.", "Fold the sides in and roll tightly. Seal the edge with a dab of water.", "Heat 2–3 cm of oil over medium heat. Fry the rolls in batches until golden and crisp, turning as needed.", "Drain briefly and let the caramel cool slightly before eating."]
+  },
+  {
+    "slug": "biko", "title": "Biko", "kind": "Coconut sticky rice", "minutes": 50, "servings": 8,
+    "image": "/food/phfood_b98d58e9b39a__biko.webp",
+    "intro": "Sticky rice cooked in coconut milk and brown sugar, made for sharing in generous squares.",
+    "ingredients": ["2 cups glutinous rice", "3 cups coconut milk", "1 cup brown sugar", "¼ tsp salt", "Coconut curds or extra coconut cream for topping, optional"],
+    "steps": ["Rinse the glutinous rice. Simmer it with 2 cups coconut milk until tender, stirring to prevent sticking.", "In a wide pan, cook the remaining coconut milk, brown sugar, and salt until thick and bubbling.", "Fold in the cooked rice and stir over low heat until the mixture is glossy and holds together.", "Press into a lightly oiled pan. Cool before slicing; add coconut curds if you like."]
+  },
+  {
+    "slug": "taho", "title": "Taho", "kind": "Warm silken tofu", "minutes": 15, "servings": 4,
+    "image": "/food/phfood_59ade93dee44__taho.webp",
+    "intro": "A warm cup of silky tofu, brown sugar syrup, and chewy sago pearls.",
+    "ingredients": ["500 g silken tofu", "¾ cup brown sugar", "¾ cup water", "1 cup cooked small sago pearls"],
+    "steps": ["Simmer the brown sugar and water for 5–7 minutes to make a light syrup.", "Warm the silken tofu gently over simmering water or in short microwave bursts; do not boil it.", "Spoon tofu into cups. Add warm syrup and cooked sago pearls.", "Serve immediately while the tofu is soft and warm."]
+  },
+  {
+    "slug": "banana-cue", "title": "Banana cue", "kind": "Caramelized saba", "minutes": 20, "servings": 4,
+    "image": "/food/phfood_703c0fd982e5__banana-cue.webp",
+    "intro": "Street-side merienda made with golden saba and a crackly brown sugar coating.",
+    "ingredients": ["8 ripe saba bananas, peeled", "1 cup brown sugar", "Neutral oil for shallow frying", "4 bamboo skewers"],
+    "steps": ["Heat a shallow layer of oil over medium heat. Fry the saba until lightly golden.", "Sprinkle the brown sugar into the oil and keep turning the bananas as it melts and coats them.", "Lift out the bananas when the sugar is amber and sticky. Drain briefly.", "Thread two bananas onto each skewer and let the caramel set for a minute before serving."]
+  },
+  {
+    "slug": "leche-flan", "title": "Leche flan", "kind": "Caramel custard", "minutes": 60, "servings": 8,
+    "image": "/food/phfood_99c59a12fbed__leche-flan.webp",
+    "intro": "Smooth egg custard under a glossy caramel sauce, a favorite at family celebrations.",
+    "ingredients": ["¾ cup sugar for caramel", "10 egg yolks", "1 can condensed milk (about 300 ml)", "1 can evaporated milk (about 370 ml)", "1 tsp vanilla extract"],
+    "steps": ["Melt the sugar in a small pan over medium heat until amber. Pour into a heatproof flan mold and swirl to coat the base.", "Gently whisk the egg yolks, condensed milk, evaporated milk, and vanilla. Strain into the caramel-lined mold.", "Cover the mold with foil. Steam over low heat for 30–40 minutes, until the center is just set.", "Cool completely, then chill for at least 4 hours. Loosen the edges and invert onto a plate."]
+  }
+]

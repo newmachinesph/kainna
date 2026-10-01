@@ -1,0 +1,4541 @@
+[
+  {
+    "id": "d001",
+    "slug": "chicken-adobo",
+    "name_tl": "Adobong Manok",
+    "name_en": "Chicken Adobo",
+    "name_ceb": "Adobong Manok",
+    "protein_class": "manok",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 53,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "adobo-flakes",
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.75
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang manok sa toyo, suka, bawang at paminta nang 15 minuto.",
+      "Igisa ang bawang at sibuyas hanggang mabango.",
+      "Ilagay ang manok at pakuluan kasama ang marinade at laurel.",
+      "Hayaang lumapot ang sarsa sa mahinang apoy, mga 30 minuto.",
+      "Ihain kasama ng mainit na kanin; itabi ang tira para sa adobo flakes."
+    ],
+    "sponsor_id": "sp-datu-puti",
+    "image": "/food/phfood_26aee4e9e0c1__chicken-adobo.webp",
+    "description_tl": "Pang-araw-araw na paborito: tumatagal sa lamesa, mas masarap pa kinabukasan."
+  },
+  {
+    "id": "d002",
+    "slug": "pork-adobo",
+    "name_tl": "Adobong Baboy",
+    "name_en": "Pork Adobo",
+    "name_ceb": "Adobong Baboy",
+    "protein_class": "baboy",
+    "cook_minutes": 50,
+    "base_cost_per_serving": 61,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "adobo-flakes",
+    "ingredients": [
+      {
+        "ingredient_id": "kasim",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang kasim sa toyo, suka, bawang at paminta nang 20 minuto.",
+      "Igisa ang bawang hanggang ginto ang kulay.",
+      "Ilagay ang baboy at marinade, dagdagan ng laurel at tubig.",
+      "Pakuluan sa mahinang apoy hanggang lumambot at lumapot ang sarsa.",
+      "Itabi ang tira para gawing adobo flakes bukas."
+    ],
+    "sponsor_id": "sp-datu-puti",
+    "image": "/food/phfood_6cfa78051d5f__pork-adobo.webp",
+    "description_tl": "Ang klasikong ulam na hindi nakakasawa, at may extra pa para bukas."
+  },
+  {
+    "id": "d003",
+    "slug": "adobo-flakes",
+    "name_tl": "Adobo Flakes at Sinangag",
+    "name_en": "Adobo Flakes with Garlic Rice",
+    "name_ceb": "Adobo Flakes ug Sinangag",
+    "protein_class": "baboy",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 24,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bigas-pang-lugaw",
+        "qty": 0.5,
+        "note": "pang-sinangag, pwede ring lamig na kanin"
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Himayin ang tirang adobo at iprito hanggang malutong ang gilid.",
+      "Igisa ang bawang sa mantika, ihalo ang lamig na kanin at asin.",
+      "Iprito ang itlog, sunny side up.",
+      "Ihain ang sinangag, adobo flakes, itlog at hiwang kamatis."
+    ],
+    "image": "/food/phfood_635e586dfd33__adobo-flakes-at-sinangag.webp",
+    "description_tl": "Almusal o hapunan mula sa tirang adobo: mabilis, malutong at walang sayang."
+  },
+  {
+    "id": "d004",
+    "slug": "sinigang-na-baboy",
+    "name_tl": "Sinigang na Baboy",
+    "name_en": "Pork Sinigang",
+    "name_ceb": "Sinigang nga Baboy",
+    "protein_class": "baboy",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 71,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-ribs",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "sinigang-mix",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kangkong",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "labanos",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang buto-buto ng baboy kasama ang sibuyas at kamatis hanggang lumambot.",
+      "Ilagay ang labanos at sitaw, pakuluan nang 5 minuto.",
+      "Ihalo ang sinigang mix at siling haba.",
+      "Idagdag ang kangkong, patayin agad ang apoy.",
+      "Timplahan ng patis at ihain nang mainit."
+    ],
+    "sponsor_id": "sp-knorr",
+    "image": "/food/phfood_3f464401f439__sinigang-na-baboy.webp",
+    "description_tl": "Pang-tag-ulan na ulam: maasim, mainit at laging may umuulit ng sabaw."
+  },
+  {
+    "id": "d005",
+    "slug": "sinigang-na-bangus",
+    "name_tl": "Sinigang na Bangus",
+    "name_en": "Milkfish Sinigang",
+    "name_ceb": "Sinigang nga Bangus",
+    "protein_class": "isda",
+    "cook_minutes": 35,
+    "base_cost_per_serving": 61,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bangus",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "sinigang-mix",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kangkong",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "labanos",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang tubig kasama ang sibuyas at kamatis.",
+      "Ilagay ang labanos, pakuluan hanggang malambot.",
+      "Ihulog ang bangus at sinigang mix, pakuluan nang 8 minuto.",
+      "Idagdag ang kangkong at siling haba, patayin ang apoy.",
+      "Timplahan ng patis bago ihain."
+    ],
+    "sponsor_id": "sp-knorr",
+    "image": "/food/phfood_4c9d6355daf8__sinigang-na-bangus.webp",
+    "description_tl": "Mas mabilis kaysa baboy at mas magaan sa bulsa, pero sarap na sarap pa rin."
+  },
+  {
+    "id": "d006",
+    "slug": "sinigang-na-hipon",
+    "name_tl": "Sinigang na Hipon",
+    "name_en": "Shrimp Sinigang",
+    "name_ceb": "Sinigang nga Hipon",
+    "protein_class": "hipon",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 80,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "hipon",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "sinigang-mix",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kangkong",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "labanos",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang tubig na may sibuyas at kamatis.",
+      "Ilagay ang labanos at pakuluan nang 5 minuto.",
+      "Ihalo ang sinigang mix, sundan ng hipon; 3 minuto lang.",
+      "Idagdag ang kangkong at siling haba, patayin ang apoy.",
+      "Timplahan ng patis at ihain agad."
+    ],
+    "image": "/food/phfood_b1c73fd37e34__sinigang-na-hipon.webp",
+    "description_tl": "Special na sinigang kapag may hipon sa palengke: mabilis lutuin, pang-bisita ang dating."
+  },
+  {
+    "id": "d007",
+    "slug": "tinolang-manok",
+    "name_tl": "Tinolang Manok",
+    "name_en": "Chicken Tinola",
+    "name_ceb": "Tinola nga Manok",
+    "protein_class": "manok",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 63,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.75
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "papaya-hilaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "dahon-ng-sili",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang luya, bawang at sibuyas hanggang mabango.",
+      "Ilagay ang manok at igisa hanggang mamuti.",
+      "Buhusan ng tubig at pakuluan hanggang lumambot ang manok.",
+      "Idagdag ang papaya, pakuluan hanggang malambot.",
+      "Ihalo ang dahon ng sili at timplahan ng patis."
+    ],
+    "image": "/food/phfood_bc92999270fa__tinolang-manok.webp",
+    "description_tl": "Pampainit ng tiyan kapag may sipon sa bahay: mainit na sabaw na may luya."
+  },
+  {
+    "id": "d008",
+    "slug": "nilagang-baka",
+    "name_tl": "Nilagang Baka",
+    "name_en": "Beef Nilaga",
+    "name_ceb": "Nilaga nga Baka",
+    "protein_class": "baka",
+    "cook_minutes": 90,
+    "base_cost_per_serving": 116,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "sinigang-na-baka",
+    "ingredients": [
+      {
+        "ingredient_id": "beef-shank",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mais",
+        "qty": 2
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang baka sa maraming tubig, alisin ang bula.",
+      "Ilagay ang sibuyas at paminta, hayaang lumambot nang 1 oras.",
+      "Idagdag ang patatas at mais, pakuluan nang 10 minuto.",
+      "Ihalo ang repolyo at pechay, patayin ang apoy.",
+      "Timplahan ng patis; itabi ang kalahati ng baka at sabaw para sa sinigang bukas."
+    ],
+    "image": "/food/phfood_452e1def00fa__nilagang-baka.webp",
+    "description_tl": "Pang-Linggo na luto: matagal sa apoy pero solb ang buong pamilya, may tira pa."
+  },
+  {
+    "id": "d009",
+    "slug": "sinigang-na-baka",
+    "name_tl": "Sinigang na Baka (tira ng nilaga)",
+    "name_en": "Beef Sinigang from leftover nilaga",
+    "name_ceb": "Sinigang nga Baka (salin sa nilaga)",
+    "protein_class": "baka",
+    "cook_minutes": 40,
+    "base_cost_per_serving": 27,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "sinigang-mix",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kangkong",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "labanos",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang tirang sabaw at baka ng nilaga.",
+      "Ilagay ang labanos at sitaw, pakuluan nang 5 minuto.",
+      "Ihalo ang sinigang mix, kamatis at siling haba.",
+      "Idagdag ang kangkong at patayin ang apoy."
+    ],
+    "image": "/food/phfood_8d56bf58b5fc__sinigang-na-baka.webp",
+    "description_tl": "Ang tira ng nilaga kahapon, bagong ulam ngayon: maasim na sabaw sa 40 minuto lang."
+  },
+  {
+    "id": "d010",
+    "slug": "bulalo",
+    "name_tl": "Bulalo",
+    "name_en": "Bulalo",
+    "name_ceb": "Bulalo",
+    "protein_class": "baka",
+    "cook_minutes": 120,
+    "base_cost_per_serving": 113,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-shank",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "mais",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "dahon-ng-sibuyas",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang buto-buto ng baka nang 2 oras hanggang lumambot ang litid.",
+      "Alisin ang bula habang kumukulo; ilagay ang sibuyas at paminta.",
+      "Idagdag ang mais, pakuluan nang 10 minuto.",
+      "Ihalo ang repolyo at pechay, patayin ang apoy.",
+      "Budburan ng dahon ng sibuyas at timplahan ng patis."
+    ],
+    "image": "/food/phfood_a11d624b161a__bulalo.webp",
+    "description_tl": "Pang-okasyon na sabaw: pang-Tagaytay ang lasa, pero sa sariling kusina lang."
+  },
+  {
+    "id": "d011",
+    "slug": "kare-kare",
+    "name_tl": "Kare-kare",
+    "name_en": "Kare-kare",
+    "name_ceb": "Kare-kare",
+    "protein_class": "baka",
+    "cook_minutes": 120,
+    "base_cost_per_serving": 126,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "oxtail",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "peanut-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "mani",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "talong",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "puso-ng-saging",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "bagoong-alamang",
+        "qty": 0.3,
+        "note": "pang-sawsaw"
+      },
+      {
+        "ingredient_id": "atsuete",
+        "qty": 0.5
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang buntot ng baka hanggang lumambot, mga 2 oras.",
+      "Ilagay ang atsuete, sarsa ng kare-kare at giniling na mani sa sabaw.",
+      "Pakuluan ang sitaw, talong at puso ng saging nang 5 minuto.",
+      "Ihalo ang pechay, patayin ang apoy.",
+      "Ihain kasama ng bagoong alamang sa gilid."
+    ],
+    "image": "/food/phfood_38ca4c813efa__kare-kare.webp",
+    "description_tl": "Handa para sa fiesta o birthday: mabigat sa bulsa pero walang tira pag-alis ng bisita."
+  },
+  {
+    "id": "d012",
+    "slug": "bicol-express",
+    "name_tl": "Bicol Express",
+    "name_en": "Bicol Express",
+    "name_ceb": "Bicol Express",
+    "protein_class": "baboy",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 74,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 1.5
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "bagoong-alamang",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya sa kaunting mantika.",
+      "Ilagay ang liempo at igisa hanggang mamula.",
+      "Ihalo ang bagoong alamang at gata, pakuluan sa mahinang apoy.",
+      "Idagdag ang siling haba at labuyo, lutuin hanggang lumapot.",
+      "Ihain kasama ng maraming kanin."
+    ],
+    "image": "/food/phfood_36debd66bda2__bicol-express.webp",
+    "description_tl": "Pang-mahilig sa maanghang: ubos ang kanin kapag ito ang nakahain."
+  },
+  {
+    "id": "d013",
+    "slug": "laing",
+    "name_tl": "Laing",
+    "name_en": "Laing",
+    "name_ceb": "Laing",
+    "protein_class": "gulay",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 52,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "dahon-ng-gabi",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "bagoong-alamang",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya sa kawali.",
+      "Ilagay ang bagoong alamang at gata, pakuluan.",
+      "Ilagay ang tuyong dahon ng gabi; huwag haluin hanggang lumambot.",
+      "Idagdag ang sili at lutuin hanggang mamantika ang gata."
+    ],
+    "image": "/food/phfood_5fda8083a178__laing.webp",
+    "description_tl": "Bicolano na paborito na dalawang araw ang sarap: mas masarap kapag inulit-init."
+  },
+  {
+    "id": "d014",
+    "slug": "pinakbet",
+    "name_tl": "Pinakbet",
+    "name_en": "Pinakbet",
+    "name_ceb": "Pinakbet",
+    "protein_class": "gulay",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 45,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "ampalaya",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "talong",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bagoong-alamang",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.15,
+        "note": "pampalasa, optional"
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, kamatis at hiwang liempo.",
+      "Ihalo ang bagoong alamang at kaunting tubig.",
+      "Ilagay ang kalabasa, pakuluan nang 5 minuto.",
+      "Idagdag ang ampalaya, talong at sitaw; takpan at lutuin hanggang malambot.",
+      "Ihain agad para hindi malata ang gulay."
+    ],
+    "image": "/food/phfood_4b1273ae65c5__pinakbet.webp",
+    "description_tl": "Ilocano na gulay na pang-araw-araw: sulit, masustansya at mabilis maubos."
+  },
+  {
+    "id": "d015",
+    "slug": "ginisang-ampalaya",
+    "name_tl": "Ginisang Ampalaya with Itlog",
+    "name_en": "Sautéed Bitter Melon with Egg",
+    "name_ceb": "Ginisang Ampalaya nga may Itlog",
+    "protein_class": "itlog",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 32,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "ampalaya",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang hiniwang ampalaya sa asin, pigain para mabawasan ang pait.",
+      "Igisa ang bawang, sibuyas at kamatis hanggang malambot.",
+      "Ilagay ang ampalaya at lutuin nang 3 minuto.",
+      "Ibuhos ang binating itlog, haluin hanggang maluto.",
+      "Timplahan ng asin at ihain."
+    ],
+    "image": "/food/phfood_179fc05f62cb__ginisang-ampalaya.webp",
+    "description_tl": "Mura at masustansya: pang-katapusan ng buwan na ulam na hindi nakakahiya."
+  },
+  {
+    "id": "d016",
+    "slug": "ginisang-monggo",
+    "name_tl": "Ginisang Monggo",
+    "name_en": "Sautéed Mung Beans",
+    "name_ceb": "Ginisang Munggos",
+    "protein_class": "gulay",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 30,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "monggo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "malunggay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "chicharon",
+        "qty": 1,
+        "note": "pang-topping"
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang monggo hanggang lumambot, mga 30 minuto.",
+      "Igisa ang bawang, sibuyas at kamatis sa kawali.",
+      "Ihalo ang nilutong monggo at kalabasa, pakuluan nang 10 minuto.",
+      "Idagdag ang malunggay at timplahan ng patis.",
+      "Budburan ng chicharon bago ihain."
+    ],
+    "image": "/food/phfood_c1a705db0b4c__ginisang-munggo-monggo.webp",
+    "description_tl": "Pang-Biyernes na ulam sa maraming bahay: mura, mabusog at pampahaba ng sabaw."
+  },
+  {
+    "id": "d017",
+    "slug": "ginataang-kalabasa",
+    "name_tl": "Ginataang Kalabasa at Sitaw",
+    "name_en": "Squash and String Beans in Coconut Milk",
+    "name_ceb": "Ginataang Kalabasa ug Batong",
+    "protein_class": "gulay",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 45,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "hipon",
+        "qty": 0.15,
+        "note": "pampalasa"
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya sa mantika.",
+      "Ilagay ang hipon at igisa hanggang mamula.",
+      "Ibuhos ang gata at ilagay ang kalabasa; pakuluan hanggang malambot.",
+      "Idagdag ang sitaw at lutuin nang 5 minuto.",
+      "Timplahan ng patis at ihain."
+    ],
+    "image": "/food/phfood_65047662e2c7__ginataang-kalabasa-at-sitaw.webp",
+    "description_tl": "Malinamnam na gulay na may gata: kahit kaunti lang ang hipon, mabusog ang lahat."
+  },
+  {
+    "id": "d018",
+    "slug": "chopsuey",
+    "name_tl": "Chopsuey",
+    "name_en": "Chop Suey",
+    "name_ceb": "Chopsuey",
+    "protein_class": "gulay",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 35,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "sayote",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "baguio-beans",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "oyster-sauce",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "cornstarch",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas, ilagay ang manok hanggang maluto.",
+      "Idagdag ang carrots, sayote at baguio beans; igisa nang 3 minuto.",
+      "Ihalo ang repolyo at oyster sauce.",
+      "Lagyan ng cornstarch na tinunaw sa tubig para lumapot.",
+      "Ihain habang malutong pa ang gulay."
+    ],
+    "image": "/food/phfood_267f226b80d8__chop-suey.webp",
+    "description_tl": "Pang-handaan o pang-gabi: makulay na gulay na pwedeng ipalit sa mabigat na karne."
+  },
+  {
+    "id": "d019",
+    "slug": "tortang-talong",
+    "name_tl": "Tortang Talong",
+    "name_en": "Eggplant Omelette",
+    "name_ceb": "Tortang Talong",
+    "protein_class": "itlog",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 26,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "talong",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 5
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ihaw o iprito ang talong hanggang malambot; balatan.",
+      "Pipiin ng tinidor ang talong at isawsaw sa binating itlog.",
+      "Iprito sa mainit na mantika hanggang ginto ang bawat gilid.",
+      "Ihain kasama ng ketchup o suka na may bawang."
+    ],
+    "image": "/food/phfood_cb5d7c204845__tortang-talong.webp",
+    "description_tl": "Mura, mabilis at paborito ng bata: pang-almusal, pang-baon at pang-hapunan."
+  },
+  {
+    "id": "d020",
+    "slug": "tortang-giniling",
+    "name_tl": "Tortang Giniling",
+    "name_en": "Ground Pork Omelette",
+    "name_ceb": "Tortang Giniling",
+    "protein_class": "itlog",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 46,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-giniling",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 5
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at kamatis.",
+      "Ilagay ang giniling at patatas, lutuin hanggang malambot.",
+      "Palamigin sandali at ihalo sa binating itlog.",
+      "Iprito ang bawat sandok hanggang ginto ang dalawang gilid.",
+      "Ihain kasama ng ketchup."
+    ],
+    "image": "/food/phfood_708d37c3f0d4__tortang-giniling.webp",
+    "description_tl": "Pang-baon na hindi nakakasawa: giniling at itlog na pwede ring pang-sandwich."
+  },
+  {
+    "id": "d021",
+    "slug": "ginisang-sardinas",
+    "name_tl": "Ginisang Sardinas",
+    "name_en": "Sautéed Sardines",
+    "name_ceb": "Ginisang Sardinas",
+    "protein_class": "delata",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 30,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "sardinas",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas hanggang malambot.",
+      "Ilagay ang kamatis at lutuin hanggang mamula.",
+      "Ibuhos ang sardinas kasama ng sarsa, pakuluan nang 5 minuto.",
+      "Idagdag ang pechay at siling labuyo, patayin ang apoy."
+    ],
+    "sponsor_id": "sp-mega",
+    "image": "/food/phfood_1bb2d6ee60e6__ginisang-sardinas.webp",
+    "description_tl": "Pang-petsa de peligro: 15 minuto, dalawang lata, mabusog ang apat."
+  },
+  {
+    "id": "d022",
+    "slug": "corned-beef-guisado",
+    "name_tl": "Corned Beef Guisado",
+    "name_en": "Corned Beef with Potatoes",
+    "name_ceb": "Corned Beef Guisado",
+    "protein_class": "delata",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 36,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "corned-beef",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Iprito ang patatas hanggang ginto, itabi.",
+      "Igisa ang bawang at sibuyas sa kaunting mantika.",
+      "Ilagay ang corned beef at haluin nang 5 minuto.",
+      "Ihalo ang patatas at paminta, ihain kasama ng kanin."
+    ],
+    "image": "/food/phfood_75d211c2335b__corned-beef-guisado.webp",
+    "description_tl": "Pang-almusal na pang-hapunan din: mabilis, mainit at ubos agad ang kanin."
+  },
+  {
+    "id": "d023",
+    "slug": "giniling-guisado",
+    "name_tl": "Giniling Guisado",
+    "name_en": "Ground Pork Guisado",
+    "name_ceb": "Giniling Guisado",
+    "protein_class": "baboy",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 64,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-giniling",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas hanggang mabango.",
+      "Ilagay ang giniling na baboy at lutuin hanggang mamuti.",
+      "Ihalo ang tomato sauce, toyo at kaunting tubig.",
+      "Idagdag ang patatas at carrots, pakuluan hanggang malambot.",
+      "Ihain nang mainit."
+    ],
+    "image": "/food/phfood_693abf4039e7__giniling.webp",
+    "description_tl": "Pang-araw-araw na ulam ng mga nanay: madali, mabilis at pwedeng pang-baon."
+  },
+  {
+    "id": "d024",
+    "slug": "menudo",
+    "name_tl": "Menudo",
+    "name_en": "Pork Menudo",
+    "name_ceb": "Menudo",
+    "protein_class": "baboy",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 73,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kasim",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "pork-laman-loob",
+        "qty": 0.15,
+        "note": "atay"
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.1
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang kasim at igisa hanggang mamula.",
+      "Ihalo ang toyo at tomato sauce, pakuluan sa mahinang apoy nang 30 minuto.",
+      "Idagdag ang atay, patatas at carrots.",
+      "Lutuin hanggang malambot ang gulay at lumapot ang sarsa.",
+      "Ihain nang mainit kasama ng kanin."
+    ],
+    "image": "/food/phfood_2dbcd9f10b16__pork-menudo.webp",
+    "description_tl": "Pang-handaan sa bahay: mamula-mula at malinamnam na ulam pang-Linggo."
+  },
+  {
+    "id": "d025",
+    "slug": "mechado",
+    "name_tl": "Mechado",
+    "name_en": "Beef Mechado",
+    "name_ceb": "Mechado",
+    "protein_class": "baka",
+    "cook_minutes": 90,
+    "base_cost_per_serving": 99,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-cubes",
+        "qty": 0.7
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang baka sa toyo at kalamansi nang 30 minuto.",
+      "Igisa ang bawang at sibuyas, ilagay ang baka hanggang mamula.",
+      "Ihalo ang tomato sauce, laurel at tubig; pakuluan nang 1 oras.",
+      "Idagdag ang patatas at carrots, lutuin hanggang malambot.",
+      "Ihain nang mainit."
+    ],
+    "image": "/food/phfood_d7916e79bce8__beef-mechado.webp",
+    "description_tl": "Pang-sahod na ulam: malambot na baka na may tomato sauce, panalo sa buong pamilya."
+  },
+  {
+    "id": "d026",
+    "slug": "caldereta",
+    "name_tl": "Kalderetang Baka",
+    "name_en": "Beef Caldereta",
+    "name_ceb": "Kalderetang Baka",
+    "protein_class": "baka",
+    "cook_minutes": 90,
+    "base_cost_per_serving": 113,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-cubes",
+        "qty": 0.7
+      },
+      {
+        "ingredient_id": "liver-spread",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bell-pepper",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "queso",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang baka at igisa hanggang mamula.",
+      "Ihalo ang tomato sauce at tubig, pakuluan hanggang lumambot ang baka.",
+      "Idagdag ang liver spread, patatas at carrots.",
+      "Ilagay ang bell pepper at keso, lutuin hanggang lumapot.",
+      "Ihain nang mainit kasama ng kanin."
+    ],
+    "image": "/food/phfood_e259fecd6213__beef-kaldereta.webp",
+    "description_tl": "Pang-fiesta at pang-birthday: mabigat at malinamnam, laging may umuulit."
+  },
+  {
+    "id": "d027",
+    "slug": "afritada",
+    "name_tl": "Afritadang Manok",
+    "name_en": "Chicken Afritada",
+    "name_ceb": "Afritada nga Manok",
+    "protein_class": "manok",
+    "cook_minutes": 50,
+    "base_cost_per_serving": 70,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.75
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "bell-pepper",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas hanggang mabango.",
+      "Ilagay ang manok at igisa hanggang mamuti.",
+      "Ihalo ang tomato sauce, patis at kaunting tubig; pakuluan nang 20 minuto.",
+      "Idagdag ang patatas, carrots at bell pepper; lutuin hanggang malambot.",
+      "Ihain nang mainit."
+    ],
+    "image": "/food/phfood_caf57ebedb55__chicken-afritada.webp",
+    "description_tl": "Mamula-mulang ulam na paborito ng bata: mabilis ang luto, ubos ang kanin."
+  },
+  {
+    "id": "d028",
+    "slug": "picadillo",
+    "name_tl": "Picadillo",
+    "name_en": "Beef Picadillo Soup",
+    "name_ceb": "Picadillo",
+    "protein_class": "baka",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 70,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-giniling",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sayote",
+        "qty": 0.25
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at kamatis hanggang malambot.",
+      "Ilagay ang giniling na baka at lutuin hanggang mamula.",
+      "Buhusan ng tubig at pakuluan nang 10 minuto.",
+      "Idagdag ang patatas at sayote, lutuin hanggang malambot.",
+      "Timplahan ng patis at ihain nang mainit."
+    ],
+    "image": "/food/phfood_0db3623cd11f__picadillo.webp",
+    "description_tl": "Sabaw na ulam na may giniling: pang-tag-ulan at madali pang lutuin."
+  },
+  {
+    "id": "d029",
+    "slug": "lechon-kawali",
+    "name_tl": "Lechon Kawali",
+    "name_en": "Lechon Kawali",
+    "name_ceb": "Lechon Kawali",
+    "protein_class": "baboy",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 87,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "paksiw-na-lechon",
+    "ingredients": [
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.3,
+        "note": "pang-deep fry"
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang liempo kasama ng bawang, laurel, paminta at asin nang 45 minuto.",
+      "Patuyuin nang husto ang liempo; ilagay sa ref kung may oras.",
+      "Iprito sa mainit na mantika hanggang malutong ang balat.",
+      "Hiwain at ihain kasama ng toyo-suka o lechon sauce.",
+      "Itabi ang tira para sa paksiw bukas."
+    ],
+    "image": "/food/phfood_aa7b715ab4cc__lechon-kawali.webp",
+    "description_tl": "Pang-Sabado na treat: malutong na balat, at may tira pa para sa paksiw bukas."
+  },
+  {
+    "id": "d030",
+    "slug": "paksiw-na-lechon",
+    "name_tl": "Paksiw na Lechon (tira ng lechon kawali)",
+    "name_en": "Lechon Paksiw from leftover lechon kawali",
+    "name_ceb": "Paksiw nga Lechon (salin sa lechon kawali)",
+    "protein_class": "baboy",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 17,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "suka",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "liver-spread",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Ilagay sa kaldero ang tirang lechon kawali, suka, toyo at tubig.",
+      "Idagdag ang bawang, sibuyas, laurel at paminta.",
+      "Pakuluan sa mahinang apoy nang 20 minuto; huwag haluin agad.",
+      "Ihalo ang liver spread at asukal, lutuin hanggang lumapot."
+    ],
+    "image": "/food/phfood_70d501f43aa6__paksiw-na-lechon-manok.webp",
+    "description_tl": "Ang tirang lechon kawali, ginawang matamis-maasim na paksiw: walang sayang."
+  },
+  {
+    "id": "d031",
+    "slug": "inihaw-na-liempo",
+    "name_tl": "Inihaw na Liempo",
+    "name_en": "Grilled Pork Belly",
+    "name_ceb": "Inihaw nga Liempo",
+    "protein_class": "baboy",
+    "cook_minutes": 40,
+    "base_cost_per_serving": 65,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "ketchup",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang liempo sa toyo, kalamansi, bawang, paminta at asukal nang 1 oras.",
+      "Ihaw sa uling o grill pan, 5 minuto bawat gilid.",
+      "Pahiran ng ketchup at marinade habang iniihaw.",
+      "Hiwain at ihain kasama ng toyo-suka."
+    ],
+    "image": "/food/phfood_b6b5c70529f3__inihaw-na-liempo.webp",
+    "description_tl": "Pang-Linggo sa labas ng bahay: usok, uling at masayang tambayan."
+  },
+  {
+    "id": "d032",
+    "slug": "pork-sisig",
+    "name_tl": "Sisig",
+    "name_en": "Pork Sisig",
+    "name_ceb": "Sisig",
+    "protein_class": "baboy",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 63,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-maskara",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "chicken-liver",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "mayonnaise",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang maskara ng baboy hanggang lumambot, saka ihaw o iprito.",
+      "Tadtarin nang pino ang maskara at atay.",
+      "Igisa ang sibuyas at sili, ihalo ang tinadtad na baboy.",
+      "Timplahan ng toyo, kalamansi at mayonnaise.",
+      "Ihain sa mainit na plato na may itlog sa ibabaw."
+    ],
+    "image": "/food/phfood_02b1630f8097__sisig.webp",
+    "description_tl": "Pang-inuman o pang-hapunan: malutong, maasim at maanghang na pang-Kapampangan."
+  },
+  {
+    "id": "d033",
+    "slug": "bistek-tagalog",
+    "name_tl": "Bistek Tagalog",
+    "name_en": "Filipino Beef Steak",
+    "name_ceb": "Bistek Tagalog",
+    "protein_class": "baka",
+    "cook_minutes": 40,
+    "base_cost_per_serving": 90,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-sirloin",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang hiniwang sirloin sa toyo, kalamansi at paminta nang 30 minuto.",
+      "Iprito ang sibuyas hanggang malambot, itabi.",
+      "Iprito ang baka sa mainit na mantika, 2 minuto bawat gilid.",
+      "Ibuhos ang marinade at pakuluan hanggang lumapot.",
+      "Patungan ng sibuyas bago ihain."
+    ],
+    "image": "/food/phfood_9acb48e2c97a__bistek-tagalog.webp",
+    "description_tl": "Pang-sahod na ulam: mabilis lutuin pero pang-restawran ang lasa."
+  },
+  {
+    "id": "d034",
+    "slug": "beef-tapa",
+    "name_tl": "Tapa",
+    "name_en": "Beef Tapa",
+    "name_ceb": "Tapa",
+    "protein_class": "baka",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 81,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "beef-sirloin",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang manipis na hiwa ng baka sa toyo, bawang, asukal at suka magdamag.",
+      "Iprito ang tapa sa kaunting mantika hanggang maluto.",
+      "Iprito ang itlog, sunny side up.",
+      "Ihain kasama ng kanin, itlog at hiwang kamatis."
+    ],
+    "image": "/food/phfood_0e5eb6cb0137__beef-tapa.webp",
+    "description_tl": "Tapsilog sa bahay: pang-almusal na pwedeng hapunan, laging masarap."
+  },
+  {
+    "id": "d035",
+    "slug": "pork-tocino",
+    "name_tl": "Tocino",
+    "name_en": "Pork Tocino",
+    "name_ceb": "Tocino",
+    "protein_class": "baboy",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 55,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tocino-raw",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "pipino",
+        "qty": 0.1
+      }
+    ],
+    "steps_short": [
+      "Ilagay ang tocino sa kawali na may kaunting tubig; pakuluan hanggang matuyo.",
+      "Lagyan ng mantika at iprito hanggang mag-caramelize.",
+      "Iprito ang itlog.",
+      "Ihain kasama ng kanin, kamatis at pipino."
+    ],
+    "image": "/food/phfood_b3ea35153c38__pork-tocino.webp",
+    "description_tl": "Matamis na almusal na pang-hapunan din: pang-gutom na bata pagkagaling sa school."
+  },
+  {
+    "id": "d036",
+    "slug": "longganisa",
+    "name_tl": "Longganisa",
+    "name_en": "Longganisa",
+    "name_ceb": "Longganisa",
+    "protein_class": "baboy",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 54,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "longganisa-raw",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1,
+        "note": "sawsawan"
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Ilagay ang longganisa sa kawali na may kaunting tubig; pakuluan hanggang matuyo.",
+      "Lagyan ng mantika at iprito hanggang mamula.",
+      "Iprito ang itlog.",
+      "Ihain kasama ng kanin, kamatis at suka na may bawang."
+    ],
+    "image": "/food/phfood_38a16dddece6__longganisa.webp",
+    "description_tl": "Longsilog na pang-umaga o pang-gabi: mabilis at hindi nakakasawa."
+  },
+  {
+    "id": "d037",
+    "slug": "daing-na-bangus",
+    "name_tl": "Daing na Bangus",
+    "name_en": "Marinated Fried Milkfish",
+    "name_ceb": "Daing nga Bangus",
+    "protein_class": "isda",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 51,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bangus",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang bangus sa suka, bawang, paminta at asin magdamag.",
+      "Patuyuin ang bangus bago iprito.",
+      "Iprito sa mainit na mantika, balat muna, hanggang malutong.",
+      "Ihain kasama ng kamatis at sinangag."
+    ],
+    "image": "/food/phfood_c4a43fdf54ed__daing-na-bangus.webp",
+    "description_tl": "Pang-almusal na ulam na maasim at malutong: pang-Linggo ng umaga."
+  },
+  {
+    "id": "d038",
+    "slug": "pritong-tilapia",
+    "name_tl": "Pritong Tilapia",
+    "name_en": "Fried Tilapia",
+    "name_ceb": "Pinirito nga Tilapia",
+    "protein_class": "isda",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 56,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "sarciadong-isda",
+    "ingredients": [
+      {
+        "ingredient_id": "tilapia",
+        "qty": 1.2
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Linisin at hiwaan ang tilapia, lagyan ng asin.",
+      "Patuyuin nang husto para hindi tumalsik ang mantika.",
+      "Iprito sa mainit na mantika hanggang malutong ang dalawang gilid.",
+      "Ihain kasama ng toyo-kalamansi at kamatis.",
+      "Itabi ang tira para sa sarciado bukas."
+    ],
+    "image": "/food/phfood_843c7abe19d9__pritong-tilapia.webp",
+    "description_tl": "Pinakamadaling ulam kapag pagod: prito, sawsawan, kanin. Tapos."
+  },
+  {
+    "id": "d039",
+    "slug": "sarciadong-isda",
+    "name_tl": "Sarciadong Isda (tira ng pritong isda)",
+    "name_en": "Fish Sarciado from leftover fried fish",
+    "name_ceb": "Sarciado nga Isda (salin sa pinirito)",
+    "protein_class": "isda",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 26,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 3
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "dahon-ng-sibuyas",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas, ilagay ang kamatis hanggang malambot.",
+      "Buhusan ng kaunting tubig at patis, pakuluan.",
+      "Ibuhos ang binating itlog at haluin nang dahan-dahan.",
+      "Ilagay ang tirang pritong isda at takpan nang 3 minuto.",
+      "Budburan ng dahon ng sibuyas bago ihain."
+    ],
+    "image": "/food/phfood_1b3b8144afd6__fish-sarciado.webp",
+    "description_tl": "Ang tirang pritong isda kahapon, may sarsa ng kamatis at itlog ngayon."
+  },
+  {
+    "id": "d040",
+    "slug": "inihaw-na-tilapia",
+    "name_tl": "Inihaw na Tilapia",
+    "name_en": "Grilled Tilapia",
+    "name_ceb": "Inihaw nga Tilapia",
+    "protein_class": "isda",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 52,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tilapia",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      }
+    ],
+    "steps_short": [
+      "Linisin ang tilapia at lagyan ng asin sa loob at labas.",
+      "Ipalaman ang kamatis, sibuyas at luya sa tiyan.",
+      "Ihaw sa uling o grill pan, 8 minuto bawat gilid.",
+      "Ihain kasama ng toyo, kalamansi at siling labuyo."
+    ],
+    "image": "/food/phfood_94ef420e7b6c__inihaw-na-tilapia.webp",
+    "description_tl": "Pang-tanghalian sa bakuran: usok ng uling at sawsawang maanghang."
+  },
+  {
+    "id": "d041",
+    "slug": "paksiw-na-bangus",
+    "name_tl": "Paksiw na Bangus",
+    "name_en": "Milkfish in Vinegar",
+    "name_ceb": "Paksiw nga Bangus",
+    "protein_class": "isda",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 59,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bangus",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "ampalaya",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "talong",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ilagay sa kaldero ang bangus, luya, bawang, suka at tubig.",
+      "Idagdag ang ampalaya, talong at siling haba.",
+      "Timplahan ng asin at paminta.",
+      "Pakuluan sa mahinang apoy nang 20 minuto; huwag haluin."
+    ],
+    "image": "/food/phfood_030266b30a61__paksiw-na-bangus.webp",
+    "description_tl": "Ulam na tumatagal nang ilang araw sa ref: mas maasim, mas masarap."
+  },
+  {
+    "id": "d042",
+    "slug": "escabeche",
+    "name_tl": "Escabeche",
+    "name_en": "Sweet and Sour Fish",
+    "name_ceb": "Escabeche",
+    "protein_class": "isda",
+    "cook_minutes": 35,
+    "base_cost_per_serving": 59,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tilapia",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bell-pepper",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "cornstarch",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Iprito ang tilapia hanggang malutong, itabi.",
+      "Igisa ang luya, sibuyas, carrots at bell pepper.",
+      "Ihalo ang suka, asukal at tubig; pakuluan.",
+      "Palaputin ng cornstarch at ibuhos sa pritong isda."
+    ],
+    "image": "/food/phfood_e6e57b13982b__escabeche.webp",
+    "description_tl": "Pang-handaan na isda: matamis-maasim na sarsa na pang-fiesta ang dating."
+  },
+  {
+    "id": "d043",
+    "slug": "ginataang-tilapia",
+    "name_tl": "Ginataang Tilapia",
+    "name_en": "Tilapia in Coconut Milk",
+    "name_ceb": "Ginataang Tilapia",
+    "protein_class": "isda",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 72,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tilapia",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 1.5
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya.",
+      "Ibuhos ang gata at pakuluan sa mahinang apoy.",
+      "Ilagay ang tilapia at siling haba, takpan nang 10 minuto.",
+      "Idagdag ang pechay at timplahan ng patis."
+    ],
+    "image": "/food/phfood_c91b95abe7a1__ginataang-tilapia.webp",
+    "description_tl": "Kapag sawa na sa prito: tilapia sa gata na malinamnam at mabilis."
+  },
+  {
+    "id": "d044",
+    "slug": "adobong-pusit",
+    "name_tl": "Adobong Pusit",
+    "name_en": "Squid Adobo",
+    "name_ceb": "Adobong Nokos",
+    "protein_class": "hipon",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 79,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pusit",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Linisin ang pusit; itabi ang tinta kung gusto ng maitim na sarsa.",
+      "Igisa ang bawang, sibuyas at kamatis.",
+      "Ilagay ang pusit, toyo at suka; pakuluan nang 5 minuto lang.",
+      "Timplahan ng paminta at ihain agad para hindi tumigas."
+    ],
+    "image": "/food/phfood_ccd4259f0c9c__adobong-pusit.webp",
+    "description_tl": "Pang-mabilisan na seafood: 5 minuto lang sa apoy, huwag lutuin nang matagal."
+  },
+  {
+    "id": "d045",
+    "slug": "ginataang-hipon",
+    "name_tl": "Ginataang Hipon",
+    "name_en": "Shrimp in Coconut Milk",
+    "name_ceb": "Ginataang Pasayan",
+    "protein_class": "hipon",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 94,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "hipon",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 1.5
+      },
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya.",
+      "Ibuhos ang gata; ilagay ang kalabasa at pakuluan hanggang malambot.",
+      "Idagdag ang sitaw at siling haba.",
+      "Ilagay ang hipon, lutuin nang 3 minuto lang.",
+      "Timplahan ng patis at ihain."
+    ],
+    "image": "/food/phfood_d411e512ed6b__ginataang-hipon-shrimp-in-coconut-milk.webp",
+    "description_tl": "Pang-sahod na treat: hipon sa gata na may kalabasa, pang-Linggo ng tanghalian."
+  },
+  {
+    "id": "d046",
+    "slug": "halabos-na-hipon",
+    "name_tl": "Halabos na Hipon",
+    "name_en": "Steamed Shrimp",
+    "name_ceb": "Halabos nga Pasayan",
+    "protein_class": "hipon",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 84,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "hipon",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1,
+        "note": "sawsawan"
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      }
+    ],
+    "steps_short": [
+      "Hugasan ang hipon at ilagay sa kawali na may kaunting tubig at asin.",
+      "Idagdag ang bawang; takpan at pakuluan hanggang mamula ang hipon.",
+      "Alisin sa apoy agad para hindi tumigas.",
+      "Ihain kasama ng suka, kalamansi at siling labuyo."
+    ],
+    "image": "/food/phfood_0f0f0b8b8e6d__halabos-na-hipon.webp",
+    "description_tl": "Pinakasimpleng seafood: 15 minuto at sawsawan lang ang kailangan."
+  },
+  {
+    "id": "d047",
+    "slug": "chicken-curry",
+    "name_tl": "Chicken Curry",
+    "name_en": "Filipino Chicken Curry",
+    "name_ceb": "Chicken Curry",
+    "protein_class": "manok",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 79,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.75
+      },
+      {
+        "ingredient_id": "curry-powder",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "gata",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bell-pepper",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya sa mantika.",
+      "Ilagay ang manok at curry powder, igisa hanggang mabalot.",
+      "Ibuhos ang gata at tubig; pakuluan nang 20 minuto.",
+      "Idagdag ang patatas, carrots at bell pepper.",
+      "Lutuin hanggang malambot at lumapot ang sarsa."
+    ],
+    "image": "/food/phfood_9068aaa1e5e4__filipino-style-chicken-curry.webp",
+    "description_tl": "Pang-Linggo na may kaunting twist: malinamnam na curry na Pinoy ang timpla."
+  },
+  {
+    "id": "d048",
+    "slug": "chicken-inasal",
+    "name_tl": "Chicken Inasal",
+    "name_en": "Chicken Inasal",
+    "name_ceb": "Chicken Inasal",
+    "protein_class": "manok",
+    "cook_minutes": 40,
+    "base_cost_per_serving": 57,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.8
+      },
+      {
+        "ingredient_id": "lemongrass",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "atsuete",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.03
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang manok sa suka, kalamansi, tanglad, bawang at luya nang 2 oras.",
+      "Ihalo ang atsuete sa mantika para sa pangpahid.",
+      "Ihaw ang manok, pahiran ng atsuete oil bawat balik.",
+      "Ihain kasama ng sinamak o toyo-kalamansi."
+    ],
+    "image": "/food/phfood_5c00f0032e33__chicken-inasal.webp",
+    "description_tl": "Pang-Bacolod na ihaw sa sariling bakuran: mabango ang tanglad, ubos ang kanin."
+  },
+  {
+    "id": "d049",
+    "slug": "pritong-manok",
+    "name_tl": "Pritong Manok",
+    "name_en": "Fried Chicken",
+    "name_ceb": "Pinirito nga Manok",
+    "protein_class": "manok",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 70,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 2,
+    "derived_slug": "chicken-sopas",
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "harina",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "ketchup",
+        "qty": 0.1
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang manok sa patis, bawang, kalamansi at paminta nang 30 minuto.",
+      "Balutin ng harina ang bawat piraso.",
+      "Iprito sa mainit na mantika hanggang ginto at luto sa loob.",
+      "Ihain kasama ng ketchup; itabi ang tira para sa sopas."
+    ],
+    "image": "/food/phfood_5ff2362eb92f__filipino-fried-chicken.webp",
+    "description_tl": "Paborito ng mga bata: malutong na manok, at may tira pa para sa sopas bukas."
+  },
+  {
+    "id": "d050",
+    "slug": "chicken-sopas",
+    "name_tl": "Sopas (tira ng manok)",
+    "name_en": "Chicken Sopas from leftover chicken",
+    "name_ceb": "Sopas (salin sa manok)",
+    "protein_class": "manok",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 30,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "misua",
+        "qty": 2,
+        "note": "o macaroni kung meron"
+      },
+      {
+        "ingredient_id": "evaporada",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "chicken-cubes",
+        "qty": 1
+      }
+    ],
+    "steps_short": [
+      "Himayin ang tirang manok, itabi ang buto para sa sabaw.",
+      "Igisa ang bawang at sibuyas; ilagay ang carrots at repolyo.",
+      "Buhusan ng tubig at chicken cubes, pakuluan.",
+      "Ilagay ang misua at manok, lutuin nang 3 minuto.",
+      "Ibuhos ang evaporada at ihain nang mainit."
+    ],
+    "image": "/food/phfood_f9471d14ecd9__chicken-sopas.webp",
+    "description_tl": "Ang tirang pritong manok, ginawang mainit na sopas: pang-malamig na gabi."
+  },
+  {
+    "id": "d051",
+    "slug": "arroz-caldo",
+    "name_tl": "Arroz Caldo",
+    "name_en": "Arroz Caldo",
+    "name_ceb": "Arroz Caldo",
+    "protein_class": "manok",
+    "cook_minutes": 45,
+    "base_cost_per_serving": 59,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bigas-pang-lugaw",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.08
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.08
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "dahon-ng-sibuyas",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 4
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang luya, bawang at sibuyas sa mantika.",
+      "Ilagay ang manok at igisa hanggang mamuti.",
+      "Ihalo ang bigas at maraming tubig; pakuluan nang 30 minuto habang hinahalo.",
+      "Timplahan ng patis.",
+      "Ihain na may itlog, dahon ng sibuyas at kalamansi."
+    ],
+    "image": "/food/phfood_e0e48a62d434__arroz-caldo.webp",
+    "description_tl": "Pang-maulan at pang-may-sakit: mainit na lugaw na may manok at luya."
+  },
+  {
+    "id": "d052",
+    "slug": "pancit-canton",
+    "name_tl": "Pancit Canton",
+    "name_en": "Pancit Canton",
+    "name_ceb": "Pancit Canton",
+    "protein_class": "pancit",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 47,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pancit-canton-dry",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "oyster-sauce",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang liempo hanggang maluto.",
+      "Idagdag ang repolyo at carrots, igisa nang 2 minuto.",
+      "Ibuhos ang tubig, toyo at oyster sauce; pakuluan.",
+      "Ilagay ang canton at haluin hanggang masipsip ang sabaw.",
+      "Ihain na may kalamansi."
+    ],
+    "image": "/food/phfood_c81ae553881a__pancit-canton.webp",
+    "description_tl": "Pang-birthday at pang-merienda na nagiging hapunan: pampahaba ng buhay."
+  },
+  {
+    "id": "d053",
+    "slug": "pancit-bihon",
+    "name_tl": "Pancit Bihon",
+    "name_en": "Pancit Bihon",
+    "name_ceb": "Pancit Bihon",
+    "protein_class": "pancit",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 55,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "bihon",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Ibabad ang bihon sa tubig nang 10 minuto.",
+      "Igisa ang bawang at sibuyas; ilagay ang manok hanggang maluto.",
+      "Idagdag ang sitaw, carrots at repolyo.",
+      "Ibuhos ang tubig at toyo; ilagay ang bihon at haluin hanggang matuyo.",
+      "Ihain na may kalamansi."
+    ],
+    "image": "/food/phfood_69c3792285c9__pancit-bihon.webp",
+    "description_tl": "Pang-handaan na madaling gawin: isang kawali, buong pamilya."
+  },
+  {
+    "id": "d054",
+    "slug": "lumpiang-shanghai",
+    "name_tl": "Lumpiang Shanghai",
+    "name_en": "Lumpiang Shanghai",
+    "name_ceb": "Lumpiang Shanghai",
+    "protein_class": "baboy",
+    "cook_minutes": 40,
+    "base_cost_per_serving": 77,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-giniling",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "lumpia-wrapper",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "ketchup",
+        "qty": 0.1
+      }
+    ],
+    "steps_short": [
+      "Ihalo ang giniling, carrots, sibuyas, bawang, itlog at toyo.",
+      "Ilagay ang isang kutsara ng palaman sa balat at irolyo nang mahigpit.",
+      "Iprito sa mainit na mantika hanggang ginto.",
+      "Ihain kasama ng ketchup o sweet chili."
+    ],
+    "image": "/food/phfood_8d5a4b392539__lumpiang-shanghai.webp",
+    "description_tl": "Pang-handaan at pang-baon: mag-rolyo ng marami at i-freeze ang iba."
+  },
+  {
+    "id": "d055",
+    "slug": "lumpiang-gulay",
+    "name_tl": "Lumpiang Gulay",
+    "name_en": "Vegetable Lumpia",
+    "name_ceb": "Lumpiang Utan",
+    "protein_class": "gulay",
+    "cook_minutes": 35,
+    "base_cost_per_serving": 42,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "lumpia-wrapper",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "togue",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "kamote",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1,
+        "note": "sawsawan"
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang kamote at carrots.",
+      "Idagdag ang repolyo at togue, igisa hanggang malambot; palamigin.",
+      "Balutin ang gulay sa balat ng lumpia.",
+      "Iprito hanggang malutong at ihain kasama ng suka na may bawang."
+    ],
+    "image": "/food/phfood_bbbef01dab3a__lumpiang-gulay.webp",
+    "description_tl": "Lumpiang gulay na pang-merienda at pang-ulam: mura, malutong at walang karne."
+  },
+  {
+    "id": "d056",
+    "slug": "adobong-sitaw",
+    "name_tl": "Adobong Sitaw",
+    "name_en": "String Bean Adobo",
+    "name_ceb": "Adobong Batong",
+    "protein_class": "gulay",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 42,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "sitaw",
+        "qty": 3
+      },
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.15,
+        "note": "hiwa-hiwa, pampalasa"
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang liempo hanggang mamula.",
+      "Ibuhos ang toyo, suka at kaunting tubig; pakuluan.",
+      "Ilagay ang sitaw at takpan nang 5 minuto.",
+      "Timplahan ng paminta at ihain."
+    ],
+    "image": "/food/phfood_ab1395928666__adobong-sitaw.webp",
+    "description_tl": "Kapag mahal ang karne: sitaw na inadobo na may kaunting baboy pampalasa."
+  },
+  {
+    "id": "d057",
+    "slug": "ginisang-repolyo",
+    "name_tl": "Ginisang Repolyo",
+    "name_en": "Sautéed Cabbage",
+    "name_ceb": "Ginisang Repolyo",
+    "protein_class": "gulay",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 22,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.6
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas hanggang malambot.",
+      "Ilagay ang carrots at repolyo, igisa nang 3 minuto.",
+      "Ibuhos ang binating itlog at haluin.",
+      "Timplahan ng asin at ihain agad."
+    ],
+    "image": "/food/phfood_1bdd09261b2f__ginisang-repolyo.webp",
+    "description_tl": "Pang-katapusan ng buwan: dalawampung piso bawat plato, mabusog pa rin."
+  },
+  {
+    "id": "d058",
+    "slug": "ginisang-upo",
+    "name_tl": "Ginisang Upo",
+    "name_en": "Sautéed Bottle Gourd",
+    "name_ceb": "Ginisang Upo",
+    "protein_class": "gulay",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 25,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "upo",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at kamatis hanggang malambot.",
+      "Ilagay ang upo at kaunting tubig, takpan nang 5 minuto.",
+      "Ibuhos ang binating itlog, haluin hanggang maluto.",
+      "Timplahan ng asin at ihain."
+    ],
+    "image": "/food/phfood_295de3017fa1__ginisang-upo.webp",
+    "description_tl": "Magaan at mura: gulay na pang-gabi kapag gusto ng simpleng ulam."
+  },
+  {
+    "id": "d059",
+    "slug": "sardinas-with-misua",
+    "name_tl": "Sardinas with Misua",
+    "name_en": "Sardines with Misua",
+    "name_ceb": "Sardinas nga may Misua",
+    "protein_class": "delata",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 33,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "sardinas",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "misua",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas hanggang mabango.",
+      "Ibuhos ang sardinas at tubig, pakuluan.",
+      "Ilagay ang misua at pechay, lutuin nang 2 minuto.",
+      "Ibuhos ang binating itlog at timplahan ng patis."
+    ],
+    "sponsor_id": "sp-mega",
+    "image": "/food/phfood_a4a2a14a33b5__sardines-with-misua.webp",
+    "description_tl": "Pang-tag-ulan at pang-tipid: mainit na sabaw na may misua sa 15 minuto."
+  },
+  {
+    "id": "d060",
+    "slug": "tinapa-with-kamatis",
+    "name_tl": "Tinapa with Kamatis at Itlog na Maalat",
+    "name_en": "Smoked Fish with Tomato and Salted Egg",
+    "name_ceb": "Tinapa nga may Kamatis ug Itlog nga Parat",
+    "protein_class": "isda",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 44,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tinapa",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "itlog-na-maalat",
+        "qty": 3
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Initin ang tinapa sa kawali o ihawan nang 3 minuto bawat gilid.",
+      "Hiwain ang kamatis, sibuyas at itlog na maalat.",
+      "Ihalo ang kamatis, sibuyas at itlog na maalat sa mangkok.",
+      "Ihain kasama ng tinapa at mainit na kanin."
+    ],
+    "image": "/food/phfood_3fefede65b2c__tinapa-flakes-salted-duck-egg-and-tomato.webp",
+    "description_tl": "Pang-almusal na Pinoy na Pinoy: tinapa, kamatis at itlog na maalat."
+  },
+  {
+    "id": "d061",
+    "slug": "tortang-itlog",
+    "name_tl": "Tortang Itlog with Kamatis",
+    "name_en": "Tomato Omelette",
+    "name_ceb": "Tortang Itlog nga may Kamatis",
+    "protein_class": "itlog",
+    "cook_minutes": 10,
+    "base_cost_per_serving": 22,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "itlog",
+        "qty": 6
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang sibuyas at kamatis hanggang malambot.",
+      "Batihin ang itlog na may asin.",
+      "Ibuhos ang itlog sa kawali at hayaang maluto ang ilalim.",
+      "Baliktarin at lutuin nang 1 minuto pa."
+    ],
+    "image": "/food/phfood_9a6ef8e472a9__tortang-itlog-with-kamatis.webp",
+    "description_tl": "Ang laging nariyan: itlog at kamatis kapag wala nang ibang laman ang ref."
+  },
+  {
+    "id": "d062",
+    "slug": "dinuguan",
+    "name_tl": "Dinuguan",
+    "name_en": "Dinuguan",
+    "name_ceb": "Dinuguan",
+    "protein_class": "baboy",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 62,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kasim",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "pork-laman-loob",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "pork-dugo",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang, sibuyas at luya; ilagay ang kasim at laman-loob.",
+      "Ibuhos ang suka at pakuluan nang hindi hinahalo nang 5 minuto.",
+      "Ibuhos ang dugo at haluin nang tuloy-tuloy para hindi mamuo.",
+      "Idagdag ang laurel at siling haba; pakuluan hanggang lumapot.",
+      "Ihain kasama ng puto o kanin."
+    ],
+    "image": "/food/phfood_64144a125605__dinuguan.webp",
+    "description_tl": "Pang-fiesta at pang-merienda: kasama ng puto, ubos sa isang upuan."
+  },
+  {
+    "id": "d063",
+    "slug": "pochero",
+    "name_tl": "Pocherong Baboy",
+    "name_en": "Pork Pochero",
+    "name_ceb": "Pochero nga Baboy",
+    "protein_class": "baboy",
+    "cook_minutes": 90,
+    "base_cost_per_serving": 74,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kasim",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "saba",
+        "qty": 0.4
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "tomato-sauce",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang baboy hanggang mamula.",
+      "Ihalo ang tomato sauce at tubig; pakuluan hanggang lumambot ang baboy.",
+      "Idagdag ang saba at patatas, lutuin nang 10 minuto.",
+      "Ihalo ang repolyo at pechay, patayin ang apoy."
+    ],
+    "image": "/food/phfood_455ac7b3bb36__filipino-pochero-using-pork-belly.webp",
+    "description_tl": "Pang-Linggo na sabaw na may saging: matamis-maalat na paborito ng lola."
+  },
+  {
+    "id": "d064",
+    "slug": "sinampalukang-manok",
+    "name_tl": "Sinampalukang Manok",
+    "name_en": "Chicken in Tamarind Leaves",
+    "name_ceb": "Sinampalukan nga Manok",
+    "protein_class": "manok",
+    "cook_minutes": 50,
+    "base_cost_per_serving": 64,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "manok-cut",
+        "qty": 0.75
+      },
+      {
+        "ingredient_id": "sampalok",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sinigang-mix",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "siling-haba",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Igisa ang luya, bawang at sibuyas; ilagay ang manok.",
+      "Idagdag ang kamatis at sampalok, buhusan ng tubig at pakuluan.",
+      "Lutuin hanggang lumambot ang manok, mga 30 minuto.",
+      "Ihalo ang sinigang mix at siling haba; timplahan ng patis."
+    ],
+    "image": "/food/phfood_2b2b0d943011__sinampalukang-manok.webp",
+    "description_tl": "Maasim na manok na pang-tag-ulan: mas magaan kaysa sinigang na baboy."
+  },
+  {
+    "id": "d065",
+    "slug": "bulanglang",
+    "name_tl": "Bulanglang",
+    "name_en": "Bulanglang",
+    "name_ceb": "Law-uy (Bulanglang)",
+    "protein_class": "gulay",
+    "cook_minutes": 25,
+    "base_cost_per_serving": 29,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "sitaw",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "okra",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "talong",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "malunggay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bagoong-isda",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang tubig na may kamatis, sibuyas at luya.",
+      "Ilagay ang kalabasa, pakuluan nang 5 minuto.",
+      "Idagdag ang sitaw, okra at talong.",
+      "Timplahan ng bagoong isda; ihalo ang malunggay at patayin ang apoy."
+    ],
+    "image": "/food/phfood_68316edbc26a__bulanglang.webp",
+    "description_tl": "Batangueño na gulay na walang mantika: pang-diet at pang-tipid nang sabay."
+  },
+  {
+    "id": "d066",
+    "slug": "pork-binagoongan",
+    "name_tl": "Binagoongang Baboy",
+    "name_en": "Pork Binagoongan",
+    "name_ceb": "Binagoongang Baboy",
+    "protein_class": "baboy",
+    "cook_minutes": 50,
+    "base_cost_per_serving": 70,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "liempo",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "bagoong-alamang",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "talong",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "asukal",
+        "qty": 0.03
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang liempo hanggang lumambot, saka iprito hanggang mamula.",
+      "Igisa ang bawang, sibuyas at kamatis sa mantika ng liempo.",
+      "Ihalo ang bagoong alamang, suka at asukal; pakuluan.",
+      "Ibalik ang liempo at ilagay ang talong at sili; lutuin nang 10 minuto."
+    ],
+    "image": "/food/phfood_7d69c0e526c6__pork-ribs-binagoongan.webp",
+    "description_tl": "Maalat-matamis na ulam na pang-sahod: kailangan ng maraming kanin at kaunting kamatis."
+  },
+  {
+    "id": "d067",
+    "slug": "bopis",
+    "name_tl": "Bopis",
+    "name_en": "Bopis",
+    "name_ceb": "Bopis",
+    "protein_class": "baboy",
+    "cook_minutes": 60,
+    "base_cost_per_serving": 53,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "pork-laman-loob",
+        "qty": 0.7
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bell-pepper",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "atsuete",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "dahon-ng-laurel",
+        "qty": 0.2
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang laman-loob hanggang lumambot, saka tadtarin nang pino.",
+      "Igisa ang bawang at sibuyas; ilagay ang tinadtad na laman-loob.",
+      "Ibuhos ang suka at atsuete, pakuluan nang 10 minuto.",
+      "Idagdag ang carrots, bell pepper, sili at laurel; lutuin hanggang matuyo."
+    ],
+    "image": "/food/phfood_6ddb06411606__bopis.webp",
+    "description_tl": "Pang-inuman na ulam din: maanghang at mamula-mula, pang-mahilig sa laman-loob."
+  },
+  {
+    "id": "d068",
+    "slug": "ginisang-togue",
+    "name_tl": "Ginisang Togue",
+    "name_en": "Sautéed Bean Sprouts",
+    "name_ceb": "Ginisang Togue",
+    "protein_class": "gulay",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 29,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "togue",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "carrots",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "pork-giniling",
+        "qty": 0.1,
+        "note": "pampalasa"
+      }
+    ],
+    "steps_short": [
+      "Igisa ang bawang at sibuyas; ilagay ang giniling hanggang maluto.",
+      "Idagdag ang kamatis at carrots, igisa nang 2 minuto.",
+      "Ilagay ang togue at toyo; haluin nang 2 minuto lang.",
+      "Ihain agad para malutong pa ang togue."
+    ],
+    "image": "/food/phfood_f7dcaf217a04__ginisang-togue.webp",
+    "description_tl": "Mabilis at mura: togue na may kaunting giniling, pang-hapunan sa Lunes."
+  },
+  {
+    "id": "d069",
+    "slug": "adobong-kangkong",
+    "name_tl": "Adobong Kangkong",
+    "name_en": "Water Spinach Adobo",
+    "name_ceb": "Adobong Tangkong",
+    "protein_class": "gulay",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 22,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_seafood",
+      "no_shellfish",
+      "vegetarian",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "kangkong",
+        "qty": 3
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "toyo",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Hugasan at pagputul-putulin ang kangkong.",
+      "Igisa ang bawang at sibuyas hanggang mabango.",
+      "Ibuhos ang toyo at suka; pakuluan sandali.",
+      "Ilagay ang kangkong at haluin nang 2 minuto; timplahan ng paminta."
+    ],
+    "image": "/food/phfood_1cb8fa966837__adobong-kangkong.webp",
+    "description_tl": "Pinakamurang ulam sa listahan: 15 minuto at tatlong tali ng kangkong."
+  },
+  {
+    "id": "d070",
+    "slug": "kinilaw",
+    "name_tl": "Kinilaw na Tanigue",
+    "name_en": "Fish Kinilaw",
+    "name_ceb": "Kinilaw nga Tangigue",
+    "protein_class": "isda",
+    "cook_minutes": 20,
+    "base_cost_per_serving": 88,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tanigue",
+        "qty": 0.7
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "kalamansi",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "pipino",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "asin",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Hiwain ang tanigue sa maliliit na kubo at hugasan sa kaunting suka.",
+      "Ihalo ang suka, kalamansi, luya, sibuyas at sili.",
+      "Ibabad ang isda nang 15 minuto sa ref.",
+      "Ihalo ang pipino at asin bago ihain nang malamig."
+    ],
+    "image": "/food/phfood_d55d3b763c43__kinilaw.webp",
+    "description_tl": "Pang-init ng panahon at pang-inuman: sariwang isda na walang apoy."
+  },
+  {
+    "id": "d071",
+    "slug": "okoy",
+    "name_tl": "Okoy",
+    "name_en": "Shrimp Fritters",
+    "name_ceb": "Okoy",
+    "protein_class": "hipon",
+    "cook_minutes": 30,
+    "base_cost_per_serving": 59,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "hipon",
+        "qty": 0.3,
+        "note": "maliit na hipon"
+      },
+      {
+        "ingredient_id": "harina",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "cornstarch",
+        "qty": 0.5
+      },
+      {
+        "ingredient_id": "kalabasa",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "togue",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "itlog",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "dahon-ng-sibuyas",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.3
+      },
+      {
+        "ingredient_id": "suka",
+        "qty": 0.1,
+        "note": "sawsawan"
+      }
+    ],
+    "steps_short": [
+      "Ihalo ang harina, cornstarch, itlog at tubig para sa batter.",
+      "Idagdag ang hipon, kalabasa, togue at dahon ng sibuyas.",
+      "Isandok sa mainit na mantika at iprito hanggang malutong.",
+      "Ihain kasama ng suka na may bawang at sili."
+    ],
+    "image": "/food/phfood_66f724b87020__ukoy.webp",
+    "description_tl": "Pang-merienda na nagiging ulam: malutong na hipon at kalabasa sa sawsawang suka."
+  },
+  {
+    "id": "d072",
+    "slug": "pesang-isda",
+    "name_tl": "Pesang Isda",
+    "name_en": "Fish Pesa",
+    "name_ceb": "Pesa nga Isda",
+    "protein_class": "isda",
+    "cook_minutes": 35,
+    "base_cost_per_serving": 58,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tilapia",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "luya",
+        "qty": 0.08
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "paminta",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "pechay",
+        "qty": 1
+      },
+      {
+        "ingredient_id": "repolyo",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.2
+      },
+      {
+        "ingredient_id": "patis",
+        "qty": 0.05
+      }
+    ],
+    "steps_short": [
+      "Pakuluan ang tubig na may luya, sibuyas at paminta.",
+      "Ilagay ang patatas at pakuluan hanggang malambot.",
+      "Ilagay ang tilapia, takpan at pakuluan nang 8 minuto.",
+      "Idagdag ang repolyo at pechay; timplahan ng patis.",
+      "Ihain kasama ng sawsawang toyo at kamatis."
+    ],
+    "image": "/food/phfood_a670909ea69a__pesang-isda.webp",
+    "description_tl": "Malinis na sabaw ng isda na may luya: pang-may-sakit at pang-magaan na gabi."
+  },
+  {
+    "id": "d073",
+    "slug": "tuna-guisado",
+    "name_tl": "Ginisang Tuna Flakes with Patatas",
+    "name_en": "Canned Tuna Guisado",
+    "name_ceb": "Ginisang Tuna Flakes nga may Patatas",
+    "protein_class": "delata",
+    "cook_minutes": 15,
+    "base_cost_per_serving": 38,
+    "servings": 4,
+    "dietary_ok_flags": [
+      "no_pork",
+      "no_beef",
+      "no_shellfish",
+      "diabetic",
+      "no_coconut"
+    ],
+    "leftover_yield": 1,
+    "ingredients": [
+      {
+        "ingredient_id": "tuna-flakes",
+        "qty": 2
+      },
+      {
+        "ingredient_id": "patatas",
+        "qty": 0.25
+      },
+      {
+        "ingredient_id": "sibuyas",
+        "qty": 0.1
+      },
+      {
+        "ingredient_id": "bawang",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "kamatis",
+        "qty": 0.15
+      },
+      {
+        "ingredient_id": "mantika",
+        "qty": 0.05
+      },
+      {
+        "ingredient_id": "siling-labuyo",
+        "qty": 0.5
+      }
+    ],
+    "steps_short": [
+      "Iprito ang patatas hanggang ginto, itabi.",
+      "Igisa ang bawang, sibuyas at kamatis.",
+      "Ilagay ang tuna flakes at haluin nang 5 minuto.",
+      "Ihalo ang patatas at siling labuyo, ihain kasama ng kanin."
+    ],
+    "image": "/food/phfood_5d03f943a414__ginisang-tuna-flakes-with-patatas.webp",
+    "description_tl": "Pang-tipid na delata: dalawang lata ng tuna at patatas, hapunan na."
+  }
+]

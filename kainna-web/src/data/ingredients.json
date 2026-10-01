@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "liempo",
+    "name_tl": "Liempo",
+    "name_en": "Pork belly",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 380,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kasim",
+    "name_tl": "Kasim",
+    "name_en": "Pork shoulder",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 340,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pork-giniling",
+    "name_tl": "Giniling na baboy",
+    "name_en": "Ground pork",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 320,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pata",
+    "name_tl": "Pata ng baboy",
+    "name_en": "Pork hock",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 300,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pork-ribs",
+    "name_tl": "Buto-buto ng baboy",
+    "name_en": "Pork ribs",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 330,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pork-maskara",
+    "name_tl": "Maskara ng baboy",
+    "name_en": "Pork face",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 260,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pork-laman-loob",
+    "name_tl": "Laman-loob ng baboy",
+    "name_en": "Pork offal",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 180,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pork-dugo",
+    "name_tl": "Dugo ng baboy",
+    "name_en": "Pork blood",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "beef-sirloin",
+    "name_tl": "Sirloin ng baka",
+    "name_en": "Beef sirloin",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 480,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "beef-cubes",
+    "name_tl": "Baka pang-nilaga",
+    "name_en": "Beef stew cubes",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 420,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "beef-shank",
+    "name_tl": "Buto-buto ng baka",
+    "name_en": "Beef shank with bone",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 350,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "oxtail",
+    "name_tl": "Buntot ng baka",
+    "name_en": "Oxtail",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 520,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "beef-giniling",
+    "name_tl": "Giniling na baka",
+    "name_en": "Ground beef",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 400,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kambing",
+    "name_tl": "Kambing",
+    "name_en": "Goat meat",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 500,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "manok-whole",
+    "name_tl": "Manok, buo",
+    "name_en": "Whole chicken",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 200,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "manok-cut",
+    "name_tl": "Manok, hiwa",
+    "name_en": "Chicken cuts",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 220,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "chicken-breast",
+    "name_tl": "Dibdib ng manok",
+    "name_en": "Chicken breast",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 240,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "chicken-liver",
+    "name_tl": "Atay ng manok",
+    "name_en": "Chicken liver",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 160,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "longganisa-raw",
+    "name_tl": "Longganisa",
+    "name_en": "Longganisa sausage",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 300,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tocino-raw",
+    "name_tl": "Tocino",
+    "name_en": "Cured pork tocino",
+    "unit": "kg",
+    "palengke_group": "karne",
+    "price_php": 320,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "chicharon",
+    "name_tl": "Chicharon",
+    "name_en": "Pork rinds",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bangus",
+    "name_tl": "Bangus",
+    "name_en": "Milkfish",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 190,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tilapia",
+    "name_tl": "Tilapia",
+    "name_en": "Tilapia",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 150,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "galunggong",
+    "name_tl": "Galunggong",
+    "name_en": "Round scad",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 200,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "hipon",
+    "name_tl": "Hipon",
+    "name_en": "Shrimp",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 380,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pusit",
+    "name_tl": "Pusit",
+    "name_en": "Squid",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 320,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tinapa",
+    "name_tl": "Tinapa",
+    "name_en": "Smoked fish",
+    "unit": "bundle",
+    "palengke_group": "isda",
+    "price_php": 80,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tuna-fresh",
+    "name_tl": "Tuna, sariwa",
+    "name_en": "Fresh tuna",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 260,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tanigue",
+    "name_tl": "Tanigue",
+    "name_en": "Spanish mackerel",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 400,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tahong",
+    "name_tl": "Tahong",
+    "name_en": "Mussels",
+    "unit": "kg",
+    "palengke_group": "isda",
+    "price_php": 90,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "dilis",
+    "name_tl": "Dilis",
+    "name_en": "Anchovies",
+    "unit": "pack",
+    "palengke_group": "isda",
+    "price_php": 45,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kangkong",
+    "name_tl": "Kangkong",
+    "name_en": "Water spinach",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 20,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pechay",
+    "name_tl": "Pechay",
+    "name_en": "Bok choy",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 20,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "repolyo",
+    "name_tl": "Repolyo",
+    "name_en": "Cabbage",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sitaw",
+    "name_tl": "Sitaw",
+    "name_en": "String beans",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 25,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "talong",
+    "name_tl": "Talong",
+    "name_en": "Eggplant",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 80,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "ampalaya",
+    "name_tl": "Ampalaya",
+    "name_en": "Bitter melon",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 100,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kalabasa",
+    "name_tl": "Kalabasa",
+    "name_en": "Squash",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "upo",
+    "name_tl": "Upo",
+    "name_en": "Bottle gourd",
+    "unit": "pc",
+    "palengke_group": "gulay",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sayote",
+    "name_tl": "Sayote",
+    "name_en": "Chayote",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "okra",
+    "name_tl": "Okra",
+    "name_en": "Okra",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kamote",
+    "name_tl": "Kamote",
+    "name_en": "Sweet potato",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 50,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "patatas",
+    "name_tl": "Patatas",
+    "name_en": "Potato",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 90,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "carrots",
+    "name_tl": "Carrots",
+    "name_en": "Carrots",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 100,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sibuyas",
+    "name_tl": "Sibuyas",
+    "name_en": "Onion",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 120,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bawang",
+    "name_tl": "Bawang",
+    "name_en": "Garlic",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 180,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "luya",
+    "name_tl": "Luya",
+    "name_en": "Ginger",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 200,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kamatis",
+    "name_tl": "Kamatis",
+    "name_en": "Tomato",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 90,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "siling-haba",
+    "name_tl": "Siling haba",
+    "name_en": "Long green chili",
+    "unit": "pack",
+    "palengke_group": "gulay",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "siling-labuyo",
+    "name_tl": "Siling labuyo",
+    "name_en": "Bird's eye chili",
+    "unit": "pack",
+    "palengke_group": "gulay",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "malunggay",
+    "name_tl": "Malunggay",
+    "name_en": "Moringa leaves",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 10,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "dahon-ng-gabi",
+    "name_tl": "Dahon ng gabi, tuyo",
+    "name_en": "Dried taro leaves",
+    "unit": "pack",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "gabi",
+    "name_tl": "Gabi",
+    "name_en": "Taro root",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 70,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "labanos",
+    "name_tl": "Labanos",
+    "name_en": "Radish",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 50,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "puso-ng-saging",
+    "name_tl": "Puso ng saging",
+    "name_en": "Banana blossom",
+    "unit": "pc",
+    "palengke_group": "gulay",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "togue",
+    "name_tl": "Togue",
+    "name_en": "Mung bean sprouts",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "langka",
+    "name_tl": "Langka, hilaw",
+    "name_en": "Unripe jackfruit",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "saba",
+    "name_tl": "Saging na saba",
+    "name_en": "Saba banana",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "papaya-hilaw",
+    "name_tl": "Papaya, hilaw",
+    "name_en": "Green papaya",
+    "unit": "pc",
+    "palengke_group": "gulay",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "dahon-ng-sili",
+    "name_tl": "Dahon ng sili",
+    "name_en": "Chili leaves",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 10,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kinchay",
+    "name_tl": "Kinchay",
+    "name_en": "Chinese celery",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 10,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bell-pepper",
+    "name_tl": "Bell pepper",
+    "name_en": "Bell pepper",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 200,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sampalok",
+    "name_tl": "Sampalok, sariwa",
+    "name_en": "Fresh tamarind",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 80,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "baguio-beans",
+    "name_tl": "Baguio beans",
+    "name_en": "Green beans",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 100,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "dahon-ng-sibuyas",
+    "name_tl": "Dahon ng sibuyas",
+    "name_en": "Spring onion",
+    "unit": "bundle",
+    "palengke_group": "gulay",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kalamansi",
+    "name_tl": "Kalamansi",
+    "name_en": "Calamansi",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 80,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "mais",
+    "name_tl": "Mais",
+    "name_en": "Corn",
+    "unit": "pc",
+    "palengke_group": "gulay",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "kamoteng-kahoy",
+    "name_tl": "Kamoteng kahoy",
+    "name_en": "Cassava",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "monggo",
+    "name_tl": "Monggo",
+    "name_en": "Mung beans",
+    "unit": "kg",
+    "palengke_group": "delata",
+    "price_php": 100,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "garbanzos",
+    "name_tl": "Garbanzos",
+    "name_en": "Chickpeas",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pipino",
+    "name_tl": "Pipino",
+    "name_en": "Cucumber",
+    "unit": "kg",
+    "palengke_group": "gulay",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "niyog",
+    "name_tl": "Niyog, kinayod",
+    "name_en": "Grated coconut",
+    "unit": "pc",
+    "palengke_group": "gulay",
+    "price_php": 35,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "itlog",
+    "name_tl": "Itlog",
+    "name_en": "Eggs",
+    "unit": "pc",
+    "palengke_group": "itlog",
+    "price_php": 8,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "itlog-na-maalat",
+    "name_tl": "Itlog na maalat",
+    "name_en": "Salted egg",
+    "unit": "pc",
+    "palengke_group": "itlog",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sardinas",
+    "name_tl": "Sardinas sa lata (155g)",
+    "name_en": "Canned sardines",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 25,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026",
+    "affiliate_url": "https://shop.salo.ph/go/mega-sardines"
+  },
+  {
+    "id": "corned-beef",
+    "name_tl": "Corned beef (175g)",
+    "name_en": "Corned beef",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 48,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tuna-flakes",
+    "name_tl": "Tuna flakes (155g)",
+    "name_en": "Canned tuna",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 42,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "misua",
+    "name_tl": "Misua",
+    "name_en": "Misua noodles",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 18,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pancit-canton-dry",
+    "name_tl": "Pancit canton (227g)",
+    "name_en": "Canton noodles",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 35,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bihon",
+    "name_tl": "Bihon (250g)",
+    "name_en": "Rice vermicelli",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 42,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "gata",
+    "name_tl": "Gata sa lata (400ml)",
+    "name_en": "Coconut milk",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 45,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "evaporada",
+    "name_tl": "Evaporated milk",
+    "name_en": "Evaporated milk",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tomato-sauce",
+    "name_tl": "Tomato sauce (250g)",
+    "name_en": "Tomato sauce",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 28,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tomato-paste",
+    "name_tl": "Tomato paste",
+    "name_en": "Tomato paste",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "liver-spread",
+    "name_tl": "Liver spread",
+    "name_en": "Liver spread",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 22,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "peanut-butter",
+    "name_tl": "Peanut butter",
+    "name_en": "Peanut butter",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 45,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "mani",
+    "name_tl": "Mani, giniling",
+    "name_en": "Ground peanuts",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "lumpia-wrapper",
+    "name_tl": "Balat ng lumpia",
+    "name_en": "Lumpia wrapper",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "malagkit",
+    "name_tl": "Malagkit",
+    "name_en": "Glutinous rice",
+    "unit": "kg",
+    "palengke_group": "delata",
+    "price_php": 70,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bigas-pang-lugaw",
+    "name_tl": "Bigas pang-lugaw",
+    "name_en": "Rice for porridge",
+    "unit": "kg",
+    "palengke_group": "delata",
+    "price_php": 52,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "tablea",
+    "name_tl": "Tablea",
+    "name_en": "Cacao tablets",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pineapple-chunks",
+    "name_tl": "Pinya sa lata",
+    "name_en": "Pineapple chunks",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 45,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pineapple-juice",
+    "name_tl": "Pineapple juice",
+    "name_en": "Pineapple juice",
+    "unit": "can",
+    "palengke_group": "delata",
+    "price_php": 25,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "hotdog",
+    "name_tl": "Hotdog",
+    "name_en": "Hotdogs",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 95,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "queso",
+    "name_tl": "Keso",
+    "name_en": "Cheese",
+    "unit": "pack",
+    "palengke_group": "delata",
+    "price_php": 55,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "toyo",
+    "name_tl": "Toyo",
+    "name_en": "Soy sauce",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 65,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026",
+    "affiliate_url": "https://shop.salo.ph/go/datu-puti-toyo"
+  },
+  {
+    "id": "suka",
+    "name_tl": "Suka",
+    "name_en": "Vinegar",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026",
+    "affiliate_url": "https://shop.salo.ph/go/datu-puti-suka"
+  },
+  {
+    "id": "patis",
+    "name_tl": "Patis",
+    "name_en": "Fish sauce",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 55,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bagoong-alamang",
+    "name_tl": "Bagoong alamang",
+    "name_en": "Shrimp paste",
+    "unit": "jar",
+    "palengke_group": "sangkap",
+    "price_php": 45,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "bagoong-isda",
+    "name_tl": "Bagoong isda",
+    "name_en": "Fermented fish sauce",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "mantika",
+    "name_tl": "Mantika (1L)",
+    "name_en": "Cooking oil",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 95,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "asin",
+    "name_tl": "Asin",
+    "name_en": "Salt",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "paminta",
+    "name_tl": "Paminta",
+    "name_en": "Peppercorn",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 25,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "dahon-ng-laurel",
+    "name_tl": "Dahon ng laurel",
+    "name_en": "Bay leaves",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "asukal",
+    "name_tl": "Asukal",
+    "name_en": "Sugar",
+    "unit": "kg",
+    "palengke_group": "sangkap",
+    "price_php": 65,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "sinigang-mix",
+    "name_tl": "Sinigang mix",
+    "name_en": "Tamarind soup base",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 14,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026",
+    "affiliate_url": "https://shop.salo.ph/go/knorr-sinigang"
+  },
+  {
+    "id": "curry-powder",
+    "name_tl": "Curry powder",
+    "name_en": "Curry powder",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "oyster-sauce",
+    "name_tl": "Oyster sauce",
+    "name_en": "Oyster sauce",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 60,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "ketchup",
+    "name_tl": "Banana ketchup",
+    "name_en": "Banana ketchup",
+    "unit": "bottle",
+    "palengke_group": "sangkap",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "cornstarch",
+    "name_tl": "Cornstarch",
+    "name_en": "Cornstarch",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 20,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "harina",
+    "name_tl": "Harina",
+    "name_en": "Flour",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 25,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "star-anise",
+    "name_tl": "Star anise",
+    "name_en": "Star anise",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 20,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "atsuete",
+    "name_tl": "Atsuete",
+    "name_en": "Annatto",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 15,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "magic-sarap",
+    "name_tl": "Pampalasa (seasoning granules)",
+    "name_en": "Seasoning granules",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 8,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "chicken-cubes",
+    "name_tl": "Chicken cubes",
+    "name_en": "Bouillon cubes",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 12,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "lemongrass",
+    "name_tl": "Tanglad",
+    "name_en": "Lemongrass",
+    "unit": "bundle",
+    "palengke_group": "sangkap",
+    "price_php": 10,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "pandan",
+    "name_tl": "Pandan",
+    "name_en": "Pandan leaves",
+    "unit": "bundle",
+    "palengke_group": "sangkap",
+    "price_php": 10,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "breadcrumbs",
+    "name_tl": "Breadcrumbs",
+    "name_en": "Breadcrumbs",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 30,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "mayonnaise",
+    "name_tl": "Mayonnaise",
+    "name_en": "Mayonnaise",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 40,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  },
+  {
+    "id": "peanut-sauce",
+    "name_tl": "Sarsa ng kare-kare",
+    "name_en": "Kare-kare mix",
+    "unit": "pack",
+    "palengke_group": "sangkap",
+    "price_php": 35,
+    "price_updated_at": "2026-08-28",
+    "price_source": "DA Bantay Presyo – NCR weekly average, Aug 2026"
+  }
+]
