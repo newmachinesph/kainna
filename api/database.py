@@ -16,7 +16,9 @@ def connection_pool(database_url):
 
             _pool = ConnectionPool(
                 database_url,
-                kwargs={"row_factory": hybrid_row},
+                # PgBouncer transaction mode: never promote a query to a named
+                # server-side prepared statement; the next one may run elsewhere.
+                kwargs={"row_factory": hybrid_row, "prepare_threshold": None},
                 min_size=1,
                 max_size=8,
                 timeout=30,
