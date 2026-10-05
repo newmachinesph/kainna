@@ -35,6 +35,7 @@ export function SiteFooter() {
         </div>
         <div className="pt-6 text-xs text-paper/55">
           <span>© {new Date().getFullYear()} Kain Na! Made for the Filipino table.</span>
+          <a href="https://www.facebook.com/kainnarecipes" target="_blank" rel="noopener noreferrer" className="ml-4 inline-flex items-center gap-1 font-bold text-paper/75 transition-colors hover:text-[#efc448]">Facebook <ArrowUpRight size={13} /></a>
         </div>
       </div>
     </footer>
