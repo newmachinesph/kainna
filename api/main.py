@@ -6,6 +6,7 @@ from datetime import datetime, timedelta, timezone
 import json
 import math
 import os
+import random
 import re
 import secrets
 import hashlib
@@ -250,6 +251,7 @@ def list_catalog(
     q: str = "",
     category: str = "",
     recipes_only: bool = False,
+    rotate: str = Query(default="", pattern="^(daily|weekly)?$"),
     page: int = Query(default=1, ge=1),
     limit: int = Query(default=24, ge=1, le=100),
 ):
@@ -266,7 +268,15 @@ def list_catalog(
     where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
     with connection() as db:
         total = db.execute(f"SELECT COUNT(*) FROM catalog_items {where}", args).fetchone()[0]
-        rows = db.execute(f"SELECT payload, EXISTS (SELECT 1 FROM catalog_recipes cr WHERE cr.image_id = catalog_items.id) AS has_catalog_recipe FROM catalog_items {where} ORDER BY position LIMIT ? OFFSET ?", (*args, limit, (page - 1) * limit)).fetchall()
+        if rotate:
+            # Same order for everyone until the day (or week) turns over in Manila.
+            ids = [row["id"] for row in db.execute(f"SELECT id FROM catalog_items {where} ORDER BY position", args).fetchall()]
+            rotation_rng(rotate, f"catalog:{category.lower()}").shuffle(ids)
+            ids = ids[(page - 1) * limit:page * limit]
+            found = {row["id"]: row for row in db.execute(f"SELECT id, payload, EXISTS (SELECT 1 FROM catalog_recipes cr WHERE cr.image_id = catalog_items.id) AS has_catalog_recipe FROM catalog_items WHERE id IN ({','.join('?' * len(ids))})", ids).fetchall()} if ids else {}
+            rows = [found[item_id] for item_id in ids]
+        else:
+            rows = db.execute(f"SELECT payload, EXISTS (SELECT 1 FROM catalog_recipes cr WHERE cr.image_id = catalog_items.id) AS has_catalog_recipe FROM catalog_items {where} ORDER BY position LIMIT ? OFFSET ?", (*args, limit, (page - 1) * limit)).fetchall()
     return {"items": [{**with_media(json.loads(row["payload"])), "has_catalog_recipe": bool(row["has_catalog_recipe"])} for row in rows], "total": total, "page": page, "limit": limit}
 
 
@@ -350,6 +360,12 @@ def utc_now() -> datetime:
 def week_monday() -> str:
     today = datetime.now(ZoneInfo("Asia/Singapore")).date()
     return (today - timedelta(days=today.weekday())).isoformat()
+
+
+def rotation_rng(period: str, scope: str) -> random.Random:
+    """Seeded by the Manila day or week, so picks change on schedule but stay stable in between."""
+    key = week_monday() if period == "weekly" else datetime.now(ZoneInfo("Asia/Singapore")).date().isoformat()
+    return random.Random(f"{scope}:{key}")
 
 
 def token_digest(token: str) -> str:
@@ -543,11 +559,14 @@ def featured_week(week_start: str | None = None):
     except ValueError:
         raise HTTPException(400, "Invalid week date")
     with connection() as db:
-        row = db.execute("SELECT * FROM featured_weeks WHERE week_start <= ? ORDER BY week_start DESC LIMIT 1", (target,)).fetchone()
+        row = db.execute("SELECT * FROM featured_weeks WHERE week_start = ?", (target,)).fetchone()
         if row is None:
-            row = db.execute("SELECT * FROM featured_weeks ORDER BY week_start DESC LIMIT 1").fetchone()
-        if row is None:
-            raise HTTPException(404, "No featured week has been published")
+            # No week published by an admin: pick seven dishes that stay fixed for that week.
+            slugs = [item["slug"] for item in db.execute("SELECT slug, payload FROM recipes WHERE kind = 'ulam' ORDER BY slug").fetchall()
+                     if json.loads(item["payload"]).get("image")]
+            if len(slugs) < 7:
+                raise HTTPException(404, "No featured week is available")
+            row = {"week_start": target, "slugs_json": json.dumps(random.Random(f"featured:{target}").sample(slugs, 7)), "updated_at": None}
         return featured_week_view(db, row)
 
 

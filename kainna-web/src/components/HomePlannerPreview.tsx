@@ -6,7 +6,7 @@ import { ArrowUpRight, CalendarDays } from "lucide-react";
 
 export type FeaturedWeek = {
   week_start: string;
-  updated_at: string;
+  updated_at: string | null;
   days: { day: number; recipe: { slug: string; name_tl: string; name_en: string; image: string; cook_minutes: number; description_tl?: string } }[];
 };
 
