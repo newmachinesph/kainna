@@ -3,7 +3,7 @@ import { Bricolage_Grotesque, DM_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { AppShell } from "@/components/AppShell";
-import { absoluteUrl, siteUrl } from "@/lib/site";
+import { siteUrl } from "@/lib/site";
 
 const display = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     icon: [{ url: "/favicon.ico?v=20261001-3", sizes: "any" }, { url: "/favicon-32.png?v=20261001-3", sizes: "32x32", type: "image/png" }],
     apple: [{ url: "/icons/apple-touch-icon.png?v=20261001-3", sizes: "180x180" }],
   },
-  openGraph: { siteName: "Kain Na!", locale: "en_PH", type: "website", url: siteUrl, title: "Kain Na! | Filipino Recipes & Meal Planning", description: "Discover Filipino dishes, cook recipes with ingredients and steps, and plan family meals around your budget.", images: [{ url: absoluteUrl("/opengraph-image.png?v=20261001-3"), width: 1200, height: 630, alt: "Kain Na! Filipino food and meal planning" }] },
-  twitter: { card: "summary_large_image", images: [absoluteUrl("/twitter-image.png?v=20261001-3")] },
+  openGraph: { siteName: "Kain Na!", locale: "en_PH", type: "website", url: siteUrl, title: "Kain Na! | Filipino Recipes & Meal Planning", description: "Discover Filipino dishes, cook recipes with ingredients and steps, and plan family meals around your budget." },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
