@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/ulam", destination: "/recipes", permanent: true },
       { source: "/ulam/:path*", destination: "/recipes/:path*", permanent: true },
+      { source: "/discover", destination: "/recipes", permanent: true },
     ];
   },
   async rewrites() {

@@ -299,6 +299,17 @@ def seo_index():
     }
 
 
+@app.get("/v1/catalog/slug/{slug}")
+def catalog_item_by_slug(slug: str):
+    """Catalog ids are '<manifest id>__<title slug>'; the public URL only carries the slug."""
+    escaped = re.sub(r"[%_\\]", lambda match: "\\" + match.group(), slug)
+    with connection() as db:
+        row = db.execute("SELECT id FROM catalog_items WHERE id LIKE ? ESCAPE '\\'", (f"%\\_\\_{escaped}",)).fetchone()
+    if row is None:
+        raise HTTPException(404, "Image not found")
+    return catalog_item(row["id"])
+
+
 @app.get("/v1/catalog/{image_id}")
 def catalog_item(image_id: str):
     with connection() as db:

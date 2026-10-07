@@ -7,6 +7,7 @@ import { HomePlannerPreview, type FeaturedWeek } from "./HomePlannerPreview";
 import { HomeFAQ } from "./HomeFAQ";
 import { SaveRecipeButton } from "./SaveRecipeButton";
 import { FoodImage } from "./FoodImage";
+import { categoryHref, foodHref } from "@/lib/catalog-urls";
 
 export type HomePick = { id: string; title: string; image: string; category: string; recipe_slug: string | null; merienda_slug: string | null };
 export type HomeCategory = { name: string; caption: string; count: number; image: string };
@@ -54,9 +55,9 @@ export function Landing({ featured, picks, categories, spotlight, catalogCount, 
             <Link href="/recipes" className="text-link">See the full collection <ArrowUpRight size={17} /></Link>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5">
-            {picks.map((dish) => <Link key={dish.id} href={dish.recipe_slug ? `/recipes/${dish.recipe_slug}` : dish.merienda_slug ? `/merienda/${dish.merienda_slug}` : `/discover/${dish.id}`} className="food-card group">
+            {picks.map((dish) => <Link key={dish.id} href={foodHref(dish)} className="food-card group">
               <div className="aspect-[4/3] overflow-hidden bg-photo"><FoodImage src={dish.image} alt={dish.title} loading="lazy" /></div>
-              <div className="px-1 pb-2 pt-4"><p className="text-[12px] font-semibold uppercase tracking-[.13em] text-accent">{dish.category}{(dish.recipe_slug || dish.merienda_slug) ? " · Recipe" : ""}</p><h3 className="mt-1 text-[17px] font-bold leading-tight md:text-[20px]">{dish.title}</h3></div>
+              <div className="px-1 pb-2 pt-4"><p className="text-[12px] font-semibold uppercase tracking-[.13em] text-accent">{dish.category}</p><h3 className="mt-1 text-[17px] font-bold leading-tight md:text-[20px]">{dish.title}</h3></div>
             </Link>)}
           </div>
         </section>
@@ -67,7 +68,7 @@ export function Landing({ featured, picks, categories, spotlight, catalogCount, 
             <p className="max-w-[42ch] text-[16px] leading-relaxed text-ink-soft md:justify-self-end">Browse by what you&apos;re craving, then use the recipe filter when you&apos;re ready to cook.</p>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-12 md:gap-4">
-            {categories.map((tile, index) => <Link key={tile.name} href={`/recipes?category=${encodeURIComponent(tile.name)}`} className={`group min-w-0 ${index === 0 ? "md:col-span-5" : index === 1 ? "md:col-span-3" : "md:col-span-4"}`}>
+            {categories.map((tile, index) => <Link key={tile.name} href={categoryHref(tile.name)} className={`group min-w-0 ${index === 0 ? "md:col-span-5" : index === 1 ? "md:col-span-3" : "md:col-span-4"}`}>
               <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.22 }} className="relative h-48 overflow-hidden rounded-[18px] bg-photo md:h-72">
                 <FoodImage src={tile.image} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/5 to-transparent" />
