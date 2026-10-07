@@ -11,7 +11,7 @@ import { dayName, formatRange } from "@/lib/dates";
 import { peso, minutes } from "@/lib/format";
 import { tierById } from "@/lib/config";
 import type { DayKey } from "@/lib/types";
-import { PageHeader, Empty, Skeleton } from "./PageHeader";
+import { PageHeader, Skeleton } from "./PageHeader";
 import { PlanWeek } from "./PlanWeek";
 import { BudgetBar } from "./BudgetBar";
 import { PalengkeList } from "./PalengkeList";
@@ -19,14 +19,15 @@ import { Sheet } from "./Sheet";
 import { Button, ButtonLink } from "./Button";
 import { DishPhoto } from "./DishPhoto";
 import { Tag } from "./Tag";
+import { SampleNotice, useSamplePlan } from "./SamplePlan";
 
 export function PlanPage() {
   const { t, locale } = useT();
   const hydrated = useSalo((s) => s.hydrated);
   const recipesLoaded = useSalo((s) => s.recipesLoaded);
   const pricesLoaded = useSalo((s) => s.pricesLoaded);
-  const plan = useSalo((s) => s.plan);
-  const household = useSalo((s) => s.household);
+  const savedPlan = useSalo((s) => s.plan);
+  const savedHousehold = useSalo((s) => s.household);
   const overlay = useSalo((s) => s.overlay);
   const marketPrices = useSalo((s) => s.marketPrices);
   const bought = useSalo((s) => s.bought);
@@ -37,6 +38,11 @@ export function PlanPage() {
   const showToast = useSalo((s) => s.showToast);
   const log = useSalo((s) => s.log);
   const engineInput = useSalo((s) => s.engineInput);
+  const sample = useSamplePlan();
+  // Visitors without a plan get a read-only sample so the tool is not an empty page.
+  const isSample = !savedPlan;
+  const plan = savedPlan ?? sample.plan;
+  const household = savedPlan ? savedHousehold : sample.household;
 
   const [pickDay, setPickDay] = useState<DayKey | null>(null);
   const [swappingDay, setSwappingDay] = useState<DayKey | null>(null);
@@ -51,19 +57,11 @@ export function PlanPage() {
   }, [lastSwap]);
 
   const prices = useMemo(() => priceMapFor(household, [...marketPrices, ...overlay]), [household, marketPrices, overlay]);
-  const list = useMemo(() => (plan ? buildPalengkeList(plan.slots, DISH_BY_ID, INGREDIENTS, prices, household.size) : null), [plan, prices, household.size]);
-  const alternatives = useMemo(() => (plan && pickDay ? alternativesForSlot(plan, pickDay, engineInput(), 6) : []), [plan, pickDay, engineInput]);
+  const list = useMemo(() => buildPalengkeList(plan.slots, DISH_BY_ID, INGREDIENTS, prices, household.size), [plan, prices, household.size]);
+  const alternatives = useMemo(() => (pickDay ? alternativesForSlot(plan, pickDay, engineInput(), 6) : []), [plan, pickDay, engineInput]);
 
   if (!hydrated) return <div className="pt-8"><Skeleton /></div>;
   if (!recipesLoaded || !pricesLoaded) return <p className="py-20 text-center text-muted">Recipes or prices are unavailable. Start the local API and refresh this page.</p>;
-  if (!plan || !list) {
-    return (
-      <div className="pt-10">
-        <Empty title={t("empty.noPlan")} sub={t("empty.noPlanSub")} action={<ButtonLink href="/onboard">{t("empty.makePlan")}</ButtonLink>} />
-      </div>
-    );
-  }
-
   const total = planTotal(plan);
   const tier = tierById(household.budget_tier);
 
@@ -87,7 +85,7 @@ export function PlanPage() {
         eyebrow={t("plan.for", { name: household.name })}
         title={t("plan.title")}
         sub={t("common.week", { range: formatRange(plan.week_start, locale) })}
-        right={
+        right={isSample ? undefined :
           <>
             <Button variant="secondary" size="sm" onClick={copyPlan}>{copied ? <Check size={15} /> : <Copy size={15} />} {t("plan.copyPlan")}</Button>
             <Button variant="ink" size="sm" onClick={regenerate}><RefreshCw size={15} /> {t("plan.regen")}</Button>
@@ -95,8 +93,9 @@ export function PlanPage() {
         }
       />
 
+      {isSample && <SampleNotice />}
       <div className="grid gap-6 md:grid-cols-12 md:gap-8">
-        <div className="space-y-4 md:col-span-7">
+        <div className="min-w-0 space-y-4 md:col-span-7">
           <BudgetBar spent={total} ceiling={plan.ceiling} note={t("plan.ceilingNote", { tier: t(`tier.${tier.id}`), daily: peso(tier.daily_php), size: household.size })} />
           {total > plan.ceiling && <div className="rounded-[12px] bg-warn-soft px-4 py-3 text-[14px] text-warn">{t("plan.overBudget")}</div>}
           {lastSwap && (
@@ -105,15 +104,15 @@ export function PlanPage() {
               <button type="button" onClick={() => { pickDish(lastSwap.day, lastSwap.from); setLastSwap(null); }} className="inline-flex items-center gap-1 font-medium text-accent-deep"><Undo2 size={14} /> {t("common.undo")}</button>
             </div>
           )}
-          <PlanWeek plan={plan} household={household} interactive onSwap={onSwap} onPick={setPickDay} swappingDay={swappingDay} />
-          <p className="text-[13px] text-muted">{t("plan.tapSwap")}</p>
+          <PlanWeek plan={plan} household={household} interactive={!isSample} onSwap={onSwap} onPick={setPickDay} swappingDay={swappingDay} />
+          {!isSample && <p className="text-[13px] text-muted">{t("plan.tapSwap")}</p>}
         </div>
-        <aside className="md:col-span-5">
-          <div className="md:sticky md:top-20">
+        <aside className="min-w-0 md:col-span-5">
+          <div className="md:sticky md:top-24">
             <PalengkeList
               list={list}
-              bought={bought}
-              onToggle={toggleBought}
+              bought={isSample ? [] : bought}
+              onToggle={isSample ? undefined : toggleBought}
               title={`${household.name} · ${formatRange(plan.week_start, locale)}`}
               onCopied={() => showToast("toast.copied")}
               priceDate={marketPrices.map(item => item.observed_at).sort().at(-1)}

@@ -301,6 +301,7 @@ const tl: Dict = {
   "install.btn": "I-install",
   "install.later": "Mamaya na",
 
+  "sample.title": "Sample na plano.", "sample.sub": "Para sa 4 katao sa ₱300 kada araw. Gumawa ng sarili mo para tumugma sa pamilya mo.", "sample.cta": "Gumawa ng plano ko",
   "empty.noPlan": "Wala pang plano ngayong linggo.",
   "empty.noPlanSub": "Gumawa ng plano gamit ang settings ng pamilya mo.",
   "empty.makePlan": "Gumawa ng plano",
@@ -451,6 +452,7 @@ const en: Dict = {
   "login.demoHint": "Demo: tap here to enter as the Dela Cruz family.", "login.enterDemo": "Enter the demo", "login.noAccount": "No account yet?",
   "install.title": "Install Kain Na!", "install.sub": "On your home screen, so the plan and list are one tap away.",
   "install.btn": "Install", "install.later": "Later",
+  "sample.title": "Sample plan.", "sample.sub": "For a family of 4 at ₱300 a day. Make your own to match your household.", "sample.cta": "Make my plan",
   "empty.noPlan": "No plan for this week yet.", "empty.noPlanSub": "Generate one from your household settings.", "empty.makePlan": "Make a plan",
   "toast.copied": "Copied to clipboard", "toast.swapped": "Swapped {day}", "toast.regen": "New plan ready", "toast.checkin": "Logged {day}",
   "toast.saved": "Changes saved", "toast.reset": "Meal-plan data cleared", "toast.offline": "You are offline. The plan and list are still saved.",

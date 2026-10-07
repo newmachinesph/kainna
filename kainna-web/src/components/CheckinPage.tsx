@@ -8,12 +8,14 @@ import { dayName, formatDate, formatRange, isToday } from "@/lib/dates";
 import { cn, roundToFive } from "@/lib/format";
 import { dishName, ingredientName } from "@/lib/costing";
 import type { CheckinStatus, DayKey } from "@/lib/types";
-import { PageHeader, Empty, Skeleton } from "./PageHeader";
+import { PageHeader, Skeleton } from "./PageHeader";
 import { DishPhoto } from "./DishPhoto";
 import { Sheet } from "./Sheet";
-import { Button, ButtonLink } from "./Button";
+import { Button } from "./Button";
 import { TextInput } from "./Inputs";
 import { Tag } from "./Tag";
+import { PlanWeek } from "./PlanWeek";
+import { SampleNotice, useSamplePlan } from "./SamplePlan";
 
 export function CheckinPage() {
   const { t, locale } = useT();
@@ -34,6 +36,7 @@ export function CheckinPage() {
   const [price, setPrice] = useState("");
   const [dragging, setDragging] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  const sample = useSamplePlan();
 
   const results = useMemo(() => {
     const s = q.trim().toLowerCase();
@@ -42,7 +45,16 @@ export function CheckinPage() {
 
   if (!hydrated) return <div className="pt-8"><Skeleton /></div>;
   if (!recipesLoaded || !pricesLoaded) return <p className="py-20 text-center text-muted">Recipes or prices are unavailable. Start the local API and refresh this page.</p>;
-  if (!plan) return <div className="pt-10"><Empty title={t("empty.noPlan")} sub={t("empty.noPlanSub")} action={<ButtonLink href="/plan">{t("empty.makePlan")}</ButtonLink>} /></div>;
+  if (!plan) {
+    // No plan yet: show the sample week so the page is not empty, with check-in disabled.
+    return (
+      <div>
+        <PageHeader eyebrow={`${sample.household.name} · ${formatRange(sample.plan.week_start, locale)}`} title={t("checkin.title")} sub={t("checkin.sub")} />
+        <SampleNotice />
+        <PlanWeek plan={sample.plan} household={sample.household} compact />
+      </div>
+    );
+  }
 
   const done = checkins.length;
   const complete = done === 7;
@@ -77,7 +89,7 @@ export function CheckinPage() {
       {complete && <div className="mb-4 flex items-center gap-2 rounded-[12px] bg-accent-soft px-4 py-3 text-[14px] text-accent-deep"><Check size={16} /> {t("checkin.complete")}</div>}
 
       <div className="grid gap-6 md:grid-cols-12 md:gap-8">
-        <ol className="divide-y divide-line rounded-[16px] border border-line bg-card md:col-span-7">
+        <ol className="min-w-0 divide-y divide-line rounded-[16px] border border-line bg-card md:col-span-7">
           {plan.slots.map((slot) => {
             const dish = DISH_BY_ID.get(slot.dish_id)!;
             const ck = checkins.find((c) => c.day === slot.day);
@@ -108,8 +120,8 @@ export function CheckinPage() {
           })}
         </ol>
 
-        <aside className="md:col-span-5">
-          <div className="rounded-[16px] border border-line bg-card p-4 md:sticky md:top-20">
+        <aside className="min-w-0 md:col-span-5">
+          <div className="rounded-[16px] border border-line bg-card p-4 md:sticky md:top-24">
             <h2 className="text-[20px]">Update a market price</h2>
             <p className="mt-1 text-[13px] text-muted">Use a receipt photo for reference, then enter the price per unit. Your shopping estimate rounds it to the nearest ₱5.</p>
             <input ref={fileRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={(event) => { const file = event.target.files?.[0]; if (file) onFile(file); }} />
