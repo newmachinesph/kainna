@@ -38,7 +38,7 @@ export function HistoryPage() {
     <div>
       <PageHeader title={t("history.title")} sub={t("history.sub")} />
       <div className="grid gap-8 md:grid-cols-12">
-        <div className="space-y-4 md:col-span-8">
+        <div className="min-w-0 space-y-4 md:col-span-8">
           {weeks.map(({ plan: p, checkins }) => {
             const asPlanned = checkins.filter((c) => c.status === "as_planned").length;
             const spent = p.slots.reduce((s, slot) => { const c = checkins.find((x) => x.day === slot.day); if (!c || c.status === "not_cooked") return s; return s + slot.est_cost; }, 0);

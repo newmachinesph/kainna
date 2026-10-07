@@ -65,12 +65,12 @@ export function BudgetWeek({ daily, size, weekStart }: { daily: number; size: nu
       </div>
 
       <div className="mt-6 grid gap-6 md:grid-cols-12 md:gap-8">
-        <div className="space-y-4 md:col-span-7">
+        <div className="min-w-0 space-y-4 md:col-span-7">
           <BudgetBar spent={total} ceiling={plan.ceiling} note={t("budget.regen")} />
           <PlanWeek plan={plan} household={household} />
         </div>
-        <aside className="md:col-span-5">
-          <div className="md:sticky md:top-20">
+        <aside className="min-w-0 md:col-span-5">
+          <div className="md:sticky md:top-24">
             <PalengkeList list={list} title={`Kain Na! · ${t("budget.title", { daily: peso(daily), size })}`} showDishes={false} priceDate={prices.map(item => item.observed_at).sort().at(-1)} />
           </div>
         </aside>
