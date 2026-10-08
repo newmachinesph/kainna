@@ -1,0 +1,20 @@
+# Kain Na!
+
+> Kain Na! (kainna.ph) is a Filipino recipe collection and weekly meal planner for budget-conscious households in the Philippines. Over 1,600 Filipino dishes with ingredients and cooking steps, plus a weekly ulam plan with estimated costs and a palengke (market) shopping list.
+
+## Recipes
+
+- [All Filipino recipes](https://kainna.ph/recipes): browse and search the whole collection
+- [Chicken](https://kainna.ph/recipes/chicken), [Pork & beef](https://kainna.ph/recipes/pork-and-beef), [Seafood](https://kainna.ph/recipes/seafood), [Vegetables](https://kainna.ph/recipes/vegetables), [Rice & noodles](https://kainna.ph/recipes/rice-and-noodles), [Desserts](https://kainna.ph/recipes/desserts), [Drinks](https://kainna.ph/recipes/drinks), [More ulam](https://kainna.ph/recipes/more-ulam)
+- [Merienda & sweets](https://kainna.ph/merienda)
+- Each recipe page (https://kainna.ph/recipes/<dish-slug>) lists ingredients, step-by-step directions, cooking time and servings, with schema.org Recipe markup.
+
+## Meal planning
+
+- [Weekly plans by budget](https://kainna.ph/budget): sample weeks at PHP 200, 300 and 500 a day for households of different sizes
+- [Make a plan](https://kainna.ph/onboard): a seven-day ulam plan with a grouped market list, costs in Philippine pesos
+
+## Data
+
+- [Sitemap](https://kainna.ph/sitemap.xml)
+- Prices are estimates from a Philippine wet-market price list, not live quotes.
