@@ -15,11 +15,14 @@ import sys
 
 from PIL import Image, ImageOps
 
+from categorize import category_for
+
 ROOT = Path(__file__).resolve().parents[3]
 WEB = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "Filipino Food Image Catalog" / "images"
 OUTPUT = WEB / "public" / "food"
 CATALOG = WEB / "src" / "data" / "catalog.json"
+RECIPES = WEB / "src" / "data" / "catalog-recipes.json"
 DISHES = WEB / "src" / "data" / "dishes.json"
 MERIENDA = WEB / "src" / "data" / "merienda.json"
 MANIFEST = ROOT / "Filipino Food Image Catalog" / "filipino_food_manifest.json"
@@ -44,23 +47,6 @@ EXPLICIT_MATCHES = {
 
 def slug(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
-
-
-def category(title: str) -> str:
-    name = title.lower()
-    groups = [
-        ("Desserts", r"cake|pudding|ice|halo.halo|leche|puto|kakanin|turon|flan|cookie|bibingka|suman|biko|\btaho\b"),
-        ("Drinks", r"juice|shake|smoothie|coffee|tea|sikwate|drink|salabat"),
-        ("Rice & noodles", r"rice|sinangag|pancit|bihon|noodle|lomi|sotanghon|lugaw|arroz|spaghetti|pasta"),
-        ("Seafood", r"fish|bangus|tilapia|hipon|shrimp|tuna|salmon|pusit|squid|tahong|crab|alimango|isda|sardinas"),
-        ("Vegetables", r"gulay|talong|ampalaya|sitaw|kalabasa|monggo|kangkong|tofu|tokwa|okra|pinakbet|laing"),
-        ("Chicken", r"chicken|manok|tinola|inasal"),
-        ("Pork & beef", r"pork|baboy|beef|baka|lechon|sisig|bulalo|pata|longganisa|tocino"),
-    ]
-    for label, pattern in groups:
-        if re.search(pattern, name):
-            return label
-    return "More ulam"
 
 
 def convert(path: Path) -> None:
@@ -90,6 +76,7 @@ def main() -> None:
         raise FileNotFoundError(f"Missing canonical catalog images: {missing[:5]}")
     dishes = json.loads(DISHES.read_text(encoding="utf-8"))
     merienda = json.loads(MERIENDA.read_text(encoding="utf-8"))
+    recipe_ingredients = {r["image_id"]: r["ingredients"] for r in json.loads(RECIPES.read_text(encoding="utf-8"))} if RECIPES.exists() else {}
     records = []
     for path in entries:
         manifest_id = path.stem.split("__", 1)[0]
@@ -99,7 +86,7 @@ def main() -> None:
             "id": path.stem,
             "manifest_id": manifest_id,
             "title": title,
-            "category": category(title),
+            "category": category_for(title, recipe_ingredients.get(path.stem)),
             "image": f"/food/{path.stem}.webp",
             "source_url": next((source["url"] for source in source_item.get("sources", []) if source.get("url")), None),
             "recipe_slug": None,
