@@ -83,6 +83,4 @@ Issues and pull requests are welcome. Please keep changes focused and run the ch
 
 ## License
 
-The code is released under the [MIT License](LICENSE).
-
-The photos in `kainna-web/public/images/` come from Wikimedia Commons and keep their original licenses (mostly CC BY-SA), with credit shown where each photo appears. The MIT License does not cover them.
+Released under the [MIT License](LICENSE).
