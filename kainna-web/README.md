@@ -1,6 +1,6 @@
 # Kain Na! web
 
-The setup guide and feature status are in the [workspace README](../../README.md).
+The setup guide and feature status are in the [repository README](../README.md).
 
 For frontend work without Docker:
 
