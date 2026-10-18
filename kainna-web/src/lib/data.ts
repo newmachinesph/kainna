@@ -12,7 +12,7 @@ export const DISH_BY_SLUG = new Map(DISHES.map((d) => [d.slug, d]));
 /** Dishes that only appear as the planned second meal of a leftover-yielding dish. */
 export const DERIVED_SLUGS = new Set(DISHES.map((d) => d.derived_slug).filter(Boolean) as string[]);
 
-/** Refresh the planner's in-memory recipe index from the SQLite-backed API. */
+/** Refresh the planner's in-memory recipe index from the API. */
 export function replaceDishes(items: Dish[]): void {
   DISHES.splice(0, DISHES.length, ...items);
   DISH_BY_ID.clear();

@@ -18,6 +18,8 @@ Prices are estimates from a Philippine wet-market price list, not live quotes.
 | [`kainna-web/src/data/`](kainna-web/src/data/) | Catalog and recipe JSON the API seeds from |
 | [`compose.yaml`](compose.yaml) | Local stack: web, API, and MinIO for images |
 
+In production, kainna.ph runs on Railway, with PostgreSQL for data, Upstash Redis for rate limiting, and Cloudflare R2 behind `cdn.kainna.ph` for food photos.
+
 ## Run it locally
 
 With Docker:
@@ -35,6 +37,7 @@ Without Docker:
 cd api
 python -m venv .venv && . .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+export DATABASE_URL=postgresql://user:password@localhost:5432/kainna
 uvicorn main:app --reload --port 8000
 
 # Web, in a second terminal
@@ -43,7 +46,7 @@ npm install
 npm run dev
 ```
 
-The API uses SQLite at `api/data/salo.db` by default. **The first account registered becomes the site admin.**
+The API creates its tables on startup. If `DATABASE_URL` is not set, it falls back to a throwaway local file so you can try the app or run the tests without a database server. The Docker stack does this too. **The first account registered becomes the site admin.**
 
 ## Configuration
 
@@ -51,8 +54,7 @@ API:
 
 | Variable | Purpose |
 |---|---|
-| `DATABASE_URL` | PostgreSQL connection string. Without it the API uses SQLite. |
-| `SALO_DB_PATH` | SQLite file path (default `api/data/salo.db`) |
+| `DATABASE_URL` | PostgreSQL connection string (works behind PgBouncer in transaction mode) |
 | `SALO_DATA_DIR` | Catalog JSON directory (default `kainna-web/src/data`) |
 | `S3_PUBLIC_BASE` | Public base URL for food images |
 | `SALO_MEDIA_VERSION` | Image set version used in image URLs |

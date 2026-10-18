@@ -1,6 +1,6 @@
 import type { Dish } from "./types";
 
-/** Read the current SQLite recipe library for server-generated public plans. */
+/** Read the current recipe library from the API for server-generated public plans. */
 export async function liveRecipes(): Promise<Dish[]> {
   const response = await fetch(`${process.env.API_INTERNAL_URL ?? "http://127.0.0.1:8000"}/v1/recipes`, {
     cache: "no-store", signal: AbortSignal.timeout(5000),

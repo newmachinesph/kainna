@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. Start FastAPI as well to load the catalog, recipes, and current market prices. Guest plans and saved recipes are kept in local storage; registered households sync with SQLite. Run `npm run build` to check the production build.
+Open http://localhost:3000. Start FastAPI as well to load the catalog, recipes, and current market prices. Guest plans and saved recipes are kept in local storage; registered households sync through the API. Run `npm run build` to check the production build.
 
 ## Food images and brand assets
 
