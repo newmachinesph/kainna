@@ -40,32 +40,48 @@ def read_seed(name: str) -> list[dict]:
 
 
 FIX_TABLES = {"catalog_items": "id", "catalog_recipes": "image_id", "recipes": "slug"}
-FIX_COLUMNS = {("catalog_items", "title"), ("catalog_items", "category"), ("recipes", "title")}
+# Payload keys that also live in a column of the same name and value.
+FIX_COLUMNS = {("catalog_items", "title"), ("catalog_items", "category")}
 
 
-def apply_data_fixes(db) -> None:
+def load_data_fixes() -> list[dict]:
+    """Read data-fixes.json, skipping entries that could not be applied safely."""
+    path = DATA / "data-fixes.json"
+    log = logging.getLogger("uvicorn.error")
+    try:
+        fixes = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    except (OSError, ValueError):
+        log.warning("Data fixes skipped: data-fixes.json could not be read", exc_info=True)
+        return []
+    valid = [fix for fix in fixes if isinstance(fix, dict) and fix.get("table") in FIX_TABLES
+             and isinstance(fix.get("field"), str) and {"id", "old", "new"} <= fix.keys()]
+    if len(valid) != len(fixes):
+        log.warning("Data fixes: skipped %d malformed entries", len(fixes) - len(valid))
+    return valid
+
+
+def apply_data_fixes(db: sqlite3.Connection | PostgresConnection) -> None:
     """Correct existing rows that the seed import never updates.
 
     A fix applies only while the stored value still equals its recorded old value,
     so it runs once and never overwrites an edit made in the admin editor.
     """
-    path = DATA / "data-fixes.json"
-    if not path.exists():
-        return
-    for fix in json.loads(path.read_text(encoding="utf-8")):
+    for fix in load_data_fixes():
         table, field = fix["table"], fix["field"]
         key = FIX_TABLES[table]
         row = db.execute(f"SELECT payload FROM {table} WHERE {key} = ?", (fix["id"],)).fetchone()
         if row is None:
             continue
         payload = json.loads(row["payload"])
-        if payload.get(field) != fix["old"]:
+        if not isinstance(payload, dict) or payload.get(field) != fix["old"]:
             continue
         payload[field] = fix["new"]
+        updated = json.dumps(payload, ensure_ascii=False)
+        # Re-check the stored payload in the UPDATE so an admin edit made meanwhile wins.
         if (table, field) in FIX_COLUMNS:
-            db.execute(f"UPDATE {table} SET {field} = ?, payload = ? WHERE {key} = ?", (fix["new"], json.dumps(payload, ensure_ascii=False), fix["id"]))
+            db.execute(f"UPDATE {table} SET {field} = ?, payload = ? WHERE {key} = ? AND payload = ?", (fix["new"], updated, fix["id"], row["payload"]))
         else:
-            db.execute(f"UPDATE {table} SET payload = ? WHERE {key} = ?", (json.dumps(payload, ensure_ascii=False), fix["id"]))
+            db.execute(f"UPDATE {table} SET payload = ? WHERE {key} = ? AND payload = ?", (updated, fix["id"], row["payload"]))
 
 
 def round_price(amount: float) -> int:
@@ -329,21 +345,35 @@ def seo_index():
     }
 
 
+SEO_CATALOG_TTL = timedelta(minutes=10)
+seo_catalog_cache: tuple[datetime, dict] | None = None
+
+
 @app.get("/v1/seo-catalog")
-def seo_catalog():
-    """Every catalog dish with its image and recipe summary, so crawler-facing pages need one call."""
+def seo_catalog(response: Response):
+    """Every catalog dish with its image and recipe summary, so crawler-facing pages need one call.
+
+    Crawlers hit the pages built from this often, so the result is kept for a few minutes.
+    """
+    global seo_catalog_cache
+    response.headers["Cache-Control"] = "public, max-age=300"
+    now = utc_now()
+    if seo_catalog_cache and seo_catalog_cache[0] > now:
+        return seo_catalog_cache[1]
     with connection() as db:
-        rows = db.execute("SELECT c.payload, r.payload AS recipe FROM catalog_items c LEFT JOIN catalog_recipes r ON r.image_id = c.id ORDER BY c.position").fetchall()
+        rows = db.execute("SELECT c.id, c.title, c.category, c.recipe_slug, c.merienda_slug, c.payload, r.payload AS recipe FROM catalog_items c LEFT JOIN catalog_recipes r ON r.image_id = c.id ORDER BY c.position").fetchall()
     items = []
     for row in rows:
-        item = with_media(json.loads(row["payload"]))
         recipe = json.loads(row["recipe"]) if row["recipe"] else None
         items.append({
-            "id": item["id"], "title": item["title"], "category": item["category"], "image": item.get("image"),
-            "recipe_slug": item.get("recipe_slug"), "merienda_slug": item.get("merienda_slug"),
+            "id": row["id"], "title": row["title"], "category": row["category"],
+            "image": with_media(json.loads(row["payload"])).get("image"),
+            "recipe_slug": row["recipe_slug"], "merienda_slug": row["merienda_slug"],
             "recipe": {key: recipe.get(key) for key in ("intro", "minutes", "servings")} if recipe else None,
         })
-    return {"items": items, "total": len(items)}
+    result = {"items": items, "total": len(items)}
+    seo_catalog_cache = (now + SEO_CATALOG_TTL, result)
+    return result
 
 
 @app.get("/v1/catalog/slug/{slug}")

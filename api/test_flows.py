@@ -63,5 +63,24 @@ with TemporaryDirectory() as folder:
     main.remove_member(first["id"], owner)
     assert len(main.household_members(owner)["members"]) == 2
     rejected(lambda: main.session_user(first_token), 401)
-    print("PASS: owner, two-member limit, invitation, shared state, isolated saves, featured week, ingredient and recipe edits, removal")
+    fixes = main.load_data_fixes()
+    assert len(fixes) == len(main.json.loads((main.DATA / "data-fixes.json").read_text(encoding="utf-8")))
+    title_fix, category_fix = (next(fix for fix in fixes if fix["table"] == "catalog_items" and fix["field"] == field) for field in ("title", "category"))
+    with main.connection() as db:
+        for fix in (title_fix, category_fix):
+            payload = main.json.loads(db.execute("SELECT payload FROM catalog_items WHERE id = ?", (fix["id"],)).fetchone()["payload"])
+            # The title row goes back to its old value; the category row gets an admin edit the fix must leave alone.
+            value = fix["old"] if fix is title_fix else "Admin choice"
+            payload[fix["field"]] = value
+            db.execute(f"UPDATE catalog_items SET {fix['field']} = ?, payload = ? WHERE id = ?", (value, main.json.dumps(payload), fix["id"]))
+        main.apply_data_fixes(db)
+        main.apply_data_fixes(db)
+        title_row = db.execute("SELECT title, payload FROM catalog_items WHERE id = ?", (title_fix["id"],)).fetchone()
+        category_row = db.execute("SELECT category FROM catalog_items WHERE id = ?", (category_fix["id"],)).fetchone()
+    assert title_row["title"] == title_fix["new"] == main.json.loads(title_row["payload"])["title"]
+    assert category_row["category"] == "Admin choice"
+    catalog = main.seo_catalog(Response())
+    assert catalog["total"] == len(catalog["items"]) == main.health()["catalog_images"]
+    assert any(item["recipe"] for item in catalog["items"]) and any(item["recipe"] is None for item in catalog["items"])
+    print("PASS: owner, two-member limit, invitation, shared state, isolated saves, featured week, ingredient and recipe edits, removal, data fixes, seo catalog")
 
