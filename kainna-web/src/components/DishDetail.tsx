@@ -37,8 +37,8 @@ export function DishDetail({ dish }: { dish: Dish }) {
   const source = sourceOfDerived(dish);
   const related = DISHES.filter((d) => d.id !== dish.id && d.protein_class === dish.protein_class).slice(0, 4);
   const householdCost = hydrated ? householdCostOf(dish, household, [...marketPrices, ...overlay]) : null;
-  const facts = useMemo(() => ulamFacts(dish, cost), [dish, cost]);
   const priceDate = marketPrices.map((item) => item.observed_at).sort().at(-1) ?? PRICE_DATE;
+  const facts = useMemo(() => ulamFacts(dish, cost, priceDate), [dish, cost, priceDate]);
 
   const onAdd = () => {
     const day = addDishToPlan(dish.id);

@@ -2,7 +2,6 @@ import { INGREDIENTS } from "@/lib/data";
 import { buildPriceMap, dishCostPerServing } from "@/lib/costing";
 import { CATEGORY_SLUGS, catalogSlug } from "@/lib/catalog-urls";
 import { peso } from "@/lib/format";
-import { livePrices } from "@/lib/live-prices";
 import { absoluteUrl } from "@/lib/site";
 import type { Dish } from "@/lib/types";
 
@@ -25,14 +24,14 @@ const bullet = (title: string, url: string, details: (string | number | false | 
 
 export async function GET() {
   const base = process.env.API_INTERNAL_URL ?? "http://127.0.0.1:8000";
-  const [index, ulam, merienda, catalog, prices] = await Promise.all([
+  const [index, ulam, merienda, catalog] = await Promise.all([
     getJson<SeoIndex>(base, "/v1/seo-index"),
     getJson<{ items: Dish[] }>(base, "/v1/recipes"),
     getJson<{ items: Merienda[] }>(base, "/v1/merienda"),
     getJson<{ items: CatalogItem[] }>(base, "/v1/seo-catalog").then((result) => result.items),
-    livePrices(),
   ]);
-  const priceMap = buildPriceMap(INGREDIENTS, prices);
+  // Seed prices, the same basis as the recipe pages and their structured data.
+  const priceMap = buildPriceMap(INGREDIENTS);
   const categoryOf = new Map<string, string>();
   for (const item of catalog) {
     if (item.recipe_slug && !categoryOf.has(`ulam:${item.recipe_slug}`)) categoryOf.set(`ulam:${item.recipe_slug}`, item.category);

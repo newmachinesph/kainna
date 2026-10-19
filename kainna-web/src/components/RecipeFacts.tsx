@@ -65,8 +65,8 @@ function priceMonth(date: string): string {
   return MONTHS[month - 1] ? `${MONTHS[month - 1]} ${year}` : date;
 }
 
-/** `costPerServing` lets the page pass the price it shows in its header, so both numbers agree. */
-export function ulamFacts(dish: Dish, costPerServing?: number): RecipeFactsData {
+/** The page passes the cost and price date it shows in its header, so both agree. */
+export function ulamFacts(dish: Dish, costPerServing?: number, priceDate: string = PRICE_DATE): RecipeFactsData {
   const name = dish.name_tl;
   const alt = dish.name_en && dish.name_en.toLowerCase() !== name.toLowerCase() ? ` (${dish.name_en})` : "";
   const kind = ULAM_KIND[dish.protein_class] ?? "ulam";
@@ -77,7 +77,7 @@ export function ulamFacts(dish: Dish, costPerServing?: number): RecipeFactsData 
   const answers: QuickAnswer[] = [
     { question: `How long does it take to cook ${name}?`, answer: timeAnswer(dish.cook_minutes, dish.steps_short.length, dish.servings) },
     { question: `What do I need for ${name}?`, answer: ingredientsAnswer(ingredients) },
-    { question: `How much does ${name} cost to make?`, answer: `About ${peso(perServing * dish.servings)} for ${dish.servings} servings, or ${peso(perServing)} per serving. This uses our wet-market price list from ${priceMonth(PRICE_DATE)}.` },
+    { question: `How much does ${name} cost to make?`, answer: `About ${peso(perServing * dish.servings)} for ${dish.servings} servings, or ${peso(perServing)} per serving. This uses our wet-market price list from ${priceMonth(priceDate)}.` },
   ];
   if (derived) answers.push({ question: `What can I make with leftover ${name}?`, answer: `Turn the leftovers into ${derived.name_tl} the next day.` });
   return {

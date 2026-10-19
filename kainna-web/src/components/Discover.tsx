@@ -11,14 +11,6 @@ export type CatalogResult = { items: Item[]; total: number; page: number; limit:
 type Result = CatalogResult;
 const categories = ["All", "Chicken", "Pork & beef", "Seafood", "Vegetables", "Rice & noodles", "Desserts", "Drinks", "More ulam"];
 
-/** A new search or filter starts again at page 1, so `?page=N` leaves the URL too (`q` stays). */
-function dropPageParam() {
-  const url = new URL(window.location.href);
-  if (!url.searchParams.has("page")) return;
-  url.searchParams.delete("page");
-  window.history.replaceState(null, "", url);
-}
-
 export function Discover({ initialCategory = "All", initialQuery = "", initialPage = 1, initialResult, intro }: { initialCategory?: string; initialQuery?: string; initialPage?: number; initialResult?: CatalogResult; intro?: string }) {
   const [input, setInput] = useState(initialQuery);
   const [query, setQuery] = useState(initialQuery);
@@ -32,7 +24,7 @@ export function Discover({ initialCategory = "All", initialQuery = "", initialPa
 
   useEffect(() => {
     if (input === query) return;
-    const timer = setTimeout(() => { setQuery(input); setPage(1); dropPageParam(); }, 250);
+    const timer = setTimeout(() => { setQuery(input); setPage(1); }, 250);
     return () => clearTimeout(timer);
   }, [input, query]);
 
@@ -78,8 +70,8 @@ export function Discover({ initialCategory = "All", initialQuery = "", initialPa
         </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap items-center justify-between gap-4"><p className="text-[14px] text-muted" aria-live="polite">{result ? `${result.total.toLocaleString()} dishes` : "Loading dishes…"}{query && ` for “${query}”`}</p><label className="flex cursor-pointer items-center gap-2 text-[14px] font-semibold text-ink"><input type="checkbox" checked={recipesOnly} onChange={(event) => { setRecipesOnly(event.target.checked); setPage(1); dropPageParam(); }} className="accent-accent" /> Recipes with cooking steps</label></div>
-      {error ? <div className="mt-10 rounded-xl border border-line bg-card p-8 text-center"><p>Couldn&apos;t load the collection.</p><button type="button" className="text-link mt-3" onClick={() => setRetry((value) => value + 1)}>Try again</button></div> : !result ? <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">{Array.from({ length: 8 }, (_, index) => <div key={index} className="animate-pulse"><div className="aspect-[4/3] rounded-xl bg-paper-deep" /><div className="mt-3 h-4 w-3/4 rounded bg-paper-deep" /></div>)}</div> : result.items.length === 0 ? <div className="py-20 text-center"><p className="text-xl font-bold">No dishes found.</p><p className="mt-2 text-muted">Try another name or category.</p><button type="button" className="brand-button mt-5" onClick={() => { setInput(""); setQuery(""); setCategory("All"); setRecipesOnly(false); setPage(1); dropPageParam(); }}>Show all dishes</button></div> : <div className="mt-6 grid grid-cols-2 gap-x-3 gap-y-8 md:grid-cols-3 md:gap-x-5 lg:grid-cols-4">{result.items.map((item) => <Link key={item.id} href={foodHref(item)} className="food-card group"><div className="aspect-[4/3] overflow-hidden rounded-[14px] bg-photo"><FoodImage src={item.image} alt={item.title} loading="lazy" /></div><div className="px-1 pt-3"><p className="text-[11px] font-bold uppercase tracking-[.13em] text-accent">{item.category}{(item.recipe_slug || item.merienda_slug || item.has_catalog_recipe) && <span className="ml-2 inline-flex items-center text-ink" title="Recipe with ingredients and steps"><BookOpen size={12} aria-hidden="true" /><span className="sr-only">Recipe with ingredients and steps</span></span>}</p><h2 className="mt-1 line-clamp-2 text-[16px] font-bold leading-tight md:text-[19px]">{item.title}</h2></div></Link>)}</div>}
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-4"><p className="text-[14px] text-muted" aria-live="polite">{result ? `${result.total.toLocaleString()} dishes` : "Loading dishes…"}{query && ` for “${query}”`}</p><label className="flex cursor-pointer items-center gap-2 text-[14px] font-semibold text-ink"><input type="checkbox" checked={recipesOnly} onChange={(event) => { setRecipesOnly(event.target.checked); setPage(1); }} className="accent-accent" /> Recipes with cooking steps</label></div>
+      {error ? <div className="mt-10 rounded-xl border border-line bg-card p-8 text-center"><p>Couldn&apos;t load the collection.</p><button type="button" className="text-link mt-3" onClick={() => setRetry((value) => value + 1)}>Try again</button></div> : !result ? <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">{Array.from({ length: 8 }, (_, index) => <div key={index} className="animate-pulse"><div className="aspect-[4/3] rounded-xl bg-paper-deep" /><div className="mt-3 h-4 w-3/4 rounded bg-paper-deep" /></div>)}</div> : result.items.length === 0 ? <div className="py-20 text-center"><p className="text-xl font-bold">No dishes found.</p><p className="mt-2 text-muted">Try another name or category.</p><button type="button" className="brand-button mt-5" onClick={() => { setInput(""); setQuery(""); setCategory("All"); setRecipesOnly(false); setPage(1); }}>Show all dishes</button></div> : <div className="mt-6 grid grid-cols-2 gap-x-3 gap-y-8 md:grid-cols-3 md:gap-x-5 lg:grid-cols-4">{result.items.map((item) => <Link key={item.id} href={foodHref(item)} className="food-card group"><div className="aspect-[4/3] overflow-hidden rounded-[14px] bg-photo"><FoodImage src={item.image} alt={item.title} loading="lazy" /></div><div className="px-1 pt-3"><p className="text-[11px] font-bold uppercase tracking-[.13em] text-accent">{item.category}{(item.recipe_slug || item.merienda_slug || item.has_catalog_recipe) && <span className="ml-2 inline-flex items-center text-ink" title="Recipe with ingredients and steps"><BookOpen size={12} aria-hidden="true" /><span className="sr-only">Recipe with ingredients and steps</span></span>}</p><h2 className="mt-1 line-clamp-2 text-[16px] font-bold leading-tight md:text-[19px]">{item.title}</h2></div></Link>)}</div>}
       {result && totalPages > 1 && <nav aria-label="Pages" className="mt-12 flex items-center justify-center gap-5">{page > 1 ? <Link href={pageHref(page - 1)} onClick={goToPage(page - 1)} rel="prev" className="brand-button-outline">Previous</Link> : <span aria-disabled="true" className="brand-button-outline pointer-events-none opacity-40">Previous</span>}<span className="text-[13px] text-muted">Page {page} of {totalPages}</span>{page < totalPages ? <Link href={pageHref(page + 1)} onClick={goToPage(page + 1)} rel="next" className="brand-button">Next <ArrowRight size={16} /></Link> : <span aria-disabled="true" className="brand-button pointer-events-none opacity-40">Next <ArrowRight size={16} /></span>}</nav>}
     </div>
   );
