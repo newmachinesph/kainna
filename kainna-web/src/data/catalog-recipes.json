@@ -3068,8 +3068,8 @@
   {
     "image_id": "phfood_cabe4bdd1cc6__copycat-macho-sisig-nachos",
     "intro": "A loaded pulutan-style nacho platter gets Filipino character from crisp sisig, fresh salsa, chilies, and a generous cheese sauce drizzle.",
-    "minutes": 195,
-    "servings": 1,
+    "minutes": 15,
+    "servings": 4,
     "ingredients": [
       "1 large bowl nacho chips",
       "2 to 3 cups crispy sisig",
@@ -14074,7 +14074,7 @@
     "image_id": "phfood_b4804a283359__burnt-basque-bibingka-cheesecake",
     "intro": "A deeply caramelized coconut cheesecake with the familiar savoriness of bibingka toppings.",
     "minutes": 60,
-    "servings": 1,
+    "servings": 8,
     "ingredients": [
       "500 g cream cheese, softened",
       "3/4 cup granulated sugar",
@@ -35723,12 +35723,13 @@
   {
     "image_id": "phfood_5056788723f3__fish-stew-paksiw-na-isda-sa-gata",
     "intro": "Fish Stew (Paksiw na Isda sa Gata) is a rich coconut-vinegar fish dish with fried eggplant.",
-    "minutes": 345,
+    "minutes": 60,
     "servings": 6,
     "ingredients": [
       "4 lbs fish steaks",
       "2 Chinese eggplants, sliced",
       "1 thumb-sized ginger",
+      "1 medium onion, chopped",
       "3 cloves garlic",
       "4 cups coconut milk",
       "1 cup white vinegar",

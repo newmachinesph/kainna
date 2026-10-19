@@ -1,0 +1,954 @@
+[
+  {
+    "table": "catalog_items",
+    "id": "phfood_0502396472b6__shared-millie-s-pininyahang-manok",
+    "field": "title",
+    "old": "Shared. Millie’s Pininyahang Manok",
+    "new": "Millie’s Pininyahang Manok",
+    "reason": "scraped 'Shared.' prefix in title (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_0502396472b6__shared-millie-s-pininyahang-manok",
+    "field": "title",
+    "old": "Shared. Millie’s Pininyahang Manok",
+    "new": "Millie’s Pininyahang Manok",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_fa4cc831f52e__shared-cynthia-s-sugar-free-carrot-pandan-puto",
+    "field": "title",
+    "old": "Shared. Cynthia’s Sugar-free Carrot Pandan Puto",
+    "new": "Cynthia’s Sugar-free Carrot Pandan Puto",
+    "reason": "scraped 'Shared.' prefix in title (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_fa4cc831f52e__shared-cynthia-s-sugar-free-carrot-pandan-puto",
+    "field": "title",
+    "old": "Shared. Cynthia’s Sugar-free Carrot Pandan Puto",
+    "new": "Cynthia’s Sugar-free Carrot Pandan Puto",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_a5e0013977f4__shared-tortang-talong-with-giniling",
+    "field": "title",
+    "old": "Shared: Tortang Talong with Giniling",
+    "new": "Tortang Talong with Giniling",
+    "reason": "scraped 'Shared:' prefix in title (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_a5e0013977f4__shared-tortang-talong-with-giniling",
+    "field": "title",
+    "old": "Shared: Tortang Talong with Giniling",
+    "new": "Tortang Talong with Giniling",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_971df6cf28a2__salted-eggs",
+    "field": "title",
+    "old": "salted eggs",
+    "new": "Salted Eggs",
+    "reason": "title not capitalized (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_971df6cf28a2__salted-eggs",
+    "field": "title",
+    "old": "salted eggs",
+    "new": "Salted Eggs",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_bca61ceb8994__shrimp-with-butter-and-taba-ng-talangka-bisita-kusina-episode-2",
+    "field": "title",
+    "old": "Shrimp with Butter and Taba ng Talangka – Bisita Kusina Episode 2",
+    "new": "Shrimp with Butter and Taba ng Talangka",
+    "reason": "source video episode name left in title (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_bca61ceb8994__shrimp-with-butter-and-taba-ng-talangka-bisita-kusina-episode-2",
+    "field": "title",
+    "old": "Shrimp with Butter and Taba ng Talangka – Bisita Kusina Episode 2",
+    "new": "Shrimp with Butter and Taba ng Talangka",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_a329794ba8c3__siopao-asado-steamed-buns-with-chicken-filling",
+    "field": "title",
+    "old": "Siopao -Asado (Steamed buns with chicken filling)",
+    "new": "Siopao Asado (Steamed Buns with Chicken Filling)",
+    "reason": "stray hyphen and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_a329794ba8c3__siopao-asado-steamed-buns-with-chicken-filling",
+    "field": "title",
+    "old": "Siopao -Asado (Steamed buns with chicken filling)",
+    "new": "Siopao Asado (Steamed Buns with Chicken Filling)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_159164b37831__hopia-munggo-and-ube-filling",
+    "field": "title",
+    "old": "Hopia- Munggo and Ube filling",
+    "new": "Hopia (Munggo and Ube Filling)",
+    "reason": "stray hyphen and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_159164b37831__hopia-munggo-and-ube-filling",
+    "field": "title",
+    "old": "Hopia- Munggo and Ube filling",
+    "new": "Hopia (Munggo and Ube Filling)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_8e8b230f3adb__fish-steak-mackerel-tanigue-filipino-style",
+    "field": "title",
+    "old": "Fish Steak (Mackerel/Tanigue)- Filipino style",
+    "new": "Fish Steak (Mackerel/Tanigue), Filipino Style",
+    "reason": "stray hyphen and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_8e8b230f3adb__fish-steak-mackerel-tanigue-filipino-style",
+    "field": "title",
+    "old": "Fish Steak (Mackerel/Tanigue)- Filipino style",
+    "new": "Fish Steak (Mackerel/Tanigue), Filipino Style",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_89090f1c92ff__roast-beef-with-cream-of-mushroom-sauce-filipino-style",
+    "field": "title",
+    "old": "Roast Beef with cream of mushroom sauce- Filipino Style",
+    "new": "Roast Beef with Cream of Mushroom Sauce, Filipino Style",
+    "reason": "stray hyphen and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_89090f1c92ff__roast-beef-with-cream-of-mushroom-sauce-filipino-style",
+    "field": "title",
+    "old": "Roast Beef with cream of mushroom sauce- Filipino Style",
+    "new": "Roast Beef with Cream of Mushroom Sauce, Filipino Style",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_e5788f7fe0d7__moche-kapampangan-rice-balls",
+    "field": "title",
+    "old": "Moche - Kapampangan rice balls",
+    "new": "Moche (Kapampangan Rice Balls)",
+    "reason": "dash separator and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_e5788f7fe0d7__moche-kapampangan-rice-balls",
+    "field": "title",
+    "old": "Moche - Kapampangan rice balls",
+    "new": "Moche (Kapampangan Rice Balls)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_8300db1af0c4__braised-beef-filipino-chinese-style",
+    "field": "title",
+    "old": "Braised Beef - Filipino/Chinese style",
+    "new": "Braised Beef (Filipino-Chinese Style)",
+    "reason": "dash separator and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_8300db1af0c4__braised-beef-filipino-chinese-style",
+    "field": "title",
+    "old": "Braised Beef - Filipino/Chinese style",
+    "new": "Braised Beef (Filipino-Chinese Style)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_b5336225340c__filipino-bbq-pork-skewers",
+    "field": "title",
+    "old": "Filipino BBQ - Pork Skewers",
+    "new": "Filipino BBQ Pork Skewers",
+    "reason": "dash separator (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_b5336225340c__filipino-bbq-pork-skewers",
+    "field": "title",
+    "old": "Filipino BBQ - Pork Skewers",
+    "new": "Filipino BBQ Pork Skewers",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_9992eefdfda0__nilagang-baka-with-kalabasa-filipino-boiled-beef-soup",
+    "field": "title",
+    "old": "Nilagang Baka with Kalabasa – Filipino boiled beef Soup",
+    "new": "Nilagang Baka with Kalabasa (Filipino Boiled Beef Soup)",
+    "reason": "dash separator and casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_9992eefdfda0__nilagang-baka-with-kalabasa-filipino-boiled-beef-soup",
+    "field": "title",
+    "old": "Nilagang Baka with Kalabasa – Filipino boiled beef Soup",
+    "new": "Nilagang Baka with Kalabasa (Filipino Boiled Beef Soup)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_a3c4acf47bb9__ginisang-upo-at-kalabasa-sauteed-opo-and-butternut-squash",
+    "field": "title",
+    "old": "Ginisang Upo at Kalabasa – Sauteed Opo and Butternut Squash",
+    "new": "Ginisang Upo at Kalabasa (Sautéed Opo and Butternut Squash)",
+    "reason": "dash separator (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_a3c4acf47bb9__ginisang-upo-at-kalabasa-sauteed-opo-and-butternut-squash",
+    "field": "title",
+    "old": "Ginisang Upo at Kalabasa – Sauteed Opo and Butternut Squash",
+    "new": "Ginisang Upo at Kalabasa (Sautéed Opo and Butternut Squash)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_74fd914c6cdc__ginataang-baka-beef-in-coconut-milk-with-green-beans-and-spinach",
+    "field": "title",
+    "old": "Ginataang Baka – Beef in Coconut Milk with Green Beans and Spinach",
+    "new": "Ginataang Baka (Beef in Coconut Milk with Green Beans and Spinach)",
+    "reason": "dash separator (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_74fd914c6cdc__ginataang-baka-beef-in-coconut-milk-with-green-beans-and-spinach",
+    "field": "title",
+    "old": "Ginataang Baka – Beef in Coconut Milk with Green Beans and Spinach",
+    "new": "Ginataang Baka (Beef in Coconut Milk with Green Beans and Spinach)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_f23a8fab6f9f__grilled-pork-belly-with-garlic-fried-rice-and-fried-egg-liempo-sinangag-itlog",
+    "field": "title",
+    "old": "Grilled Pork Belly with Garlic Fried Rice and Fried Egg – Liempo Sinangag Itlog",
+    "new": "Liempo Sinangag Itlog (Grilled Pork Belly with Garlic Fried Rice and Fried Egg)",
+    "reason": "dash separator; Filipino name first like other titles (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_f23a8fab6f9f__grilled-pork-belly-with-garlic-fried-rice-and-fried-egg-liempo-sinangag-itlog",
+    "field": "title",
+    "old": "Grilled Pork Belly with Garlic Fried Rice and Fried Egg – Liempo Sinangag Itlog",
+    "new": "Liempo Sinangag Itlog (Grilled Pork Belly with Garlic Fried Rice and Fried Egg)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_9df7f173a147__tortang-tuna-with-spinach-omelet",
+    "field": "title",
+    "old": "Tortang Tuna with Spinach – Omelet",
+    "new": "Tortang Tuna with Spinach",
+    "reason": "dash separator with redundant 'Omelet' (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_9df7f173a147__tortang-tuna-with-spinach-omelet",
+    "field": "title",
+    "old": "Tortang Tuna with Spinach – Omelet",
+    "new": "Tortang Tuna with Spinach",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_4f0f6fa33c5d__champorado-with-tuyo-chocolate-porridge-with-salted-dried-fish",
+    "field": "title",
+    "old": "Champorado with Tuyo – Chocolate Porridge with Salted Dried Fish",
+    "new": "Champorado with Tuyo (Chocolate Porridge with Salted Dried Fish)",
+    "reason": "dash separator (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_4f0f6fa33c5d__champorado-with-tuyo-chocolate-porridge-with-salted-dried-fish",
+    "field": "title",
+    "old": "Champorado with Tuyo – Chocolate Porridge with Salted Dried Fish",
+    "new": "Champorado with Tuyo (Chocolate Porridge with Salted Dried Fish)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_2427893ff62b__eggplant-and-sardine-omelet-tortang-talong-with-sardinas",
+    "field": "title",
+    "old": "Eggplant and Sardine Omelet | Tortang Talong with Sardinas",
+    "new": "Tortang Talong with Sardinas (Eggplant and Sardine Omelet)",
+    "reason": "pipe separator from source page title (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_2427893ff62b__eggplant-and-sardine-omelet-tortang-talong-with-sardinas",
+    "field": "title",
+    "old": "Eggplant and Sardine Omelet | Tortang Talong with Sardinas",
+    "new": "Tortang Talong with Sardinas (Eggplant and Sardine Omelet)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_ee58db0ae331__creamy-chopseuy",
+    "field": "title",
+    "old": "Creamy Chopseuy",
+    "new": "Creamy Chopsuey",
+    "reason": "typo (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_ee58db0ae331__creamy-chopseuy",
+    "field": "title",
+    "old": "Creamy Chopseuy",
+    "new": "Creamy Chopsuey",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_08943c2a5a38__abistsuelas-guisado",
+    "field": "title",
+    "old": "Abistsuelas Guisado",
+    "new": "Abitsuelas Guisado",
+    "reason": "typo (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_08943c2a5a38__abistsuelas-guisado",
+    "field": "title",
+    "old": "Abistsuelas Guisado",
+    "new": "Abitsuelas Guisado",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_acc5984f3bfb__bulanglang-kapangpangan",
+    "field": "title",
+    "old": "Bulanglang Kapangpangan",
+    "new": "Bulanglang Kapampangan",
+    "reason": "typo (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_acc5984f3bfb__bulanglang-kapangpangan",
+    "field": "title",
+    "old": "Bulanglang Kapangpangan",
+    "new": "Bulanglang Kapampangan",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_8eb12f64c070__hotsilog-hotdog-sinangang-at-itlog",
+    "field": "title",
+    "old": "Hotsilog (Hotdog Sinangang at Itlog)",
+    "new": "Hotsilog (Hotdog, Sinangag at Itlog)",
+    "reason": "typo: sinangang -> sinangag (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_8eb12f64c070__hotsilog-hotdog-sinangang-at-itlog",
+    "field": "title",
+    "old": "Hotsilog (Hotdog Sinangang at Itlog)",
+    "new": "Hotsilog (Hotdog, Sinangag at Itlog)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_35bfb3fe3293__maxs-style-fried-chicken-with-kamote-fries",
+    "field": "title",
+    "old": "Maxs Style Fried Chicken with Kamote Fries",
+    "new": "Max’s Style Fried Chicken with Kamote Fries",
+    "reason": "missing apostrophe (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_35bfb3fe3293__maxs-style-fried-chicken-with-kamote-fries",
+    "field": "title",
+    "old": "Maxs Style Fried Chicken with Kamote Fries",
+    "new": "Max’s Style Fried Chicken with Kamote Fries",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_90bc668a3d2a__ginataang-kamoteng-kahoy-ay-saging",
+    "field": "title",
+    "old": "Ginataang Kamoteng Kahoy ay Saging",
+    "new": "Ginataang Kamoteng Kahoy at Saging",
+    "reason": "typo: ay -> at (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_90bc668a3d2a__ginataang-kamoteng-kahoy-ay-saging",
+    "field": "title",
+    "old": "Ginataang Kamoteng Kahoy ay Saging",
+    "new": "Ginataang Kamoteng Kahoy at Saging",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_27e33b0feb37__sotanghon-and-egg-noodle-soup",
+    "field": "title",
+    "old": "Sotanghon And Egg Noodle Soup",
+    "new": "Sotanghon and Egg Noodle Soup",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_27e33b0feb37__sotanghon-and-egg-noodle-soup",
+    "field": "title",
+    "old": "Sotanghon And Egg Noodle Soup",
+    "new": "Sotanghon and Egg Noodle Soup",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_455ac7b3bb36__filipino-pochero-using-pork-belly",
+    "field": "title",
+    "old": "Filipino Pochero using pork belly",
+    "new": "Filipino Pochero with Pork Belly",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_4fb19593fb0f__pininyahang-manok-pineapple-chicken",
+    "field": "title",
+    "old": "Pininyahang Manok (Pineapple chicken)",
+    "new": "Pininyahang Manok (Pineapple Chicken)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_4fb19593fb0f__pininyahang-manok-pineapple-chicken",
+    "field": "title",
+    "old": "Pininyahang Manok (Pineapple chicken)",
+    "new": "Pininyahang Manok (Pineapple Chicken)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_5b172693ae3e__filipino-style-chicken-curry-with-coconut-milk",
+    "field": "title",
+    "old": "Filipino Style Chicken Curry with coconut milk",
+    "new": "Filipino Style Chicken Curry with Coconut Milk",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_5b172693ae3e__filipino-style-chicken-curry-with-coconut-milk",
+    "field": "title",
+    "old": "Filipino Style Chicken Curry with coconut milk",
+    "new": "Filipino Style Chicken Curry with Coconut Milk",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_507e9781c7c9__ginataang-bilo-bilo-sticky-rice-balls-in-coco-milk",
+    "field": "title",
+    "old": "Ginataang Bilo bilo (sticky rice balls in coco milk)",
+    "new": "Ginataang Bilo-bilo (Sticky Rice Balls in Coconut Milk)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_507e9781c7c9__ginataang-bilo-bilo-sticky-rice-balls-in-coco-milk",
+    "field": "title",
+    "old": "Ginataang Bilo bilo (sticky rice balls in coco milk)",
+    "new": "Ginataang Bilo-bilo (Sticky Rice Balls in Coconut Milk)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_d805a1a488b0__grilled-stuffed-squid-inihaw-na-pusit",
+    "field": "title",
+    "old": "Grilled Stuffed Squid (inihaw na pusit)",
+    "new": "Grilled Stuffed Squid (Inihaw na Pusit)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_d805a1a488b0__grilled-stuffed-squid-inihaw-na-pusit",
+    "field": "title",
+    "old": "Grilled Stuffed Squid (inihaw na pusit)",
+    "new": "Grilled Stuffed Squid (Inihaw na Pusit)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_960a5d9c18f5__ginataang-pusit-squid-in-coconut-milk",
+    "field": "title",
+    "old": "Ginataang Pusit (squid in coconut milk)",
+    "new": "Ginataang Pusit (Squid in Coconut Milk)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_960a5d9c18f5__ginataang-pusit-squid-in-coconut-milk",
+    "field": "title",
+    "old": "Ginataang Pusit (squid in coconut milk)",
+    "new": "Ginataang Pusit (Squid in Coconut Milk)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_6220d0ca9b3c__gourmet-tuyo-dried-herring-in-spicy-oil",
+    "field": "title",
+    "old": "Gourmet Tuyo (dried Herring) in Spicy Oil",
+    "new": "Gourmet Tuyo (Dried Herring) in Spicy Oil",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_6220d0ca9b3c__gourmet-tuyo-dried-herring-in-spicy-oil",
+    "field": "title",
+    "old": "Gourmet Tuyo (dried Herring) in Spicy Oil",
+    "new": "Gourmet Tuyo (Dried Herring) in Spicy Oil",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_2065f33d5412__sinigang-na-panga-ng-tuna-tuna-jaw-cooked-in-sour-broth",
+    "field": "title",
+    "old": "Sinigang na Panga ng Tuna (Tuna jaw cooked in sour broth)",
+    "new": "Sinigang na Panga ng Tuna (Tuna Jaw in Sour Broth)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_2065f33d5412__sinigang-na-panga-ng-tuna-tuna-jaw-cooked-in-sour-broth",
+    "field": "title",
+    "old": "Sinigang na Panga ng Tuna (Tuna jaw cooked in sour broth)",
+    "new": "Sinigang na Panga ng Tuna (Tuna Jaw in Sour Broth)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_6ebb4aa9a772__monggo-with-hibi-mung-beans-with-small-dried-shrimp",
+    "field": "title",
+    "old": "Monggo with Hibi (Mung beans with small dried shrimp)",
+    "new": "Monggo with Hibi (Mung Beans with Small Dried Shrimp)",
+    "reason": "casing (update the title column and payload.title)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_6ebb4aa9a772__monggo-with-hibi-mung-beans-with-small-dried-shrimp",
+    "field": "title",
+    "old": "Monggo with Hibi (Mung beans with small dried shrimp)",
+    "new": "Monggo with Hibi (Mung Beans with Small Dried Shrimp)",
+    "reason": "payload.title copies the catalog title; keep in sync"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_61ffad7da569__mutya-ng-cavite",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Seafood",
+    "reason": "seafood soup (shellfish, fish, crab), no pork or beef (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_eab873350dd9__halaan-bopis",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Seafood",
+    "reason": "clam dish (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_d5f402037382__pisatisati",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Seafood",
+    "reason": "tinapa and mackerel croquettes (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_de274cb273ec__piyalam-istah",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Seafood",
+    "reason": "fried fish in turmeric sauce (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_32aad906fa9f__buridibud",
+    "field": "category",
+    "old": "Chicken",
+    "new": "Vegetables",
+    "reason": "Ilocano vegetable soup with prawns, no chicken (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_4fd786bcc385__linapwahan",
+    "field": "category",
+    "old": "Chicken",
+    "new": "Vegetables",
+    "reason": "Ilonggo vegetable soup with shrimp and dried fish, no chicken (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_98b7ae745daf__lumpiang-pabasa",
+    "field": "category",
+    "old": "Seafood",
+    "new": "Vegetables",
+    "reason": "vegetable and tofu lumpia filling, no seafood (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_6a91ed7d8893__kangkong-in-oyster-sauce",
+    "field": "category",
+    "old": "Seafood",
+    "new": "Vegetables",
+    "reason": "kangkong side dish, no seafood (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_81ef02aa0b8d__garlic-tokwa-and-kangkong-in-oyster-sauce",
+    "field": "category",
+    "old": "Seafood",
+    "new": "Vegetables",
+    "reason": "tofu and kangkong, no seafood (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_458ff0db6316__tokneneng",
+    "field": "category",
+    "old": "Seafood",
+    "new": "More ulam",
+    "reason": "battered hard-boiled eggs (street food), not seafood (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_a7ad7569d88e__kwek-kwek",
+    "field": "category",
+    "old": "Seafood",
+    "new": "More ulam",
+    "reason": "battered quail eggs (street food), not seafood (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_220184f4532e__grilled-paprika-chicken-with-chorizo-gravy",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Chicken",
+    "reason": "chicken main dish (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_12c623bc6035__bacon-and-egg-filipino-chicken-adobo",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Chicken",
+    "reason": "chicken adobo (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_51cbda441b80__filipino-style-pot-roast-in-creamy-mushroom-gravy",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Pork & beef",
+    "reason": "beef pot roast (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_96d69d6823f4__sinigang-na-buto-buto-with-gabi",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Pork & beef",
+    "reason": "pork-bone sinigang (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_e0e2684f6172__vigan-empanada",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Pork & beef",
+    "reason": "longganisa-filled empanada (Pork Empanada is in Pork & beef) (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_536ddc21aae3__kiniing-bukel",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Pork & beef",
+    "reason": "smoked pork soup (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_fcaec3a55087__etag",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Pork & beef",
+    "reason": "cured pork dish (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_45e810528fc9__betute",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "More ulam",
+    "reason": "stuffed frog; Pampanga exotic dishes like Kamaro are in More ulam (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_79d104a31166__lechon-manok-sauce",
+    "field": "category",
+    "old": "Chicken",
+    "new": "More ulam",
+    "reason": "sauce; Lechon Sauce is in More ulam (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_d945d34ec46e__peach-mango-nuggets",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "sweet fruit pastry (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_92be24dd3ab8__pinaso",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "cracker custard dessert (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_046475258efc__pilipit",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "sweet fried pastry (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_9a5f6bc76cb9__lihim-ni-lola",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "cassava sweet (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_7400c4f64ab4__kalingking",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "sweet camote fritters (Kamote Cue is in Desserts) (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_8da41edaf3eb__ginataang-monggo",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "recipe is a sweet malagkit-mung bean dessert (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_c65986e819b0__lelot-balatong",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "sweet coconut rice porridge (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_91b83f83f7da__ginataang-munggo-lelut-balatung",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Desserts",
+    "reason": "sweet coconut rice and mung bean pudding (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_7ec06cd87f07__ginataang-mais-at-malagkit-sweet-corn-and-glutinous-rice-porridge",
+    "field": "category",
+    "old": "Rice & noodles",
+    "new": "Desserts",
+    "reason": "sweet porridge; Ginataang Mais is in Desserts (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_1e6d2c26a69a__pasulbot",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Desserts",
+    "reason": "coconut-milk dessert (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_c8519e7ffd10__kulambo",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Desserts",
+    "reason": "coconut rice cake (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_99a7065a710f__malibog",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Desserts",
+    "reason": "coconut-pandan dessert (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_0eeb46dfa4ad__10-5-5-5",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Desserts",
+    "reason": "puto maya with sikwate, a sweet breakfast/dessert (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_25bbe25aa79a__magic-water",
+    "field": "category",
+    "old": "More ulam",
+    "new": "Drinks",
+    "reason": "banana-flavored gulaman drink (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_5056788723f3__fish-stew-paksiw-na-isda-sa-gata",
+    "field": "minutes",
+    "old": 345,
+    "new": 60,
+    "reason": "345 minutes is absurd; steps are fry eggplant and fish, then a short coconut-vinegar simmer (about 1 hour)"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_5056788723f3__fish-stew-paksiw-na-isda-sa-gata",
+    "field": "ingredients",
+    "old": [
+      "4 lbs fish steaks",
+      "2 Chinese eggplants, sliced",
+      "1 thumb-sized ginger",
+      "3 cloves garlic",
+      "4 cups coconut milk",
+      "1 cup white vinegar",
+      "2 long green peppers, sliced",
+      "5 Thai chilli peppers",
+      "3 tbsp coarse sea salt",
+      "1 cup cooking oil",
+      "8 g Maggi Magic Sarap",
+      "Fish sauce and ground black pepper, to taste"
+    ],
+    "new": [
+      "4 lbs fish steaks",
+      "2 Chinese eggplants, sliced",
+      "1 thumb-sized ginger",
+      "1 medium onion, chopped",
+      "3 cloves garlic",
+      "4 cups coconut milk",
+      "1 cup white vinegar",
+      "2 long green peppers, sliced",
+      "5 Thai chilli peppers",
+      "3 tbsp coarse sea salt",
+      "1 cup cooking oil",
+      "8 g Maggi Magic Sarap",
+      "Fish sauce and ground black pepper, to taste"
+    ],
+    "reason": "step 3 sautes onion but onion was missing from the ingredient list"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_cabe4bdd1cc6__copycat-macho-sisig-nachos",
+    "field": "minutes",
+    "old": 195,
+    "new": 15,
+    "reason": "195 minutes, but the recipe only assembles nachos with ready crispy sisig"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_cabe4bdd1cc6__copycat-macho-sisig-nachos",
+    "field": "servings",
+    "old": 1,
+    "new": 4,
+    "reason": "a large shared platter with 2 to 3 cups sisig is not 1 serving"
+  },
+  {
+    "table": "catalog_recipes",
+    "id": "phfood_b4804a283359__burnt-basque-bibingka-cheesecake",
+    "field": "servings",
+    "old": 1,
+    "new": 8,
+    "reason": "a whole cheesecake (500 g cream cheese, 3 eggs) is not 1 serving"
+  },
+  {
+    "table": "recipes",
+    "id": "caldereta",
+    "field": "dietary_ok_flags",
+    "old": [
+      "no_pork",
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "new": [
+      "no_seafood",
+      "no_shellfish",
+      "low_salt",
+      "diabetic",
+      "no_coconut"
+    ],
+    "reason": "uses liver spread (Filipino canned liver spread is pork liver), so it is not safe for no-pork households"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_5b2c1f82741d__bulanghang",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Pork & beef",
+    "reason": "recipe and photo are coconut-braised beef brisket and tendons, not a vegetable dish (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_1df2dd9f09ab__sabo-kamatis",
+    "field": "category",
+    "old": "Vegetables",
+    "new": "Pork & beef",
+    "reason": "beef rib soup (1.5 kg beef ribs) (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_b46a4ed19fa1__buntaa",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Seafood",
+    "reason": "stuffed crab in coconut milk, no pork or beef (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_953639ceb6c1__burger-steak-sardinas",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "Seafood",
+    "reason": "sardine and banana blossom patties, no pork or beef (update the category column and payload.category)"
+  },
+  {
+    "table": "catalog_items",
+    "id": "phfood_8349992c5c21__dynamite-lumpia",
+    "field": "category",
+    "old": "Pork & beef",
+    "new": "More ulam",
+    "reason": "cheese-stuffed chili snack, no meat; Cheese Sticks is in More ulam (update the category column and payload.category)"
+  }
+]

@@ -39,6 +39,35 @@ def read_seed(name: str) -> list[dict]:
     return json.loads((DATA / name).read_text(encoding="utf-8"))
 
 
+FIX_TABLES = {"catalog_items": "id", "catalog_recipes": "image_id", "recipes": "slug"}
+FIX_COLUMNS = {("catalog_items", "title"), ("catalog_items", "category"), ("recipes", "title")}
+
+
+def apply_data_fixes(db) -> None:
+    """Correct existing rows that the seed import never updates.
+
+    A fix applies only while the stored value still equals its recorded old value,
+    so it runs once and never overwrites an edit made in the admin editor.
+    """
+    path = DATA / "data-fixes.json"
+    if not path.exists():
+        return
+    for fix in json.loads(path.read_text(encoding="utf-8")):
+        table, field = fix["table"], fix["field"]
+        key = FIX_TABLES[table]
+        row = db.execute(f"SELECT payload FROM {table} WHERE {key} = ?", (fix["id"],)).fetchone()
+        if row is None:
+            continue
+        payload = json.loads(row["payload"])
+        if payload.get(field) != fix["old"]:
+            continue
+        payload[field] = fix["new"]
+        if (table, field) in FIX_COLUMNS:
+            db.execute(f"UPDATE {table} SET {field} = ?, payload = ? WHERE {key} = ?", (fix["new"], json.dumps(payload, ensure_ascii=False), fix["id"]))
+        else:
+            db.execute(f"UPDATE {table} SET payload = ? WHERE {key} = ?", (json.dumps(payload, ensure_ascii=False), fix["id"]))
+
+
 def round_price(amount: float) -> int:
     """Keep stored PHP estimates in five-peso increments."""
     return max(5, math.floor(amount / 5 + 0.5) * 5)
@@ -208,6 +237,7 @@ def initialize(db: sqlite3.Connection) -> None:
         recipe["title"] = title
         catalog_recipe_rows.append((draft["image_id"], json.dumps(recipe, ensure_ascii=False), seeded_at))
     db.executemany("INSERT OR IGNORE INTO catalog_recipes(image_id, payload, updated_at) VALUES (?, ?, ?)", catalog_recipe_rows)
+    apply_data_fixes(db)
     for row in db.execute("SELECT id, payload FROM ingredients").fetchall():
         item = json.loads(row["payload"])
         rounded = round_price(item["price_php"])
@@ -297,6 +327,23 @@ def seo_index():
         "ulam_slugs": [row["slug"] for row in ulam],
         "merienda_slugs": [row["slug"] for row in merienda],
     }
+
+
+@app.get("/v1/seo-catalog")
+def seo_catalog():
+    """Every catalog dish with its image and recipe summary, so crawler-facing pages need one call."""
+    with connection() as db:
+        rows = db.execute("SELECT c.payload, r.payload AS recipe FROM catalog_items c LEFT JOIN catalog_recipes r ON r.image_id = c.id ORDER BY c.position").fetchall()
+    items = []
+    for row in rows:
+        item = with_media(json.loads(row["payload"]))
+        recipe = json.loads(row["recipe"]) if row["recipe"] else None
+        items.append({
+            "id": item["id"], "title": item["title"], "category": item["category"], "image": item.get("image"),
+            "recipe_slug": item.get("recipe_slug"), "merienda_slug": item.get("merienda_slug"),
+            "recipe": {key: recipe.get(key) for key in ("intro", "minutes", "servings")} if recipe else None,
+        })
+    return {"items": items, "total": len(items)}
 
 
 @app.get("/v1/catalog/slug/{slug}")

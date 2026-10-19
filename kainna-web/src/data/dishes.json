@@ -1578,7 +1578,6 @@
     "base_cost_per_serving": 113,
     "servings": 4,
     "dietary_ok_flags": [
-      "no_pork",
       "no_seafood",
       "no_shellfish",
       "low_salt",
