@@ -9,3 +9,5 @@ kainna-web/src/components/
 kainna-web/src/lib/
 kainna-web/src/store/
 api/data/
+api/.venv/
+**/__pycache__/
