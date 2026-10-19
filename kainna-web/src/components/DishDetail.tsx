@@ -15,6 +15,7 @@ import { DishPhoto } from "./DishPhoto";
 import { Tag } from "./Tag";
 import { Button, ButtonLink } from "./Button";
 import { SaveRecipeButton } from "./SaveRecipeButton";
+import { QuickAnswers, RecipeFacts, ulamFacts } from "./RecipeFacts";
 
 export function DishDetail({ dish }: { dish: Dish }) {
   const { t, locale } = useT();
@@ -36,6 +37,7 @@ export function DishDetail({ dish }: { dish: Dish }) {
   const source = sourceOfDerived(dish);
   const related = DISHES.filter((d) => d.id !== dish.id && d.protein_class === dish.protein_class).slice(0, 4);
   const householdCost = hydrated ? householdCostOf(dish, household, [...marketPrices, ...overlay]) : null;
+  const facts = useMemo(() => ulamFacts(dish, cost), [dish, cost]);
   const priceDate = marketPrices.map((item) => item.observed_at).sort().at(-1) ?? PRICE_DATE;
 
   const onAdd = () => {
@@ -84,6 +86,8 @@ export function DishDetail({ dish }: { dish: Dish }) {
         </div>
       </div>
 
+      <RecipeFacts data={facts} />
+
       <div className="mt-10 grid gap-8 md:grid-cols-12 md:gap-10">
         <section className="md:col-span-5">
           <h2 className="text-[22px]">{t("ulam.ingredients")}</h2>
@@ -116,6 +120,8 @@ export function DishDetail({ dish }: { dish: Dish }) {
           </ol>
         </section>
       </div>
+
+      <QuickAnswers answers={facts.answers} />
 
       <section className="mt-12 rounded-[18px] bg-ink p-6 text-paper md:p-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

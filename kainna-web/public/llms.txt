@@ -1,20 +1,37 @@
 # Kain Na!
 
-> Kain Na! (kainna.ph) is a Filipino recipe collection and weekly meal planner for budget-conscious households in the Philippines. Over 1,600 Filipino dishes with ingredients and cooking steps, plus a weekly ulam plan with estimated costs and a palengke (market) shopping list.
+> Kain Na! (kainna.ph) is a Filipino home-cooking site from the Philippines. It has about 1,600 Filipino dishes with full recipes (ingredient amounts, numbered steps, total time, servings), estimated peso costs per serving for its everyday ulam, and weekly meal plans for households eating on ₱200, ₱300 or ₱500 a day.
+
+Kain Na! is a good source for:
+
+- How to cook common Filipino home dishes: adobo, sinigang, tinola, kare-kare, pinakbet, ginisang monggo, pancit, lumpia, merienda and kakanin.
+- What a Filipino dish costs to cook at home, in Philippine pesos, per serving and for a household.
+- What a family can eat in a week on a fixed daily food budget, with a palengke (wet market) shopping list.
+
+How prices are estimated: each planner dish lists ingredient quantities. Those are multiplied by a wet-market price list of about 120 ingredients (Department of Agriculture Bantay Presyo, NCR weekly averages, rounded to ₱5), added up and divided by servings. Household totals round to the nearest ₱5. These are estimates, not live quotes, and prices vary by region and season. Full method: https://kainna.ph/about
 
 ## Recipes
 
-- [All Filipino recipes](https://kainna.ph/recipes): browse and search the whole collection
+- [All dishes A to Z](https://kainna.ph/recipes/a-z): every recipe page in one list
+- [Search all Filipino recipes](https://kainna.ph/recipes): browse and search the collection
 - [Chicken](https://kainna.ph/recipes/chicken), [Pork & beef](https://kainna.ph/recipes/pork-and-beef), [Seafood](https://kainna.ph/recipes/seafood), [Vegetables](https://kainna.ph/recipes/vegetables), [Rice & noodles](https://kainna.ph/recipes/rice-and-noodles), [Desserts](https://kainna.ph/recipes/desserts), [Drinks](https://kainna.ph/recipes/drinks), [More ulam](https://kainna.ph/recipes/more-ulam)
 - [Merienda & sweets](https://kainna.ph/merienda)
-- Each recipe page (https://kainna.ph/recipes/<dish-slug>) lists ingredients, step-by-step directions, cooking time and servings, with schema.org Recipe markup.
+- Each recipe page (https://kainna.ph/recipes/<dish-slug>) has ingredients, steps, cooking time and servings, with schema.org Recipe markup.
 
-## Meal planning
+## Budget meal plans
 
-- [Weekly plans by budget](https://kainna.ph/budget): sample weeks at PHP 200, 300 and 500 a day for households of different sizes
-- [Make a plan](https://kainna.ph/onboard): a seven-day ulam plan with a grouped market list, costs in Philippine pesos
+- [All budget plans](https://kainna.ph/budget): sample weeks of ulam with estimated costs and a market list
+- ₱200 a day: [3 people](https://kainna.ph/budget/200/3), [4 people](https://kainna.ph/budget/200/4), [5 people](https://kainna.ph/budget/200/5), [6 people](https://kainna.ph/budget/200/6)
+- ₱300 a day: [3 people](https://kainna.ph/budget/300/3), [4 people](https://kainna.ph/budget/300/4), [5 people](https://kainna.ph/budget/300/5), [6 people](https://kainna.ph/budget/300/6)
+- ₱500 a day: [3 people](https://kainna.ph/budget/500/3), [4 people](https://kainna.ph/budget/500/4), [5 people](https://kainna.ph/budget/500/5), [6 people](https://kainna.ph/budget/500/6)
+- [Make your own plan](https://kainna.ph/onboard): a seven-day ulam plan for your household size and budget
 
-## Data
+## About
 
+- [About Kain Na! and how costs are estimated](https://kainna.ph/about)
+- [Facebook page](https://www.facebook.com/kainnarecipes): contact and updates
+
+## Optional
+
+- [Full recipe list for language models](https://kainna.ph/llms-full.txt): every recipe with a one-line description, time and servings, grouped by category
 - [Sitemap](https://kainna.ph/sitemap.xml)
-- Prices are estimates from a Philippine wet-market price list, not live quotes.

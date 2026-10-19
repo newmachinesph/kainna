@@ -22,7 +22,6 @@ export const metadata: Metadata = {
   title: { default: "Kain Na! | Filipino Recipes & Meal Planning", template: "%s | Kain Na!" },
   description: "Discover Filipino dishes, cook recipes with ingredients and steps, and plan family meals around your budget.",
   applicationName: "Kain Na!",
-  alternates: { canonical: "/" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
   manifest: "/manifest.webmanifest?v=20261001-3",
   appleWebApp: { capable: true, statusBarStyle: "default", title: "Kain Na!" },

@@ -1,7 +1,19 @@
 import { absoluteUrl } from "@/lib/site";
 
-export function recipeSeoTitle(name: string): string {
-  return `${name} Recipe: How to Cook It`;
+const MAX_TITLE_LENGTH = 60;
+
+/** Adds the English name when it differs from the dish name and the title still fits a search result. */
+export function recipeSeoTitle(name: string, englishName?: string | null): string {
+  const plain = `${name} Recipe: How to Cook It`;
+  const english = englishName?.trim();
+  if (!english || name.toLowerCase().includes(english.toLowerCase())) return plain;
+  const withEnglish = `${name} Recipe (${english}): How to Cook It`;
+  return withEnglish.length <= MAX_TITLE_LENGTH ? withEnglish : plain;
+}
+
+/** "crisp banana rolls" -> "Crisp Banana Rolls", for English names used in titles. */
+export function titleCase(text: string): string {
+  return text.replace(/\b([a-z])([a-z]*)/g, (word, first: string, rest: string) => ["and", "or", "of", "with", "in", "na", "ng"].includes(word) ? word : first.toUpperCase() + rest);
 }
 
 export function recipeSeoDescription(summary: string, detail: string): string {

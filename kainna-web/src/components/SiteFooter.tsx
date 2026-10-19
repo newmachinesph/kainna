@@ -4,12 +4,15 @@ import { Wordmark } from "./Wordmark";
 
 const explore = [
   { href: "/recipes", label: "Explore food" },
+  { href: "/recipes/a-z", label: "All dishes A–Z" },
   { href: "/merienda", label: "Merienda & sweets" },
   { href: "/saved", label: "Saved recipes" },
+  { href: "/about", label: "About Kain Na!" },
 ];
 
 const kitchen = [
   { href: "/onboard", label: "Make a meal plan" },
+  { href: "/budget", label: "Budget meal plans" },
   { href: "/plan", label: "My week" },
   { href: "/palengke", label: "Palengke list" },
 ];
