@@ -28,7 +28,7 @@ export function BudgetWeek({ daily, size, weekStart }: { daily: number; size: nu
   const list = useMemo(() => sample ? buildPalengkeList(sample.plan.slots, DISH_BY_ID, INGREDIENTS, buildPriceMap(INGREDIENTS, prices, tier.price_multiplier), size) : null, [sample, size, tier.price_multiplier, prices]);
 
   if (!hydrated) return <p className="py-20 text-center text-muted">Loading current recipes and prices…</p>;
-  if (!sample || !list) return <p className="py-20 text-center text-muted">Recipes or prices are unavailable. Refresh when the local API is running.</p>;
+  if (!sample || !list) return <p className="py-20 text-center text-muted">Recipes or prices didn&apos;t load. Please refresh the page.</p>;
   const { plan, household } = sample;
   const total = planTotal(plan);
 

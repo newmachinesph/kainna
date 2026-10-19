@@ -2,22 +2,22 @@
 export const faqQuestions = (catalogCount: number, recipeCount: number) => [
   {
     id: "recipes",
-    question: "Does every food image have a recipe?",
-    answer: `The collection currently has ${catalogCount.toLocaleString()} unique dish images and ${recipeCount.toLocaleString()} in-app recipes with ingredients and steps. Other food pages include a link to the publisher's recipe when the catalog provides one.`,
+    question: "Does every dish have a recipe?",
+    answer: `Most do: ${recipeCount.toLocaleString()} of the ${catalogCount.toLocaleString()} dishes have a full recipe here with ingredients and steps. For the rest, the dish page links to the publisher's original recipe when there is one.`,
   },
   {
     id: "prices",
     question: "Are the recipe prices live market prices?",
-    answer: "No. The costs are estimates based on the app’s ingredient price list. They help you compare meals and plan a budget, but your local palengke prices may differ.",
+    answer: "No, the prices are estimates, not live quotes. They come from a wet-market price list, so your own palengke may be cheaper or pricier. Use them to compare dishes and plan a budget.",
   },
   {
     id: "plan",
     question: "What happens after I make a meal plan?",
-    answer: "You get seven days of dishes and a grouped palengke list based on the plan. You can swap meals and check off what you need to buy.",
+    answer: "You get seven days of ulam and one palengke list for the whole week. The list is grouped by stall, you can swap any dish, and you can tick off items as you buy them.",
   },
   {
     id: "saved",
     question: "Do I need an account to save recipes?",
-    answer: "No. As a guest, your saved recipes stay in this browser. If you create an account, Kain Na! stores them in your account so you can sign in again.",
+    answer: "No, you can save recipes as a guest, and they stay in this browser. If you sign in, Kain Na! keeps them in your account so they are there on any device.",
   },
 ];

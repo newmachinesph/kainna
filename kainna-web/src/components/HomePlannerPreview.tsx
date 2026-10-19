@@ -18,7 +18,7 @@ export function HomePlannerPreview({ featured }: { featured: FeaturedWeek }) {
       <div className="feature-icon"><CalendarDays size={20} /></div>
       <p className="eyebrow mt-8">This week at the table</p>
       <h2 id="planner-heading" className="section-title mt-3 max-w-[13ch]">Seven dishes, one good week.</h2>
-      <p className="mt-5 max-w-[44ch] text-[16px] leading-relaxed text-ink-soft">A fresh set of real recipes chosen for the week. Open any dish for ingredients and cooking steps.</p>
+      <p className="mt-5 max-w-[44ch] text-[16px] leading-relaxed text-ink-soft">One ulam for each day, picked by us for this week. Open any dish for the ingredients and steps.</p>
       <p className="mt-6 text-sm text-muted">Week of {new Date(`${featured.week_start}T12:00:00`).toLocaleDateString("en-PH", { month: "long", day: "numeric", year: "numeric" })}</p>
       <Link href="/onboard" className="brand-button mt-8 w-fit">Make your own plan <ArrowUpRight size={17} /></Link>
     </div>

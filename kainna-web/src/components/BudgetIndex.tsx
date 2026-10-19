@@ -18,7 +18,7 @@ export function BudgetIndex({ weekStart }: { weekStart: string }) {
   const prices = useSalo((state) => state.marketPrices);
   const cells = useMemo(() => recipesLoaded && pricesLoaded ? TIERS.map((tier) => ({ tier, sizes: BUDGET_PAGE_SIZES.map((size) => ({ size, total: planTotal(samplePlan(tier.daily_php, size, weekStart, "NCR", prices).plan) })) })) : [], [weekStart, prices, recipesLoaded, pricesLoaded]);
   if (!hydrated) return <p className="py-20 text-center text-muted">Loading current recipes and prices…</p>;
-  if (!recipesLoaded || !pricesLoaded) return <p className="py-20 text-center text-muted">Recipes or prices are unavailable. Refresh when the local API is running.</p>;
+  if (!recipesLoaded || !pricesLoaded) return <p className="py-20 text-center text-muted">Recipes or prices didn&apos;t load. Please refresh the page.</p>;
   return (
     <div>
       <PageHeader title={t("budget.indexTitle")} sub={t("budget.indexSub")} />
