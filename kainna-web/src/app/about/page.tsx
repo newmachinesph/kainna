@@ -24,12 +24,15 @@ function monthYear(date: string): string {
 
 export default async function AboutPage() {
   const base = process.env.API_INTERNAL_URL ?? "http://127.0.0.1:8000";
-  const [healthResponse, ingredientsResponse] = await Promise.all([
+  // Dishes with any recipe: a collection recipe, or a curated ulam/merienda page (the same count as the home page).
+  const [healthResponse, ingredientsResponse, recipesResponse] = await Promise.all([
     fetch(`${base}/health`, { cache: "no-store" }),
     fetch(`${base}/v1/ingredients`, { cache: "no-store" }),
+    fetch(`${base}/v1/catalog?limit=1&recipes_only=true`, { cache: "no-store" }),
   ]);
-  if (!healthResponse.ok || !ingredientsResponse.ok) throw new Error("Site details unavailable");
+  if (!healthResponse.ok || !ingredientsResponse.ok || !recipesResponse.ok) throw new Error("Site details unavailable");
   const health = await healthResponse.json() as Health;
+  const { total: withRecipe } = await recipesResponse.json() as { total: number };
   const { items: ingredients } = await ingredientsResponse.json() as { items: Ingredient[] };
   const latest = ingredients.reduce((newest, item) => item.price_updated_at > newest.price_updated_at ? item : newest, ingredients[0]);
   // "DA Bantay Presyo – NCR weekly average, Aug 2026" reads as "the Department of Agriculture's Bantay Presyo, NCR weekly average".
@@ -65,7 +68,7 @@ export default async function AboutPage() {
         <h2 className="text-2xl font-bold">What is in the collection</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-ink-soft">
           <li>{count(health.catalog_images)} Filipino dishes with photos, sorted into chicken, pork and beef, seafood, vegetables, rice and noodles, desserts, drinks and other ulam.</li>
-          <li>{count(health.catalog_recipes)} of those have a full recipe page with ingredient amounts, numbered steps, total cooking time and servings.</li>
+          <li>{withRecipe >= health.catalog_images ? "Every one of them has" : `${count(withRecipe)} of those have`} a full recipe page with ingredient amounts, numbered steps, total cooking time and servings.</li>
           <li>{count(health.ulam_recipes)} everyday ulam make up the weekly meal planner. These are the dishes with a peso cost per serving.</li>
           <li>{count(health.merienda_recipes)} merienda recipes, like banana cue and bibingka.</li>
         </ul>

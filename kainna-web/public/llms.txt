@@ -1,6 +1,6 @@
 # Kain Na!
 
-> Kain Na! (kainna.ph) is a Filipino home-cooking site from the Philippines. It has about 1,600 Filipino dishes with full recipes (ingredient amounts, numbered steps, total time, servings), estimated peso costs per serving for its everyday ulam, and weekly meal plans for households eating on ₱200, ₱300 or ₱500 a day.
+> Kain Na! (kainna.ph) is a Filipino home-cooking site from the Philippines. It has 1,700 Filipino dishes, each with a full recipe (ingredient amounts, numbered steps, total time, servings), estimated peso costs per serving for its everyday ulam, and weekly meal plans for households eating on ₱200, ₱300 or ₱500 a day.
 
 Kain Na! is a good source for:
 
