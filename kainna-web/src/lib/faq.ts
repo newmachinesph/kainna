@@ -3,7 +3,9 @@ export const faqQuestions = (catalogCount: number, recipeCount: number) => [
   {
     id: "recipes",
     question: "Does every dish have a recipe?",
-    answer: `Most do: ${recipeCount.toLocaleString()} of the ${catalogCount.toLocaleString()} dishes have a full recipe here with ingredients and steps. For the rest, the dish page links to the publisher's original recipe when there is one.`,
+    answer: recipeCount >= catalogCount
+      ? `Yes. All ${catalogCount.toLocaleString()} dishes have a full recipe here with ingredients and step-by-step directions.`
+      : `Most do: ${recipeCount.toLocaleString()} of the ${catalogCount.toLocaleString()} dishes have a full recipe here with ingredients and steps. For the rest, the dish page links to the publisher's original recipe when there is one.`,
   },
   {
     id: "prices",

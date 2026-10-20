@@ -7,7 +7,7 @@ import { absoluteUrl } from "@/lib/site";
 export const dynamic = "force-dynamic";
 
 const API = process.env.API_INTERNAL_URL ?? "http://127.0.0.1:8000";
-const description = "Every Filipino dish in the Kain Na! collection, sorted A to Z. Dishes marked with a dot have a full recipe with ingredients and cooking steps.";
+const description = "Every Filipino dish in the Kain Na! collection, sorted A to Z, each linking to its recipe with ingredients and cooking steps.";
 
 export const metadata: Metadata = {
   title: "All Filipino Dishes A–Z",
@@ -45,7 +45,7 @@ export default async function Page() {
       <div className="border-b border-line py-10 md:py-14">
         <p className="eyebrow">The Kain Na! food collection</p>
         <h1 className="section-title mt-3">All Filipino dishes, A to Z</h1>
-        <p className="mt-4 max-w-[60ch] text-ink-soft">{items.length.toLocaleString()} dishes, {withRecipe.toLocaleString()} of them with a full recipe. Dishes marked with a dot have ingredients and cooking steps. To browse with photos, go to <Link href="/recipes" className="text-link">the recipe collection</Link>.</p>
+        <p className="mt-4 max-w-[60ch] text-ink-soft">{withRecipe >= items.length ? `${items.length.toLocaleString()} dishes, each with a full recipe.` : `${items.length.toLocaleString()} dishes, ${withRecipe.toLocaleString()} of them with a full recipe. Dishes marked with a dot have ingredients and cooking steps.`} To browse with photos, go to <Link href="/recipes" className="text-link">the recipe collection</Link>.</p>
       </div>
       <nav aria-label="Jump to letter" className="sticky top-16 z-20 -mx-4 flex flex-wrap gap-1.5 border-b border-line bg-paper/95 px-4 py-3 backdrop-blur md:top-20 md:-mx-8 md:px-8">
         {letters.map((letter) => <a key={letter} href={`#letter-${letter === "#" ? "num" : letter}`} className="min-w-8 rounded-full border border-line bg-card px-2.5 py-1 text-center text-[13px] font-bold hover:border-ink">{letter}</a>)}
@@ -55,7 +55,8 @@ export default async function Page() {
           <h2 className="text-[28px] font-bold">{letter}</h2>
           <ul className="mt-4 columns-1 gap-8 text-[15px] sm:columns-2 lg:columns-3">
             {groups.get(letter)!.map((item) => {
-              const hasRecipe = Boolean(item.recipe_slug || item.merienda_slug || item.recipe);
+              // The dot only means something while some dishes still lack a recipe.
+              const hasRecipe = withRecipe < items.length && Boolean(item.recipe_slug || item.merienda_slug || item.recipe);
               return <li key={item.id} className="break-inside-avoid py-1"><Link href={foodHref(item)} prefetch={false} className="hover:text-accent hover:underline">{item.title}</Link>{hasRecipe && <span className="ml-1.5 text-accent" title="Full recipe with ingredients and steps"><span aria-hidden="true">•</span><span className="sr-only">(full recipe)</span></span>}</li>;
             })}
           </ul>

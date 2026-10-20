@@ -29,8 +29,9 @@ export function Landing({ featured, picks, categories, spotlight, catalogCount, 
               <Link href="/onboard" className="brand-button-outline">Make a meal plan <ArrowUpRight size={18} /></Link>
             </div>
             <div className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-line pt-5 text-[14px] text-muted">
-              <span><strong className="text-ink">{catalogCount.toLocaleString()}</strong> dishes</span>
-              <span><strong className="text-ink">{recipeCount.toLocaleString()}</strong> recipes with steps</span>
+              {recipeCount >= catalogCount
+                ? <span><strong className="text-ink">{catalogCount.toLocaleString()}</strong> dishes, each with a full recipe</span>
+                : <><span><strong className="text-ink">{catalogCount.toLocaleString()}</strong> dishes</span><span><strong className="text-ink">{recipeCount.toLocaleString()}</strong> recipes with steps</span></>}
               <span><strong className="text-ink">7 days</strong> of ulam per plan</span>
             </div>
           </div>
