@@ -12,12 +12,11 @@ import re
 import secrets
 import hashlib
 import sqlite3
-import urllib.request
 from zoneinfo import ZoneInfo
 
 from database import PostgresConnection
 
-from fastapi import FastAPI, HTTPException, Query, Cookie, Depends, Request, Response
+from fastapi import FastAPI, HTTPException, Query, Cookie, Depends, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr, Field
 from pwdlib import PasswordHash
@@ -28,9 +27,6 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 PUBLIC_MEDIA_BASE = os.getenv("S3_PUBLIC_BASE", "http://localhost:9000/salosalo-food").rstrip("/")
 MEDIA_VERSION = os.getenv("SALO_MEDIA_VERSION", "clean-v3")
 SESSION_COOKIE = "salosalo_session"
-REDIS_URL = os.getenv("UPSTASH_REDIS_REST_URL", "").rstrip("/")
-REDIS_TOKEN = os.getenv("UPSTASH_REDIS_REST_TOKEN", "")
-PROXY_SHARED_KEY = os.getenv("PROXY_SHARED_KEY", "")
 SESSION_DAYS = 14
 password_hash = PasswordHash.recommended()
 
@@ -461,35 +457,6 @@ def rotation_rng(period: str, scope: str) -> random.Random:
     return random.Random(f"{scope}:{key}")
 
 
-def client_ip(request: Request | None) -> str:
-    # Requests relayed by the web server carry the visitor's IP in a header signed with the shared key.
-    if request and PROXY_SHARED_KEY and secrets.compare_digest(request.headers.get("x-kainna-proxy-key", ""), PROXY_SHARED_KEY):
-        relayed = request.headers.get("x-kainna-client-ip", "").strip()
-        if relayed:
-            return relayed
-    forwarded = request.headers.get("x-forwarded-for", "") if request else ""
-    return forwarded.split(",")[0].strip() or (request.client.host if request and request.client else "unknown")
-
-
-def rate_limit(*rules: tuple[str, int, int]) -> None:
-    """Each rule is (key, max attempts, window seconds), counted in Upstash Redis. Off when Redis is not configured."""
-    if not REDIS_URL:
-        return
-    commands = [command for key, _, window in rules for command in (["INCR", f"rl:{key}"], ["EXPIRE", f"rl:{key}", window, "NX"])]
-    request = urllib.request.Request(f"{REDIS_URL}/pipeline", data=json.dumps(commands).encode(), method="POST",
-                                     headers={"Authorization": f"Bearer {REDIS_TOKEN}", "Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(request, timeout=2) as reply:
-            counts = [item["result"] for item in json.load(reply)[::2]]
-    except Exception:
-        # ponytail: fails open so a Redis outage cannot lock everyone out of signing in
-        logging.getLogger("uvicorn.error").warning("Rate limit check skipped: Redis unavailable", exc_info=True)
-        return
-    for (_, limit, window), count in zip(rules, counts):
-        if count > limit:
-            raise HTTPException(429, "Too many attempts. Please wait a few minutes and try again.", headers={"Retry-After": str(window)})
-
-
 def token_digest(token: str) -> str:
     return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
@@ -547,8 +514,7 @@ class LoginRequest(BaseModel):
 
 
 @app.post("/v1/auth/register", status_code=201)
-def register(payload: RegisterRequest, response: Response, request: Request = None):
-    rate_limit((f"register:ip:{client_ip(request)}", 10, 3600))
+def register(payload: RegisterRequest, response: Response):
     email = str(payload.email).strip().lower()
     display_name = payload.display_name.strip()
     if not display_name:
@@ -587,9 +553,8 @@ def register(payload: RegisterRequest, response: Response, request: Request = No
 
 
 @app.post("/v1/auth/login")
-def login(payload: LoginRequest, response: Response, request: Request = None):
+def login(payload: LoginRequest, response: Response):
     email = str(payload.email).strip().lower()
-    rate_limit((f"login:email:{email}", 10, 900), (f"login:ip:{client_ip(request)}", 50, 900))
     with connection() as db:
         row = db.execute("SELECT * FROM users WHERE email = ?", (email,)).fetchone()
         if row is None or not password_hash.verify(payload.password, row["password_hash"]):
@@ -629,7 +594,6 @@ def household_members(user: dict = Depends(session_user)):
 
 @app.post("/v1/household/invitations", status_code=201)
 def create_invitation(payload: InviteRequest, user: dict = Depends(owner_user)):
-    rate_limit((f"invite:user:{user['id']}", 10, 3600))
     email = str(payload.email).strip().lower()
     now = utc_now()
     with connection() as db:

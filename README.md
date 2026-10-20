@@ -18,7 +18,7 @@ Prices are estimates from a Philippine wet-market price list, not live quotes.
 | [`kainna-web/src/data/`](kainna-web/src/data/) | Catalog and recipe JSON the API seeds from |
 | [`compose.yaml`](compose.yaml) | Local stack: web, API, and MinIO for images |
 
-In production, kainna.ph runs on Railway, with PostgreSQL for data, Upstash Redis for rate limiting, and Cloudflare R2 behind `cdn.kainna.ph` for food photos.
+In production, kainna.ph runs on Railway, with PostgreSQL for data and Cloudflare R2 behind `cdn.kainna.ph` for food photos.
 
 ## Run it locally
 
@@ -59,8 +59,6 @@ API:
 | `S3_PUBLIC_BASE` | Public base URL for food images |
 | `SALO_MEDIA_VERSION` | Image set version used in image URLs |
 | `SALO_COOKIE_SECURE` | Set to `1` to mark the session cookie `Secure` (needed in production) |
-| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | Redis used to rate limit login, signup, and invitations |
-| `PROXY_SHARED_KEY` | Shared secret that lets the API trust the client IP relayed by the web proxy, for rate limiting |
 
 Web:
 
@@ -68,7 +66,6 @@ Web:
 |---|---|
 | `API_INTERNAL_URL` | Where the web server reaches the API (default `http://127.0.0.1:8000`) |
 | `SITE_URL` | Public site URL for canonical links, sitemap, and social cards |
-| `PROXY_SHARED_KEY` | Must match the API's value |
 
 Copy these into a local `.env` file, which git ignores. Never commit real values.
 
