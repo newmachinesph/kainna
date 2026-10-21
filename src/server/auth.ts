@@ -35,12 +35,14 @@ export function userView(row: Row): User {
 /** Each rule is [key, max attempts, window seconds], counted in MySQL. Fails open so a database hiccup cannot lock everyone out. */
 export async function rateLimit(...rules: [string, number, number][]): Promise<void> {
   const now = Math.floor(Date.now() / 1000);
+  if (Math.random() < 0.02) await query("DELETE FROM rate_limits WHERE window_ends < ? LIMIT 1000", [now]).catch(() => undefined);
   for (const [key, limit, window] of rules) {
+    const bucket = tokenDigest(`rl:${key}`);
     let hits: number;
     try {
       await query(`INSERT INTO rate_limits (bucket, hits, window_ends) VALUES (?, 1, ?)
-        ON DUPLICATE KEY UPDATE hits = IF(window_ends <= ?, 1, hits + 1), window_ends = IF(window_ends <= ?, VALUES(window_ends), window_ends)`, [`rl:${key}`, now + window, now, now]);
-      hits = Number((await one("SELECT hits FROM rate_limits WHERE bucket = ?", [`rl:${key}`]))?.hits ?? 0);
+        ON DUPLICATE KEY UPDATE hits = IF(window_ends <= ?, 1, hits + 1), window_ends = IF(window_ends <= ?, VALUES(window_ends), window_ends)`, [bucket, now + window, now, now]);
+      hits = Number((await one("SELECT hits FROM rate_limits WHERE bucket = ?", [bucket]))?.hits ?? 0);
     } catch (error) {
       console.warn("Rate limit check skipped: database unavailable", error);
       return;

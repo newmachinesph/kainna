@@ -10,6 +10,8 @@ export class HttpError extends Error {
 export function route<C>(fn: (request: Request, context: C) => Promise<unknown>) {
   return async (request: Request, context: C): Promise<Response> => {
     try {
+      // Session cookies are SameSite=Lax, so also refuse state changes started from another site.
+      if (request.method !== "GET" && request.method !== "HEAD" && request.headers.get("sec-fetch-site") === "cross-site") throw new HttpError(403, "Cross-site request refused");
       const result = await fn(request, context);
       return result instanceof Response ? result : Response.json(result);
     } catch (error) {
@@ -25,6 +27,8 @@ export function created(body: unknown): Response {
 }
 
 export async function body<S extends z.ZodType>(request: Request, schema: S): Promise<z.infer<S>> {
+  // A JSON content type forces a CORS preflight, so cross-site forms cannot post here.
+  if (!/^application\/([\w.+-]+\+)?json\b/i.test(request.headers.get("content-type") ?? "")) throw new HttpError(415, "Request body must be JSON");
   const raw = await request.json().catch(() => { throw new HttpError(422, "Request body must be JSON"); });
   const parsed = schema.safeParse(raw);
   if (!parsed.success) {
@@ -53,8 +57,8 @@ export function boolParam(params: URLSearchParams, name: string): boolean {
   throw new HttpError(422, `${name} must be true or false`);
 }
 
-/** Cloudflare's header when proxied, otherwise the first forwarded address from Hostinger's front proxy. */
+/** The address Hostinger's front proxy saw. Its hop is the last X-Forwarded-For entry; earlier entries come from the client and can be forged. */
 export function clientIp(request: Request): string {
-  const forwarded = request.headers.get("cf-connecting-ip") ?? request.headers.get("x-forwarded-for")?.split(",")[0];
-  return forwarded?.trim() || request.headers.get("x-real-ip") || "unknown";
+  const forwarded = request.headers.get("x-forwarded-for")?.split(",").pop()?.trim();
+  return forwarded || request.headers.get("x-real-ip")?.trim() || "unknown";
 }

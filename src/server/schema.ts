@@ -95,6 +95,6 @@ export async function initialize(db: Db): Promise<void> {
   if (Number(count) === 0) {
     const ready = await select(db, "SELECT payload FROM recipes WHERE kind = 'ulam' AND slug IN (?)", [INITIAL_FEATURED]);
     if (ready.length === INITIAL_FEATURED.length && ready.every((row) => parseJson(row.payload).image))
-      await db.query("INSERT INTO featured_weeks (week_start, slugs_json, updated_at) VALUES (?, ?, ?)", [weekMonday(), JSON.stringify(INITIAL_FEATURED), nowIso()]);
+      await db.query("INSERT IGNORE INTO featured_weeks (week_start, slugs_json, updated_at) VALUES (?, ?, ?)", [weekMonday(), JSON.stringify(INITIAL_FEATURED), nowIso()]);
   }
 }

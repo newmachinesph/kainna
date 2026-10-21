@@ -62,7 +62,7 @@ export async function catalogItem(imageId: string) {
 
 /** Catalog ids are '<manifest id>__<title slug>'; the public URL only carries the slug. */
 export async function catalogItemBySlug(slug: string) {
-  const escaped = slug.replace(/[%_\\]/g, (match) => `\\${match}`);
+  const escaped = slug.toLowerCase().replace(/[%_\\]/g, (match) => `\\${match}`);
   const row = await one("SELECT id FROM catalog_items WHERE id LIKE ?", [`%\\_\\_${escaped}`]);
   return row ? catalogItem(String(row.id)) : null;
 }

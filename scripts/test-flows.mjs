@@ -51,6 +51,10 @@ await rejected("POST", "/v1/household/invitations", 403, { token: first.token, b
 await rejected("POST", "/v1/auth/register", 400, { body: { email: `uninvited-${run}@example.com`, password: "correct horse battery staple", display_name: "No", invite_code: "wrong" } });
 await rejected("POST", "/v1/auth/login", 401, { body: { email: `owner-${run}@example.com`, password: "wrong password here" } });
 assert.ok((await ok("POST", "/v1/auth/login", { body: { email: `owner-${run}@example.com`, password: "correct horse battery staple" } })).token);
+const plainLogin = await fetch(`${base}/v1/auth/login`, { method: "POST", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ email: `owner-${run}@example.com`, password: "correct horse battery staple" }) });
+assert.equal(plainLogin.status, 415, "form-encodable bodies must be refused");
+const crossSite = await fetch(`${base}/v1/auth/logout`, { method: "POST", headers: { "Sec-Fetch-Site": "cross-site", cookie: `salosalo_session=${owner.token}` } });
+assert.equal(crossSite.status, 403, "cross-site state changes must be refused");
 assert.equal((await ok("GET", "/v1/household/state", { token: owner.token })).data.state, null);
 await ok("PUT", "/v1/household/state", { token: first.token, body: { state: { plan: { id: "plan-one" }, ignored: true } } });
 const state = (await ok("GET", "/v1/household/state", { token: owner.token })).data.state;

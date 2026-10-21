@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   output: "standalone",
   serverExternalPackages: ["mysql2"],
   experimental: {
-    // Hostinger counts threads against the account's process limit, and sharp would otherwise start one per core.
+    // Hostinger counts threads against the account's process limit. Next.js would otherwise start a build
+    // worker per core (63 there), and sharp an image thread per core.
+    cpus: 1,
     imgOptConcurrency: 1,
   },
   images: {

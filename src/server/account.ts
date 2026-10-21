@@ -16,7 +16,8 @@ export const RegisterRequest = z.object({
   household_name: z.string().max(100).nullish(),
   invite_code: z.string().nullish(),
 });
-export const LoginRequest = z.object({ email: z.email(), password: z.string() });
+// Login only looks the address up, so it skips format checks that older accounts might not pass.
+export const LoginRequest = z.object({ email: z.string().trim().min(3).max(254), password: z.string() });
 export const InviteRequest = z.object({ email: z.email() });
 export const SaveRecipe = z.object({ recipe_slug: z.string() });
 export const HouseholdStateRequest = z.object({ state: z.record(z.string(), z.unknown()) });
@@ -40,7 +41,8 @@ export async function register(payload: z.infer<typeof RegisterRequest>, ip: str
         if (!invite || invite.email !== email) throw new HttpError(400, "Invitation is invalid or expired");
         householdId = String(invite.household_id);
         await db.query("SELECT id FROM households WHERE id = ? FOR UPDATE", [householdId]);
-        const [{ count }] = await rows(db, "SELECT COUNT(*) AS count FROM users WHERE household_id = ?", [householdId]);
+        // A locking read sees members committed after this transaction's snapshot was taken.
+        const [{ count }] = await rows(db, "SELECT COUNT(*) AS count FROM users WHERE household_id = ? LOCK IN SHARE MODE", [householdId]);
         if (Number(count) >= MAX_ACCOUNTS) throw new HttpError(409, "This household already has three accounts");
         [role, isAdmin] = ["member", 0];
         await db.query("UPDATE invitations SET used_at = ? WHERE code_hash = ?", [now, invite.code_hash]);
