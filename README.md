@@ -11,72 +11,47 @@ Prices are estimates from a Philippine wet-market price list, not live quotes.
 
 ## Repository layout
 
+One Next.js 16 app (React 19, Tailwind CSS 4, Zustand) serves both the pages and the REST API.
+
 | Path | What it is |
 |---|---|
-| [`kainna-web/`](kainna-web/) | Next.js 16 + React 19 frontend (Tailwind CSS 4, Zustand) |
-| [`api/`](api/) | FastAPI backend: catalog, recipes, prices, auth, households, admin |
-| [`kainna-web/src/data/`](kainna-web/src/data/) | Catalog and recipe JSON the API seeds from |
-| [`compose.yaml`](compose.yaml) | Local stack: web, API, and MinIO for images |
+| [`src/app/`](src/app/) | Pages, plus the REST API under [`src/app/v1/`](src/app/v1/) (catalog, recipes, prices, auth, households, admin) |
+| [`src/server/`](src/server/) | Server-only code: MySQL access, schema and seeding, auth, and the API logic |
+| [`src/data/`](src/data/) | Catalog and recipe JSON the database seeds from |
+| [`scripts/`](scripts/) | Image, catalog and R2 tooling, the API flow test, and the one-off PostgreSQL to MySQL copy |
+| [`compose.yaml`](compose.yaml) | A local MariaDB for development |
 
-In production, kainna.ph runs on Railway, with PostgreSQL for data, Upstash Redis for rate limiting, and Cloudflare R2 behind `cdn.kainna.ph` for food photos.
+In production, kainna.ph runs on Hostinger as a single Node.js app with MySQL, behind Cloudflare DNS, with food photos on Cloudflare R2 behind `cdn.kainna.ph`.
 
 ## Run it locally
 
-With Docker:
-
 ```sh
-docker compose up --build
-```
-
-The web app is at http://localhost:3000, the API at http://localhost:8000, and the MinIO console at http://localhost:9001. Every port binds to `127.0.0.1` only. To load food photos into MinIO, put them in `kainna-web/public/food/` and run `docker compose run --rm seed-images`.
-
-Without Docker:
-
-```sh
-# API
-cd api
-python -m venv .venv && . .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-export DATABASE_URL=postgresql://user:password@localhost:5432/kainna
-uvicorn main:app --reload --port 8000
-
-# Web, in a second terminal
-cd kainna-web
+docker compose up -d db
 npm install
-npm run dev
+DATABASE_URL=mysql://kainna:kainna-local@127.0.0.1:3306/kainna npm run dev
 ```
 
-The API creates its tables on startup. If `DATABASE_URL` is not set, it falls back to a throwaway local file so you can try the app or run the tests without a database server. The Docker stack does this too. **The first account registered becomes the site admin.**
+Open http://localhost:3000. The app creates its tables and imports the catalog JSON on the first request. Import files only add missing rows; after that the database owns them. **The first account registered becomes the site admin.**
 
 ## Configuration
 
-API:
-
 | Variable | Purpose |
 |---|---|
-| `DATABASE_URL` | PostgreSQL connection string (works behind PgBouncer in transaction mode) |
-| `SALO_DATA_DIR` | Catalog JSON directory (default `kainna-web/src/data`) |
-| `S3_PUBLIC_BASE` | Public base URL for food images |
-| `SALO_MEDIA_VERSION` | Image set version used in image URLs |
+| `DATABASE_URL` | MySQL or MariaDB connection string, `mysql://user:password@host:3306/database`. On Hostinger use host `127.0.0.1` |
+| `DATABASE_POOL_SIZE` | Maximum MySQL connections per process (default 5) |
+| `SITE_URL` | Public site URL for canonical links, sitemap, and social cards. Read at build time too |
+| `S3_PUBLIC_BASE` | Public base URL for food images (default `https://cdn.kainna.ph/watermark-v1/full`) |
+| `SALO_MEDIA_VERSION` | Image set version used in image URLs (default `watermark-v1`) |
 | `SALO_COOKIE_SECURE` | Set to `1` to mark the session cookie `Secure` (needed in production) |
-| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | Redis used to rate limit login, signup, and invitations |
-| `PROXY_SHARED_KEY` | Shared secret that lets the API trust the client IP relayed by the web proxy, for rate limiting |
 
-Web:
-
-| Variable | Purpose |
-|---|---|
-| `API_INTERNAL_URL` | Where the web server reaches the API (default `http://127.0.0.1:8000`) |
-| `SITE_URL` | Public site URL for canonical links, sitemap, and social cards |
-| `PROXY_SHARED_KEY` | Must match the API's value |
-
-Copy these into a local `.env` file, which git ignores. Never commit real values.
+Login, signup and invitations are rate limited in the `rate_limits` table. Copy these into a local `.env` file, which git ignores. Never commit real values.
 
 ## Tests and checks
 
 ```sh
-cd api && python test_flows.py      # household, roles, saved recipes, weekly publishing
-cd kainna-web && npm run lint && npm run build
+npm run lint && npm run build
+# With the app running against an empty database:
+BASE_URL=http://localhost:3000 node scripts/test-flows.mjs
 ```
 
 ## Contributing
