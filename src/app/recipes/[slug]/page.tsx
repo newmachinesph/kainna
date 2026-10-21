@@ -17,7 +17,7 @@ async function loadDish(slug: string): Promise<Dish | null> {
   return await getRecipe(slug, "ulam") as Dish | null;
 }
 
-export async function loadCategoryPage(category: string): Promise<CatalogResult> {
+async function loadCategoryPage(category: string): Promise<CatalogResult> {
   return await listCatalog({ category, limit: 24, page: 1 }) as unknown as CatalogResult;
 }
 

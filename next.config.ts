@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "standalone",
   serverExternalPackages: ["mysql2"],
+  experimental: {
+    // Hostinger counts threads against the account's process limit, and sharp would otherwise start one per core.
+    imgOptConcurrency: 1,
+  },
   images: {
     remotePatterns: [{ protocol: "https", hostname: "upload.wikimedia.org" }],
   },
